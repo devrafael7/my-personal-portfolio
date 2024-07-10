@@ -5,13 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="w-full h-min-screen px-14">
+    <div class="w-full h-min-screen bg-white">
+        <header class="w-full h-16 flex justify-between items-center px-20 mb-3 pt-3">
+            <article class="logo flex items-center h-full justify-center bg-white cursor-pointer">
+                <h1 class="text-lg logoText font-semibold">Rafa's <span>Dev</span>Work</h1>
+            </article>
+
+            <nav class="flex gap-3">
+                <ul class="flex gap-10 opacity-90">
+                    <li><a class="text-sm font-medium" href="">Home</a></li>
+                    <li><a class="text-sm font-medium" href="">About</a></li>
+                    <li><a class="text-sm font-medium" href="">Services</a></li>
+                    <li><a class="text-sm font-medium" href="">Projects</a></li>
+                    <li><a class="text-sm font-medium" href="">Blog</a></li>
+                </ul>
+            </nav>
+
+            <article class="emailBox flex gap-2 items-center w-auto h-auto opacity-70 cursor-pointer">
+                <img class="h-5" src="icons/icons8-gmail-logo-50.png" alt="">
+                <h3 class="text-sm">rafarafa99944@gmail.com</h3>
+            </article>
+        </header>
+    </div>
+
+    <main class="mainCard w-full flex rounded-md mb-9">
+        <div class="mainCardLeft h-full flex flex-col pl-20 justify-center pr-20">
+            <p class="text-lg font-medium gap-1 flex items-center mb-1">Hello Mate <img class="h-7 mb-1" src="icons/icons8-emoji-de-mão-acenando-48.png" alt=""> </p>
+            <h1 class="text-4xl font-semibold leading-tight tracking-wide mb-2">I'm Rafael Oliveira <br>a <span class="text-blue-500">Front-end Developer</span></h1>
+            <p class="text-sm mb-4 opacity-70">Software Engineering student, currently studying <br> web development for 6 months. I have skills in developing <br> interfaces and functionalities for pages.</p>
+
+            <div class="flex gap-3">
+                <a href="">
+                    <div class="flex border border-black border-solid rounded-sm w-auto pl-2 pr-4 justify-start items-end gap-1">
+                        <img class="h-7" src="icons/icons8-linkedin-48.png" alt="">
+                        <h3 class="font-medium">Linkedin</h3>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="flex border border-black border-solid rounded-sm w-auto pl-2 pr-4 justify-start items-end gap-1">
+                        <img class="h-7" src="icons/icons8-github-24.png" alt="">
+                        <h3 class="font-medium">GitHub</h3>
+                    </div>
+                </a>
+              
+              
+            </div>
+        </div>
+        
+        <div class="mainCardRight bg-blue-500 h-full rounded-r-md relative flex  items-center">
+            <img class="myPicture absolute right-52 bottom-0" src="images/1720500891538.png" alt="">
+            <h1 class="mainCardRightTitle transform rotate-90 text-3xl tracking-widest text-white absolute -right-20">
+                WEB DEVELOPER
+            </h1>
+        </div>
+    </main>
+
+    <section class="w-full h-20 flex flex-col items-center uppercase gap-8">
+        <h3 class="font-semibold opacity-80">Knowledge in technologies:</h3>
+        <figure class="flex gap-2 h-7 w-full justify-evenly px-20 items-center">
+            <img class="w-12 h-12" src="icons/icons8-html5-48.png" alt="">
+            <img class="w-12 h-12" src="icons/icons8-css3-48.png" alt="">
+            <img class="w-12 h-12" src="icons/icons8-atrevido-avatar-48.png" alt="">
+            <img class="w-12 h-12" src="icons/icons8-tailwindcss-48.png" alt="">
+            <img class="w-12 h-12" src="icons/icons8-javascript-48.png" alt="">
+            <img class="w-12 h-12" src="icons/icons8-git-48.png" alt="">
+            <img class="w-12 h-12" src="icons/icons8-github-64.png" alt="">
+            <img class="w-12 h-10" src="icons/PHP-Logo.png" alt="">
+            <img class="w-12 h-14" src="icons/icons8-mysql-48.png" alt="">
+        </figure>
+    </section>
     
-
-
-
-
     <script src="script.js"></script>
 </body>
 </html>
