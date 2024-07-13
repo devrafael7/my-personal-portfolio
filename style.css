@@ -54,4 +54,20 @@ nav ul li a:hover {
 
 .mainCard .mainCardRight .myPicture {
   height: 95%;
+}
+
+.skills .creationOfInterfaceSkill {
+  width: 87%;
+}
+
+.skills .databaseUsageSkill {
+  width: 69%;
+}
+
+.skills .front-endDevelopmentSkill {
+  width: 62%;
+}
+
+.skills .back-endDevelopmentSkill {
+  width: 39%;
 }/*# sourceMappingURL=style.css.map */
