@@ -70,4 +70,8 @@ nav ul li a:hover {
 
 .skills .back-endDevelopmentSkill {
   width: 39%;
+}
+
+.myServiceCards {
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }/*# sourceMappingURL=style.css.map */
