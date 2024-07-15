@@ -90,3 +90,32 @@ nav ul li a:hover{
 .sourceCodeBtn {
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
+
+.image-container img {
+    transition: transform 0.3s ease;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.301); /* Fundo escuro com opacidade */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 20px;
+}
+
+.image-container:hover .image-overlay {
+    opacity: 1; /* Torna o overlay visível */
+}
+
+.projectInformations {
+ 
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .projectInformations {
+    opacity: 1;
+}
