@@ -119,3 +119,30 @@ nav ul li a:hover{
 .image-container:hover .projectInformations {
     opacity: 1;
 }
+
+@media (min-width: 1024px) and (max-width: 1120px) {
+    body {
+        padding: 0px 30px;
+    }
+}
+
+@media (min-width: 1124px) and (max-width: 2000px) {
+    body {
+        padding: 0px 80px;
+    }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    height: 11px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: $soft-blue;
+    border-radius: 2000px; 
+    border: 3px solid #e2e8f0; 
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background-color: #edf2f7; 
+    border-radius: 2000px; 
+}
