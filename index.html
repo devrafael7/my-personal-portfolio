@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="w-full h-min-screen ">
+    <div class="mainContent w-full h-min-screen">
     <div class="w-full h-min-screen bg-white">
         <header class="w-full h-16 flex justify-between items-center mb-7 pt-3">
             <article class="logo flex items-center h-full justify-center bg-white cursor-pointer">
@@ -258,7 +259,7 @@
         <!--<img class="border-b-4 border-blue-400 border-solid pb-3 transform -scale-x-100 w-72 mt-5" src="images/3d-hygge-young-woman-working-at-desk.png" alt="">-->
     </div>
 
-    <section class="projectsSection w-full h-auto  py-5 mb-10">
+    <section class="projectsSection w-full h-auto  py-5 mb-24">
         <div class="flex w-full justify-between mb-7">
             <div class="flex flex-col">
                 <h1 class="text-xl font-semibold textgray-800 uppercase">Featured Projects</h1>
@@ -456,38 +457,47 @@
                             </div>
                     </div>
     </section>
-
-    <div class="flex flex-col">
-        <h1 class="text-xl font-semibold textgray-800 uppercase">CERTIFICATES</h1>
-        <p class="text-sm text-sm">My certificates for completed courses</p>
     </div>
 
-    <div class="relative w-full py-4">
-        <button id="prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-md">Prev</button>
-        <div class="w-full overflow-x-auto custom-scrollbar">
-            <div class="flex space-x-4 w-max">
-                <img class="w-64 h-auto rounded-lg transform transition-transform duration-300 hover:scale-105" src="images/image1.jpg" alt="Image 1">
-                <img class="w-64 h-auto rounded-lg transform transition-transform duration-300 hover:scale-105" src="images/image2.jpg" alt="Image 2">
-                <img class="w-64 h-auto rounded-lg transform transition-transform duration-300 hover:scale-105" src="images/image3.jpg" alt="Image 3">
-                <img class="w-64 h-auto rounded-lg transform transition-transform duration-300 hover:scale-105" src="images/image4.jpg" alt="Image 4">
-                <img class="w-64 h-auto rounded-lg transform transition-transform duration-300 hover:scale-105" src="images/image5.jpg" alt="Image 5">
-                <img class="w-64 h-auto rounded-lg transform transition-transform duration-300 hover:scale-105" src="images/image6.jpg" alt="Image 6">
-                <img class="w-64 h-auto rounded-lg transform transition-transform duration-300 hover:scale-105" src="images/image7.jpg" alt="Image 7">
+    <section class="allWhaves pt-16">
+
+        <div class="w-full h-max certificatesSection">
+            <div class="flex flex-col mb-5">
+                <h1 class="text-xl font-semibold textgray-800 uppercase text-green-500 z-50 ">CERTIFICATES</h1>
+                <p class="text-sm text-sm text-gray-300 z-50 ">My certificates for completed courses</p>
             </div>
-        </div>
-        <button id="next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-md">Next</button>
-    </div>
-    
-    
-    
-    
-    
-    
-    
-    <section class="certificatesSection w-full h-80 bg-gray-300">
+        
+            <div class="relative w-full py-4">
+                <button type="button" id="prev" class="z-40 absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-md">Prev</button>
+                <div class="w-full overflow-x-auto custom-scrollbar overflow-y-hidden h-max py-4 px-4">
+                    <div class="flex gap-4 w-max h-auto">
+                        <img class="w-auto h-64 rounded-2xl transform transition-transform duration-300 hover:scale-105" src="certificate-images/certificate.PNG" alt="Image 1">
+                        <img class="w-auto h-64 rounded-2xl transform transition-transform duration-300 hover:scale-105" src="certificate-images/certificate1.PNG" alt="Image 2">
+                        <img class="w-auto h-64 rounded-2xl transform transition-transform duration-300 hover:scale-105" src="certificate-images/certificate2.PNG" alt="Image 3">
+                        <img class="w-auto h-64 rounded-2xl transform transition-transform duration-300 hover:scale-105" src="certificate-images/certificate3.PNG" alt="Image 4">
+                        <img class="w-auto h-64 rounded-2xl transform transition-transform duration-300 hover:scale-105" src="certificate-images/certificate4.PNG" alt="Image 5">
+                    </div>
+                </div>
+                <button type="button" id="next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-md">Next</button>
+            </div>
+            </div>
+        
 
+
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
     </section>
 
+    <!--This div is taking up all the space in the certificate content, which is absolut-->
+    <div class="invisibleDiv w-full h-screen">
+    </div>
+
+    <footer class="w-full h-screen bg-white">
+
+    </footer>
+   
   
     <script src="script.js"></script>
 </body>
