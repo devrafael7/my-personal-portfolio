@@ -224,14 +224,12 @@ nav ul li a:hover {
 
 .hideaway {
   opacity: 0;
-  filter: blur(15px);
   transform: translateX(-100%);
-  transition: all 2s;
+  transition: all 1.4s;
 }
 
 .show {
   opacity: 1;
-  filter: blur(0);
   transform: translateX(0);
-  transition: all 2s;
+  transition: all 1.4s;
 }/*# sourceMappingURL=style.css.map */
