@@ -11,3 +11,5 @@ document.getElementById('next').addEventListener('click', function() {
         behavior: 'smooth'
     });
 });
+
+const lastOne = document.querySelector('.footerLastOne')

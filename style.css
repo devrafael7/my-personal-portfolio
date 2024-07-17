@@ -218,6 +218,20 @@ nav ul li a:hover {
     background-position-x: -1000px;
   }
 }
-footer {
+.footerLastOne {
   height: 80vh;
+}
+
+.hideaway {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 2s;
 }/*# sourceMappingURL=style.css.map */
