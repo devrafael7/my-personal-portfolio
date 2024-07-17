@@ -122,6 +122,9 @@ nav ul li a:hover {
   .projectsDiv {
     gap: 17px;
   }
+  .logoAndTerms {
+    margin-right: 50px;
+  }
 }
 @media (min-width: 1124px) and (max-width: 2000px) {
   .mainContent {
