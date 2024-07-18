@@ -71,3 +71,33 @@ function type() {
     setTimeout(type, typingSpeed);
 }
 setTimeout(type, typingSpeed);
+
+const cards = document.querySelectorAll(".myServiceCards");
+
+cards.forEach(card => {
+    card.addEventListener("mouseover", function() {
+        cards.forEach(c => {
+            c.classList.remove("bg-blue-400");
+            c.classList.remove("invert-card");
+            c.querySelector(".invert-img").classList.add("invert-img");
+            this.classList.remove("text-white");
+        });
+        this.classList.add("bg-blue-400");
+        if (!this.classList.contains("myCard0")) {
+            this.classList.add("invert-card");
+            this.querySelector(".invert-img").classList.remove("invert-img");
+            this.classList.add("text-white");
+        }
+    });
+
+    card.addEventListener("mouseout", function() {
+        if (!this.classList.contains("myCard0")) {
+            this.classList.remove("bg-blue-400");
+            this.classList.remove("text-white");
+            this.classList.remove("invert-card");
+            this.querySelector(".invert-img").classList.add("invert-img");
+            
+        }
+    });
+});
+

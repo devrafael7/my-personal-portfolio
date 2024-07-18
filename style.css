@@ -248,12 +248,6 @@ nav ul li a:hover {
   height: 80vh;
 }
 
-.hideaway {
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: all 1.4s;
-}
-
 .show {
   opacity: 1;
   transform: translateX(0);
@@ -319,4 +313,33 @@ nav ul li a:hover {
 .gitAndLinkedinBtns:hover .linkedinFillTransition {
   width: 100%;
   color: rgba(255, 255, 255, 0.8901960784);
+}
+
+.eachAchievementCard {
+  transition: 0.5s ease;
+}
+
+.myServiceCards {
+  transition: background-color 0.5s ease, color 0.3s ease;
+}
+
+.myServiceCards:hover {
+  background-color: rgba(87, 147, 243, 0.862745098);
+  color: #fff;
+}
+
+.myServiceCards:hover div p {
+  color: #e6e8ec;
+}
+
+.myServiceCards:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.invert-card .invert-img {
+  filter: brightness(0) invert(1);
+}
+
+.textWhite {
+  color: #e6e8ec;
 }/*# sourceMappingURL=style.css.map */
