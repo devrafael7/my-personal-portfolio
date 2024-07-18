@@ -52,8 +52,34 @@ nav ul li a:hover {
   width: 30%;
 }
 
-.mainCard .mainCardRight .myPicture {
+.mainCard .mainCardRight .mainPicture0 {
   height: 95%;
+}
+
+.mainCard .mainCardRight .mainPicture1 {
+  height: 105%;
+}
+
+.mainCard .mainCardRight .mainPicture2 {
+  height: 105%;
+}
+
+.mainPicture0,
+.mainPicture1,
+.mainPicture2 {
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.nVisible {
+  opacity: 0;
+  transform: translateX(100%);
 }
 
 .skills .creationOfInterfaceSkill {
@@ -232,4 +258,29 @@ nav ul li a:hover {
   opacity: 1;
   transform: translateX(0);
   transition: all 1.4s;
+}
+
+.gitAndLinkedinBtns {
+  position: relative;
+  overflow: hidden;
+  transition: 0.2s ease;
+}
+
+.fillTransition {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #181821;
+  transition: width 0.5s ease;
+}
+
+.gitAndLinkedinBtns:hover h3 {
+  color: rgba(255, 255, 255, 0.8901960784);
+}
+
+.gitAndLinkedinBtns:hover .fillTransition {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.8901960784);
 }/*# sourceMappingURL=style.css.map */
