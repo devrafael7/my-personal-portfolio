@@ -63,11 +63,11 @@ nav ul li a:hover{
 }
 
 .mainCard .mainCardRight .mainPicture1 {
-    height: 105%;
+    height: 1050;
 }
 
 .mainCard .mainCardRight .mainPicture2 {
-    height: 105%;
+    height: 100%;
 }
 
 .mainPicture0,
@@ -287,7 +287,17 @@ nav ul li a:hover{
     transition: .2s ease;
 }
 
-.fillTransition {
+.linkedinFillTransition {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: $soft-blue;
+    transition: width 0.5s ease; 
+}
+
+.githubFillTransition {
     position: absolute;
     top: 0;
     left: 0;
@@ -297,12 +307,38 @@ nav ul li a:hover{
     transition: width 0.5s ease; 
 }
 
+.gitAndLinkedinBtns {
+    position: relative;
+    overflow: hidden; 
+}
+
+.hoverIcon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.gitAndLinkedinBtns:hover .hoverIcon {
+    opacity: 1; 
+}
+
+.gitAndLinkedinBtns:hover .noHoverIcon {
+    opacity: 0; 
+}
+
 .gitAndLinkedinBtns:hover h3{
     color: $text-white;
 
 }
 
-.gitAndLinkedinBtns:hover .fillTransition {
+.gitAndLinkedinBtns:hover .githubFillTransition {
+    width: 100%; 
+    color: $text-white;
+}
+
+.gitAndLinkedinBtns:hover .linkedinFillTransition {
     width: 100%; 
     color: $text-white;
 }
