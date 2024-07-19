@@ -376,4 +376,13 @@ nav ul li a:hover {
 .viewAllBtn:hover .viewAllBtnFillTransition {
   width: 100%;
   color: rgba(255, 255, 255, 0.8901960784);
+}
+
+#download-cv-btn {
+  transition: 0.3s ease;
+}
+
+.mainCardRight {
+  background: rgb(90, 148, 247);
+  background: linear-gradient(63deg, rgb(113, 165, 255) 0%, rgb(23, 127, 253) 100%);
 }/*# sourceMappingURL=style.css.map */

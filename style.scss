@@ -399,3 +399,12 @@ nav ul li a:hover{
     width: 100%; 
     color: $text-white;
 }
+
+#download-cv-btn {
+    transition: 0.3s ease;
+}
+
+.mainCardRight {
+    background: rgb(90,148,247);
+    background: linear-gradient(63deg, rgb(113, 165, 255) 0%, rgb(23, 127, 253) 100%);
+}
