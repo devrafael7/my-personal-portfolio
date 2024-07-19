@@ -41,7 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         currentIndex = (currentIndex + 1) % images.length;
 
-        // Mostra a próxima imagem
         images[currentIndex].classList.remove('nVisible');
         images[currentIndex].classList.add('visible');
     };
