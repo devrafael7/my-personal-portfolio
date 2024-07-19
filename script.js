@@ -72,32 +72,26 @@ function type() {
 }
 setTimeout(type, typingSpeed);
 
+
+
 const cards = document.querySelectorAll(".myServiceCards");
+cards.forEach(allCard=>{
+    allCard.addEventListener('mouseover', function(){
+        const card0 = document.querySelector('.card0');
+        const card0P = document.getElementById('card0-p');
+        card0.classList.remove('bg-blue-400');
+        card0.classList.remove('invert-card');
+        card0.classList.add('text-black');
+        card0P.classList.remove('text-gray-200');
+        card0P.classList.add('text-gray-500');
 
-cards.forEach(card => {
-    card.addEventListener("mouseover", function() {
-        cards.forEach(c => {
-            c.classList.remove("bg-blue-400");
-            c.classList.remove("invert-card");
-            c.querySelector(".invert-img").classList.add("invert-img");
-            this.classList.remove("text-white");
-        });
-        this.classList.add("bg-blue-400");
-        if (!this.classList.contains("myCard0")) {
-            this.classList.add("invert-card");
-            this.querySelector(".invert-img").classList.remove("invert-img");
-            this.classList.add("text-white");
-        }
-    });
-
-    card.addEventListener("mouseout", function() {
-        if (!this.classList.contains("myCard0")) {
-            this.classList.remove("bg-blue-400");
-            this.classList.remove("text-white");
-            this.classList.remove("invert-card");
-            this.querySelector(".invert-img").classList.add("invert-img");
-            
-        }
-    });
-});
+        allCard.addEventListener('mouseout', function(){
+            card0.classList.add('bg-blue-400');
+            card0.classList.add('invert-card');
+            card0.classList.remove('text-black');
+            card0P.classList.remove('text-gray-500');
+        })
+    })
+   
+})
 
