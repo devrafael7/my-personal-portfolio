@@ -197,8 +197,6 @@ nav ul li a:hover{
     }
 }
 
-
-
 .custom-scrollbar::-webkit-scrollbar {
     height: 12px;
 }
@@ -413,11 +411,38 @@ nav ul li a:hover{
     color: $text-white;
 }
 
-#download-cv-btn {
-    transition: 0.3s ease;
-}
-
 .mainCardRight {
     background: rgb(90,148,247);
     background: linear-gradient(63deg, rgb(113, 165, 255) 0%, rgb(23, 127, 253) 100%);
+}
+
+#download-cv-btn {
+    position: relative; 
+    transition: 0.9s ease; 
+}
+
+#download-cv-btn:hover {
+    border-radius: 10px;
+}
+
+#download-cv-btn h3 {
+    position: relative; 
+    z-index: 1; 
+    margin: 0; 
+}
+
+.fillDownloadCVBtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: $soft-black;
+    transition: 0.6s ease; 
+    z-index: 0; 
+}
+
+#download-cv-btn:hover .fillDownloadCVBtn {
+    width: 100%; 
+    border-radius: 10px;
 }

@@ -23,9 +23,9 @@
 
           <nav class="flex gap-3 hideaway">
             <ul class="flex gap-10 opacity-90">
-              <li><a class="text-sm font-medium" href="">Home</a></li>
-              <li><a class="text-sm font-medium" href="">About</a></li>
-              <li><a class="text-sm font-medium" href="">Services</a></li>
+              <li><a class="text-sm font-medium" href="index.html">Home</a></li>
+              <li class="redirectAbout text-sm font-medium cursor-pointer">About</li>
+              <li class="redirectionServices text-sm font-medium">Services</li>
               <li><a class="text-sm font-medium" href="">Projects</a></li>
               <li><a class="text-sm font-medium" href="">Blog</a></li>
             </ul>
@@ -201,13 +201,18 @@
             >
           </section>
           <div class="w-full flex">
-            <button 
-              type="button"
-              class="bg-blue-500 text-white text-xs w-auto px-5 h-auto py-2 rounded-sm hover:bg-blue-700 transition-all hover:scale-105"
+            <div 
+              class="bg-blue-500 text-white text-xs w-auto px-5 h-auto py-2 rounded-sm relative cursor-pointer"
               id="download-cv-btn"
             >
+            <h3 class="">
               Download CV
-            </button>
+            </h3>
+              <div class="fillDownloadCVBtn">
+
+              </div>
+             
+            </div>
           </div>
         </aside>
       </article>
@@ -236,7 +241,7 @@
               quidem.
             </p>
             <button
-              class="bg-blue-600 hover:bg-blue-700 transition-all bg-opacity-80 text-white w-max h-max px-5 py-2 text-xs rounded-sm"
+              class="getAnyProjectBtn bg-blue-600 hover:bg-blue-700 transition-all bg-opacity-80 text-white w-max h-max px-5 py-2 text-xs rounded-sm"
               type="submit"
             >
               Get Any Project
@@ -340,7 +345,7 @@
         </div>
       </div>
 
-      <h3 class="text-xl font-semibold hideaway">SERVICES</h3>
+      <h3 class="text-xl font-semibold hideaway services">SERVICES</h3>
       <p class="mb-6 hideaway">Services I can offer</p>
 
       <div

@@ -23,14 +23,6 @@ document.getElementById('next').addEventListener('click', function() {
     });
 });
 
-const backToTopBtn = document.querySelector('.backToTopBtn');
-backToTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth' 
-    });
-});
-
 document.addEventListener('DOMContentLoaded', () => {
     const images = document.querySelectorAll('.mainPicture0, .mainPicture1, .mainPicture2');
     let currentIndex = 0;
@@ -93,3 +85,44 @@ cards.forEach(allCard=>{
     })
 })
 
+
+const redirectAbout = document.querySelector('.redirectAbout');
+redirectAbout.addEventListener('click', function(){
+    const aboutMe = document.querySelector('.aboutMe');
+    const aboutMeTop = aboutMe.offsetTop;
+
+    window.scrollTo({
+        top: aboutMeTop,
+        behavior: 'smooth'
+    });
+});
+
+const redirectAbout = document.querySelector('.redirectAbout');
+redirectAbout.addEventListener('click', function(){
+    const aboutMe = document.querySelector('.aboutMe');
+    const aboutMeTop = aboutMe.offsetTop;
+
+    window.scrollTo({
+        top: aboutMeTop,
+        behavior: 'smooth'
+    });
+});
+
+const backToTopBtn = document.querySelector('.backToTopBtn');
+backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
+    });
+});
+
+const getAnyProjectBtn = document.querySelector('.getAnyProjectBtn');
+getAnyProjectBtn.addEventListener('click', function() {
+    const projectsSection = document.querySelector('.projectsSection');
+    const sectionTop = projectsSection.offsetTop;
+    
+    window.scrollTo({
+        top: sectionTop,
+        behavior: 'smooth'
+    });
+});
