@@ -92,6 +92,5 @@ cards.forEach(allCard=>{
             card0P.classList.remove('text-gray-500');
         })
     })
-   
 })
 
