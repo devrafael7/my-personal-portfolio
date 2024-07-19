@@ -86,13 +86,13 @@ cards.forEach(allCard=>{
 })
 
 
-const redirectAbout = document.querySelector('.redirectAbout');
-redirectAbout.addEventListener('click', function(){
-    const aboutMe = document.querySelector('.aboutMe');
-    const aboutMeTop = aboutMe.offsetTop;
+const redirectServices = document.querySelector('.redirectServices');
+redirectServices.addEventListener('click', function(){
+    const sevices = document.querySelector('.services');
+    const servicesTop = sevices.offsetTop;
 
     window.scrollTo({
-        top: aboutMeTop,
+        top: servicesTop,
         behavior: 'smooth'
     });
 });
