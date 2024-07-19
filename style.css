@@ -184,7 +184,7 @@ nav ul li a:hover {
 
 .allWhaves {
   position: absolute;
-  height: 111vh;
+  height: 105vh;
   width: 100%;
   background: #181821;
   overflow: hidden;
@@ -250,6 +250,12 @@ nav ul li a:hover {
 }
 .footerLastOne {
   height: 80vh;
+}
+
+.hideaway {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 1.4s;
 }
 
 .show {
@@ -350,4 +356,24 @@ nav ul li a:hover {
 
 .textWhite {
   color: #e6e8ec;
+}
+
+.viewAllBtn h3 {
+  z-index: 999;
+}
+
+.viewAllBtnFillTransition {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1D4ED8;
+  transition: width 0.5s ease;
+  z-index: -999;
+}
+
+.viewAllBtn:hover .viewAllBtnFillTransition {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.8901960784);
 }/*# sourceMappingURL=style.css.map */
