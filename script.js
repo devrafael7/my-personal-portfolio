@@ -86,27 +86,33 @@ cards.forEach(allCard=>{
 })
 
 
-const redirectServices = document.querySelector('.redirectServices');
-redirectServices.addEventListener('click', function(){
-    const sevices = document.querySelector('.services');
-    const servicesTop = sevices.offsetTop;
-
-    window.scrollTo({
-        top: servicesTop,
-        behavior: 'smooth'
+const redirectServices = document.querySelectorAll('.redirectServices');
+redirectServices.forEach(redirectServicesAll => {
+    redirectServicesAll.addEventListener('click', function(){
+        const sevices = document.querySelector('.services');
+        const servicesTop = sevices.offsetTop;
+    
+        window.scrollTo({
+            top: servicesTop,
+            behavior: 'smooth'
+        });
     });
-});
+})
 
-const redirectAbout = document.querySelector('.redirectAbout');
-redirectAbout.addEventListener('click', function(){
-    const aboutMe = document.querySelector('.aboutMe');
-    const aboutMeTop = aboutMe.offsetTop;
 
-    window.scrollTo({
-        top: aboutMeTop,
-        behavior: 'smooth'
+const redirectAbout = document.querySelectorAll('.redirectAbout');
+redirectAbout.forEach(redirectAboutAll => {
+    redirectAboutAll.addEventListener('click', function(){
+        const aboutMe = document.querySelector('.aboutMe');
+        const aboutMeTop = aboutMe.offsetTop;
+    
+        window.scrollTo({
+            top: aboutMeTop,
+            behavior: 'smooth'
+        });
     });
-});
+    
+})
 
 const backToTopBtn = document.querySelector('.backToTopBtn');
 backToTopBtn.addEventListener('click', () => {
