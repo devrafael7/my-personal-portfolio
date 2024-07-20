@@ -6,6 +6,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  transition: 0.4s ease;
+}
+
 .logo .logoText span {
   color: #2772db;
 }
@@ -300,12 +304,6 @@ nav ul li a:hover {
   height: 80vh;
 }
 
-.hideaway {
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: all 1.4s;
-}
-
 .show {
   opacity: 1;
   transform: translateX(0);
@@ -464,4 +462,19 @@ nav ul li a:hover {
 
 .qrCodeForMobile {
   height: 70vh;
+}
+
+body.dark {
+  background: #181821;
+  color: rgba(255, 255, 255, 0.8901960784);
+  transition: 0.3s ease;
+}
+
+body.dark .darkModeBtn {
+  padding-left: 52px;
+  background: rgb(82, 79, 109);
+}
+
+body.dark .darkModeBtn div {
+  background: rgb(179, 168, 226);
 }/*# sourceMappingURL=style.css.map */

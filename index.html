@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="w-full h-min-screen content overflow-x-hidden indexBody">
+  <body class="w-full h-min-screen content overflow-x-hidden">
     <div class="mainContent w-full h-min-screen">
-      <div class="w-full h-min-screen bg-white">
+      <div class="w-full h-min-screen">
         <header
           class="w-full h-16 flex justify-between items-center mb-7 pt-3 hideaway"
         >
           <article
-            class="logo flex items-center h-full justify-center bg-white cursor-pointer hideaway"
+            class="logo flex items-center h-full justify-center cursor-pointer hideaway"
           >
-            <h1 class="text-lg logoText font-semibold">
+            <h1 class="text-lg logoText font-semibold mr-7">
               Rafa's <span>Dev</span>Work
             </h1>
           </article>
@@ -43,7 +43,12 @@
       </div>
 
       <main class="mainCard w-full flex rounded-md mb-14 hideaway">
-        <div class="mainCardLeft h-full flex flex-col justify-center hideaway">
+        <div class="mainCardLeft h-full flex flex-col justify-center hideaway relative ">
+          <div class="darkModeBtn w-20 h-8 bg-blue-200 absolute top-0 cursor-pointer rounded-full py-1 px-1 flex items-center justify-start cursor-pointer">
+            <div class="darkModeInsideBtn bg-white rounded-full h-full w-6">
+
+            </div>
+          </div>
           <p class="text-lg font-medium gap-1 flex items-center mb-1">
             Hello Mate
             <img

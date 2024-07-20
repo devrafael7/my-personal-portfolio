@@ -133,4 +133,8 @@ getAnyProjectBtn.addEventListener('click', function() {
     });
 });
 
-const indexBody = document.querySelector('.indexBody');
+const body = document.querySelector('body');
+const darkModeBtn = document.querySelector('.darkModeBtn');
+darkModeBtn.addEventListener('click', function() {
+    body.classList.toggle('dark');
+})
