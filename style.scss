@@ -167,11 +167,15 @@ nav ul li a:hover{
         margin-right: 50px;
     }
 
+    .logoAndTerms {
+        margin-right: 6rem;
+    }
+    
     .footerLastOne{
         padding: 0;
         padding-top: 40px;
         padding-right: 130px;
-        padding-bottom: 120px;
+        padding-bottom: 30px;
     }
     
 }
@@ -187,6 +191,10 @@ nav ul li a:hover{
 
     .projectsDiv {
         gap: 60px;
+    }
+
+    .logoAndTerms {
+        margin-right: 9rem;
     }
 
     .footerLastOne{ 
@@ -445,4 +453,8 @@ nav ul li a:hover{
 #download-cv-btn:hover .fillDownloadCVBtn {
     width: 100%; 
     border-radius: 10px;
+}
+
+.qrCodeForMobile {
+    height: 70vh;
 }
