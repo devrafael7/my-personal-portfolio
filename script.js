@@ -132,3 +132,5 @@ getAnyProjectBtn.addEventListener('click', function() {
         behavior: 'smooth'
     });
 });
+
+const indexBody = document.querySelector('.indexBody');
