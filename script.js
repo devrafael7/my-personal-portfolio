@@ -144,11 +144,4 @@ darkModeBtn.addEventListener('click', function() {
     lmLinkedinIcon.forEach(lmLinkedinIcons => {
         lmLinkedinIcons.classList.toggle('hidden');
     })
-
-    const dmGithubIcon = document.querySelector('.dmGithubIcon');
-    dmGithubIcon.classList.toggle('hidden');
-    const lmGithubIcon = document.querySelector('.lmGithubIcon');
-    lmGithubIcon.classList.toggle('hidden');
-    const hoverGhIcon = document.querySelector('.hoverGhIcon');
-    hoverGhIcon.classList.toggle('hidden');
 })

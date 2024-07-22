@@ -384,7 +384,14 @@ nav ul li a:hover{
 
 .gitAndLinkedinBtns:hover h3{
     color: $text-white;
+}
 
+.lmGithubIcon {
+    transition: .1s ease;
+}
+
+.githubBtn:hover .lmGithubIcon{
+    filter: brightness(0) invert(1); 
 }
 
 .gitAndLinkedinBtns:hover .githubFillTransition {
@@ -483,7 +490,7 @@ nav ul li a:hover{
 
 #download-cv-btn:hover .fillDownloadCVBtn {
     width: 100%; 
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .qrCodeForMobile {
@@ -500,6 +507,10 @@ nav ul li a:hover{
     background: $standart-black;
     color: $text-white;
     transition: .2s ease;
+}
+
+.mainContent.dark p{
+    color: $soft-white;
 }
 
 .darkModeBtn {
@@ -528,5 +539,63 @@ nav ul li a:hover{
 }
 
 .mainContent.dark #main-title-name span{
-    color: $standart-yellow;
+    color: $text-yellow;
+}
+
+.mainContent.dark .logoText span {
+    color: $text-yellow;
+}
+
+.mainContent.dark .mainCardRight {
+    background: $standart-yellow;
+}
+
+.dmCodeIcon {
+    display: none;
+}
+
+.mainContent.dark .dmCodeIcon {
+    display: flex;
+}
+
+.mainContent.dark nav ul li a:hover{
+    color: $text-yellow;
+}
+
+.mainContent.dark nav ul li:hover{
+    color: $text-yellow;
+}
+
+.mainContent.dark nav ul li::after {
+    background-color: $standart-yellow; 
+}
+
+.mainContent.dark .gmailIcon {
+    filter: brightness(0) invert(1); 
+}
+
+.mainContent.dark .knowledgeGithubIcon {
+    filter: brightness(0) invert(1); 
+}
+
+.mainContent.dark .lmGithubIcon{
+    filter: brightness(0) invert(1); 
+}
+
+.mainContent.dark .mainCardRight h1{
+    color: rgb(246, 255, 206);
+}
+
+.mainContent.dark .aboutMe figure div{
+    background: $soft-black;
+}
+
+.mainContent.dark #download-cv-btn {
+    background: $soft-white;
+    color: black;
+    font-weight: 600;
+}
+
+.mainContent.dark #download-cv-btn:hover .fillDownloadCVBtn{
+    background: $standart-yellow;
 }

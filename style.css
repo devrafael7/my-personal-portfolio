@@ -350,17 +350,25 @@ nav ul li a:hover {
 }
 
 .gitAndLinkedinBtns:hover h3 {
-  color: rgba(255, 255, 255, 0.8901960784);
+  color: rgba(255, 255, 255, 0.9333333333);
+}
+
+.lmGithubIcon {
+  transition: 0.1s ease;
+}
+
+.githubBtn:hover .lmGithubIcon {
+  filter: brightness(0) invert(1);
 }
 
 .gitAndLinkedinBtns:hover .githubFillTransition {
   width: 100%;
-  color: rgba(255, 255, 255, 0.8901960784);
+  color: rgba(255, 255, 255, 0.9333333333);
 }
 
 .gitAndLinkedinBtns:hover .linkedinFillTransition {
   width: 100%;
-  color: rgba(255, 255, 255, 0.8901960784);
+  color: rgba(255, 255, 255, 0.9333333333);
 }
 
 .eachAchievementCard {
@@ -413,7 +421,7 @@ nav ul li a:hover {
 
 .viewAllBtn:hover .viewAllBtnFillTransition {
   width: 100%;
-  color: rgba(255, 255, 255, 0.8901960784);
+  color: rgba(255, 255, 255, 0.9333333333);
 }
 
 .mainCardRight {
@@ -449,7 +457,7 @@ nav ul li a:hover {
 
 #download-cv-btn:hover .fillDownloadCVBtn {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .qrCodeForMobile {
@@ -462,8 +470,12 @@ nav ul li a:hover {
 
 .mainContent.dark {
   background: #181821;
-  color: rgba(255, 255, 255, 0.8901960784);
+  color: rgba(255, 255, 255, 0.9333333333);
   transition: 0.2s ease;
+}
+
+.mainContent.dark p {
+  color: rgba(255, 255, 255, 0.7176470588);
 }
 
 .darkModeBtn {
@@ -492,5 +504,63 @@ nav ul li a:hover {
 }
 
 .mainContent.dark #main-title-name span {
-  color: #cbf078;
+  color: #eeec6e;
+}
+
+.mainContent.dark .logoText span {
+  color: #eeec6e;
+}
+
+.mainContent.dark .mainCardRight {
+  background: #f1b963;
+}
+
+.dmCodeIcon {
+  display: none;
+}
+
+.mainContent.dark .dmCodeIcon {
+  display: flex;
+}
+
+.mainContent.dark nav ul li a:hover {
+  color: #eeec6e;
+}
+
+.mainContent.dark nav ul li:hover {
+  color: #eeec6e;
+}
+
+.mainContent.dark nav ul li::after {
+  background-color: #f1b963;
+}
+
+.mainContent.dark .gmailIcon {
+  filter: brightness(0) invert(1);
+}
+
+.mainContent.dark .knowledgeGithubIcon {
+  filter: brightness(0) invert(1);
+}
+
+.mainContent.dark .lmGithubIcon {
+  filter: brightness(0) invert(1);
+}
+
+.mainContent.dark .mainCardRight h1 {
+  color: rgb(246, 255, 206);
+}
+
+.mainContent.dark .aboutMe figure div {
+  background: #272736;
+}
+
+.mainContent.dark #download-cv-btn {
+  background: rgba(255, 255, 255, 0.7176470588);
+  color: black;
+  font-weight: 600;
+}
+
+.mainContent.dark #download-cv-btn:hover .fillDownloadCVBtn {
+  background: #f1b963;
 }/*# sourceMappingURL=style.css.map */
