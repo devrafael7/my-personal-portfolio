@@ -599,3 +599,45 @@ nav ul li a:hover{
 .mainContent.dark #download-cv-btn:hover .fillDownloadCVBtn{
     background: $standart-yellow;
 }
+
+.mainContent.dark .skills {
+    background: $soft-black;
+    border-bottom: 2px solid $standart-yellow;
+}
+
+.mainContent.dark .skillsDecoration {
+    background: $standart-yellow;
+}
+
+.mainContent.dark .getAnyProjectBtn{
+    background: $standart-yellow;
+    color: black;
+    font-weight: 600;
+}
+
+.mainContent.dark .skillsFilledBar {
+    background: $standart-yellow;
+}
+
+.mainContent.dark #months-learning-card {
+    background: #43435083;
+}
+
+.mainContent.dark .eachAchievementCard {
+    background: $soft-black;
+    border: none;
+}
+
+.mainContent.dark .eachAchievementCard h3{
+    background: $soft-black;
+    border: none;
+    color: $text-yellow;
+}
+
+.mainContent.dark #months-learning-card h1{
+    color: $text-white;
+}
+
+.mainContent.dark #months-learning-card span{
+    color: $text-yellow;
+}

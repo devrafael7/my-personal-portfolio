@@ -563,4 +563,46 @@ nav ul li a:hover {
 
 .mainContent.dark #download-cv-btn:hover .fillDownloadCVBtn {
   background: #f1b963;
+}
+
+.mainContent.dark .skills {
+  background: #272736;
+  border-bottom: 2px solid #f1b963;
+}
+
+.mainContent.dark .skillsDecoration {
+  background: #f1b963;
+}
+
+.mainContent.dark .getAnyProjectBtn {
+  background: #f1b963;
+  color: black;
+  font-weight: 600;
+}
+
+.mainContent.dark .skillsFilledBar {
+  background: #f1b963;
+}
+
+.mainContent.dark #months-learning-card {
+  background: rgba(67, 67, 80, 0.5137254902);
+}
+
+.mainContent.dark .eachAchievementCard {
+  background: #272736;
+  border: none;
+}
+
+.mainContent.dark .eachAchievementCard h3 {
+  background: #272736;
+  border: none;
+  color: #eeec6e;
+}
+
+.mainContent.dark #months-learning-card h1 {
+  color: rgba(255, 255, 255, 0.9333333333);
+}
+
+.mainContent.dark #months-learning-card span {
+  color: #eeec6e;
 }/*# sourceMappingURL=style.css.map */
