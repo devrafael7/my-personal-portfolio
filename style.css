@@ -106,6 +106,14 @@ nav ul li a:hover {
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
+.bg-blue {
+  background: #60A5FA;
+}
+
+.bg-red {
+  background: #f95959;
+}
+
 .deployBtn {
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   transition: 0.5s ease;
@@ -504,15 +512,15 @@ nav ul li a:hover {
 }
 
 .mainContent.dark #main-title-name span {
-  color: #eeec6e;
+  color: #ff7777;
 }
 
 .mainContent.dark .logoText span {
-  color: #eeec6e;
+  color: #ff7777;
 }
 
 .mainContent.dark .mainCardRight {
-  background: #f1b963;
+  background: #f95959;
 }
 
 .dmCodeIcon {
@@ -524,15 +532,15 @@ nav ul li a:hover {
 }
 
 .mainContent.dark nav ul li a:hover {
-  color: #eeec6e;
+  color: #ff7777;
 }
 
 .mainContent.dark nav ul li:hover {
-  color: #eeec6e;
+  color: #ff7777;
 }
 
 .mainContent.dark nav ul li::after {
-  background-color: #f1b963;
+  background-color: #f95959;
 }
 
 .mainContent.dark .gmailIcon {
@@ -556,32 +564,30 @@ nav ul li a:hover {
 }
 
 .mainContent.dark #download-cv-btn {
-  background: rgba(255, 255, 255, 0.7176470588);
-  color: black;
+  background: #3a3a4d;
   font-weight: 600;
 }
 
 .mainContent.dark #download-cv-btn:hover .fillDownloadCVBtn {
-  background: #f1b963;
+  background: #f95959;
 }
 
 .mainContent.dark .skills {
   background: #272736;
-  border-bottom: 2px solid #f1b963;
+  border-bottom: 2px solid #f95959;
 }
 
 .mainContent.dark .skillsDecoration {
-  background: #f1b963;
+  background: #f95959;
 }
 
 .mainContent.dark .getAnyProjectBtn {
-  background: #f1b963;
-  color: black;
+  background: #f95959;
   font-weight: 600;
 }
 
 .mainContent.dark .skillsFilledBar {
-  background: #f1b963;
+  background: #f95959;
 }
 
 .mainContent.dark #months-learning-card {
@@ -596,7 +602,7 @@ nav ul li a:hover {
 .mainContent.dark .eachAchievementCard h3 {
   background: #272736;
   border: none;
-  color: #eeec6e;
+  color: #ff7777;
 }
 
 .mainContent.dark #months-learning-card h1 {
@@ -604,5 +610,13 @@ nav ul li a:hover {
 }
 
 .mainContent.dark #months-learning-card span {
-  color: #eeec6e;
+  color: #ff7777;
+}
+
+.mainContent.dark .myServiceCards:hover {
+  background-color: #f95959;
+}
+
+.mainContent.dark .myServiceCards {
+  background: none;
 }/*# sourceMappingURL=style.css.map */

@@ -66,21 +66,29 @@ setTimeout(type, typingSpeed);
 
 
 const cards = document.querySelectorAll(".myServiceCards");
+const card0 = document.querySelector('.card0');
+card0.classList.add('bg-blue');
+const card0H3 = document.querySelector('.card0H3');
+card0H3.classList.add('text-gray-200');
 cards.forEach(allCard=>{
     allCard.addEventListener('mouseover', function(){
-        const card0 = document.querySelector('.card0');
+        const card0H3 = document.querySelector('.card0H3');
+        card0H3.classList.remove('text-gray-200');
+        card0H3.classList.add('text-black');
         const card0P = document.getElementById('card0-p');
-        card0.classList.remove('bg-blue-400');
+        card0.classList.remove('bg-blue');
         card0.classList.remove('invert-card');
         card0.classList.add('text-black');
         card0P.classList.remove('text-gray-200');
         card0P.classList.add('text-gray-500');
 
         allCard.addEventListener('mouseout', function(){
-            card0.classList.add('bg-blue-400');
+            card0.classList.add('bg-blue');
             card0.classList.add('invert-card');
             card0.classList.remove('text-black');
             card0P.classList.remove('text-gray-500');
+            card0H3.classList.add('text-gray-200');
+            card0H3.classList.remove('text-black');
         })
     })
 })
@@ -144,4 +152,23 @@ darkModeBtn.addEventListener('click', function() {
     lmLinkedinIcon.forEach(lmLinkedinIcons => {
         lmLinkedinIcons.classList.toggle('hidden');
     })
+
+    const card0H3 = document.querySelector('.card0H3');
+    const card0 = document.querySelector('.card0');
+    card0.classList.toggle('bg-red');
+    const cards = document.querySelectorAll(".myServiceCards");
+
+    cards.forEach(allCard=>{
+    allCard.addEventListener('mouseover', function(){
+        card0H3.classList.toggle('text-black');
+        card0H3.classList.toggle('text-gray-200');
+        card0.classList.toggle('bg-red');
+    })
+    allCard.addEventListener('mouseout', function(){
+        card0.classList.toggle('bg-red');
+    })
 })
+
+})
+
+

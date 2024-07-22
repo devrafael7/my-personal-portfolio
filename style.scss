@@ -112,6 +112,13 @@ nav ul li a:hover{
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
+.bg-blue {
+    background: #60A5FA;
+}
+
+.bg-red {
+    background: $standart-yellow;
+}
 
 .deployBtn {
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
@@ -591,8 +598,7 @@ nav ul li a:hover{
 }
 
 .mainContent.dark #download-cv-btn {
-    background: $soft-white;
-    color: black;
+    background: #3a3a4d;
     font-weight: 600;
 }
 
@@ -611,7 +617,6 @@ nav ul li a:hover{
 
 .mainContent.dark .getAnyProjectBtn{
     background: $standart-yellow;
-    color: black;
     font-weight: 600;
 }
 
@@ -641,3 +646,12 @@ nav ul li a:hover{
 .mainContent.dark #months-learning-card span{
     color: $text-yellow;
 }
+
+.mainContent.dark .myServiceCards:hover {
+    background-color: $standart-yellow;
+}
+
+.mainContent.dark .myServiceCards {
+    background: none;
+}
+
