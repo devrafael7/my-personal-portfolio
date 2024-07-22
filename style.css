@@ -300,22 +300,12 @@ nav ul li a:hover {
   height: 80vh;
 }
 
-.hideaway {
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: all 1.4s;
-}
-
-.show {
-  opacity: 1;
-  transform: translateX(0);
-  transition: all 1.4s;
-}
-
 .gitAndLinkedinBtns {
   position: relative;
   overflow: hidden;
   transition: 0.2s ease;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .linkedinFillTransition {
@@ -467,12 +457,16 @@ nav ul li a:hover {
 }
 
 .mainContent {
-  transition: 0.4s ease;
+  transition: 0.3s ease;
 }
 
 .mainContent.dark {
   background: #181821;
   color: rgba(255, 255, 255, 0.8901960784);
+  transition: 0.2s ease;
+}
+
+.darkModeBtn {
   transition: 0.2s ease;
 }
 
@@ -483,4 +477,20 @@ nav ul li a:hover {
 
 .mainContent.dark .darkModeBtn div {
   background: rgb(179, 168, 226);
+}
+
+.mainContent.dark .gitAndLinkedinBtns {
+  border-color: rgba(255, 255, 255, 0.562);
+}
+
+.mainContent.dark .linkedinFillTransition {
+  background: black;
+}
+
+.mainContent.dark .githubFillTransition {
+  background: black;
+}
+
+.mainContent.dark #main-title-name span {
+  color: #cbf078;
 }/*# sourceMappingURL=style.css.map */
