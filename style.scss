@@ -747,10 +747,30 @@ nav ul li:hover{
 }
 
 body.dark {
-    background: $standart-black;
+    background: $standart-black; 
 }
 
 body.dark .logoText span {
     color: $text-yellow;
+}
+
+@media (min-width: 360px) and (max-width: 780px) {
+    .mainCard {
+        justify-content: end;
+        align-items: end;
+        gap: 3rem;
+        height: auto;
+    }
+
+    .mainCard .mainCardLeft {
+        width: 100%;
+        padding: 10px 10px;
+    }
+
+    .mainCard .mainCardRight {
+        width: 70%;
+        height: 40vh;
+        justify-content: end;
+    }
 }
 

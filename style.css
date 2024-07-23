@@ -720,4 +720,22 @@ body.dark {
 
 body.dark .logoText span {
   color: #ff7777;
+}
+
+@media (min-width: 360px) and (max-width: 780px) {
+  .mainCard {
+    justify-content: end;
+    align-items: end;
+    gap: 3rem;
+    height: auto;
+  }
+  .mainCard .mainCardLeft {
+    width: 100%;
+    padding: 10px 10px;
+  }
+  .mainCard .mainCardRight {
+    width: 70%;
+    height: 40vh;
+    justify-content: end;
+  }
 }/*# sourceMappingURL=style.css.map */
