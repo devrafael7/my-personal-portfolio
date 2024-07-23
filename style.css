@@ -309,7 +309,7 @@ nav ul li:hover {
   }
 }
 .footerLastOne {
-  height: 80vh;
+  height: 85vh;
 }
 
 .gitAndLinkedinBtns {
@@ -755,6 +755,7 @@ body.dark .logoText span {
   }
   .footerLastOne {
     padding-right: 0px;
+    padding-bottom: 0rem;
   }
   .footerDivision p {
     font-size: 110%;
