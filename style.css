@@ -37,7 +37,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #2772db;
+  color: #83b6fd;
+}
+
+nav ul li:hover {
+  color: #83b6fd;
 }
 
 .mainCard {
@@ -384,7 +388,7 @@ nav ul li a:hover {
 }
 
 .myServiceCards {
-  transition: background-color 0.5s ease, color 0.3s ease;
+  transition: background-color 0.2s ease, color 0.3s ease;
 }
 
 .myServiceCards:hover {
@@ -536,11 +540,11 @@ nav ul li a:hover {
 }
 
 .mainContent.dark nav ul li a:hover {
-  color: #ff7777;
+  color: #fcc5c5;
 }
 
 .mainContent.dark nav ul li:hover {
-  color: #ff7777;
+  color: #fcc5c5;
 }
 
 .mainContent.dark nav ul li::after {
@@ -687,7 +691,15 @@ nav ul li a:hover {
 
 .mainContent.dark .image-container {
   background: #363649;
-  border: 2px black solid;
+  border: 1px #262631 solid;
+}
+
+.mainContent.dark .image-container img {
+  display: none;
+}
+
+.mainContent.dark .image-container .hidden {
+  display: flex;
 }
 
 .mainContent.dark {
@@ -699,7 +711,7 @@ nav ul li a:hover {
 }
 
 .mainContent.dark .projectsSection {
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 body.dark {
