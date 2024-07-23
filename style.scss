@@ -532,11 +532,11 @@ nav ul li:hover{
 
 .mainContent.dark .darkModeBtn {
     padding-left: 52px;
-    background: rgb(82, 79, 109);
+    background: #ff62629d;
 }
 
 .mainContent.dark .darkModeBtn div{
-    background: rgb(179, 168, 226);
+    background: rgba(255, 255, 255, 0.774);
 }
 
 .mainContent.dark .gitAndLinkedinBtns {
@@ -555,10 +555,6 @@ nav ul li:hover{
     color: $text-yellow;
 }
 
-.mainContent.dark .logoText span {
-    color: $text-yellow;
-}
-
 .mainContent.dark .mainCardRight {
     background: $standart-yellow;
 }
@@ -569,6 +565,10 @@ nav ul li:hover{
 
 .mainContent.dark .dmCodeIcon {
     display: flex;
+}
+
+.mainContent.dark .lmCodeIcon {
+    display: none;
 }
 
 .mainContent.dark nav ul li a:hover{
@@ -596,7 +596,7 @@ nav ul li:hover{
 }
 
 .mainContent.dark .mainCardRight h1{
-    color: rgb(246, 255, 206);
+    color: $text-white;
 }
 
 .mainContent.dark .aboutMe figure div{
@@ -748,5 +748,9 @@ nav ul li:hover{
 
 body.dark {
     background: $standart-black;
+}
+
+body.dark .logoText span {
+    color: $text-yellow;
 }
 
