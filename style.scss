@@ -66,7 +66,7 @@ nav ul li:hover{
 }
 
 .mainCard .mainCardRight .mainPicture1 {
-    height: 1050;
+    height: 105%;
 }
 
 .mainCard .mainCardRight .mainPicture2 {
@@ -771,6 +771,18 @@ body.dark .logoText span {
         width: 70%;
         height: 40vh;
         justify-content: end;
+    }
+
+    .mainCard .mainCardRight .mainPicture0 {
+        height: 100%;
+    }
+    
+    .mainCard .mainCardRight .mainPicture1 {
+        height: 105%;
+    }
+    
+    .mainCard .mainCardRight .mainPicture2 {
+        height: 100%;
     }
 }
 
