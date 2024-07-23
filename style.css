@@ -10,6 +10,10 @@ body {
   overflow-x: hidden;
 }
 
+.mainContent {
+  overflow-x: hidden;
+}
+
 .logo .logoText span {
   color: #2772db;
 }

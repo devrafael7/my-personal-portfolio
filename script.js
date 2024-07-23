@@ -185,5 +185,25 @@ document.querySelectorAll('.no-translate').forEach(noTranslate => {
     noTranslate.setAttribute('translate', 'no');
 })
 
+//br language section
+
+const responsivenessH3 = document.querySelector('.responsivenessH3');
+const versioningH3 = document.querySelector('.versioningH3');
+const databaseP = document.querySelector('.databaseP');
+const versioningP = document.querySelector('.versioningP');
+
+if (document.documentElement.lang === 'pt-BR') {
+    responsivenessH3.textContent = 'Responsividade';
+    versioningH3.textContent = 'Versionamento';
+    databaseP.textContent = 'Integração de DB';
+    versioningP.textContent = 'Versionamento Code';
+} else {
+    responsivenessH3.textContent = 'Responsiveness'; 
+    versioningH3.textContent = 'Versioning';
+    databaseP.textContent = 'Database Integration';
+    versioningP.textContent = 'Code Versioning';
+}
+
+
 
 
