@@ -753,4 +753,7 @@ body.dark .logoText span {
   .mainContent.dark .skills {
     border-left: 16px solid #f95959;
   }
+  .footerLastOne {
+    padding-right: 0px;
+  }
 }/*# sourceMappingURL=style.css.map */
