@@ -6,13 +6,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .logo .logoText span {
   color: #2772db;
 }
@@ -317,18 +310,6 @@ nav ul li:hover {
 }
 .footerLastOne {
   height: 80vh;
-}
-
-.hideaway {
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: opacity 1.4s, transform 1.4s;
-}
-
-.show {
-  opacity: 1;
-  transform: translateX(0);
-  transition: opacity 1.4s, transform 1.4s;
 }
 
 .gitAndLinkedinBtns {
@@ -739,40 +720,4 @@ body.dark {
 
 body.dark .logoText span {
   color: #ff7777;
-}
-
-@media (min-width: 360px) and (max-width: 630px) {
-  html {
-    font-size: 90%;
-  }
-  body {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .mainContent {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .mainContent header {
-    display: none;
-  }
-  .mainCard {
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    padding: 0;
-  }
-  .mainCard .mainCardLeft {
-    padding-top: 30px;
-    margin-bottom: 30px;
-    padding-left: 30px;
-  }
 }/*# sourceMappingURL=style.css.map */
