@@ -81,6 +81,7 @@ cards.forEach(allCard=>{
         card0.classList.add('text-black');
         card0P.classList.remove('text-gray-200');
         card0P.classList.add('text-gray-500');
+        card0Icon.classList.remove('icon-red');
 
         allCard.addEventListener('mouseout', function(){
             card0.classList.add('bg-blue');
@@ -141,10 +142,14 @@ getAnyProjectBtn.addEventListener('click', function() {
     });
 });
 
+const card0Icon = document.querySelector('.card0Icon');
+
 const mainContent = document.querySelector('.mainContent');
+const body = document.querySelector('body');
 const darkModeBtn = document.querySelector('.darkModeBtn');
 darkModeBtn.addEventListener('click', function() {
     mainContent.classList.toggle('dark');
+    body.classList.toggle('dark');
 
     const dmLinkedinIcon = document.querySelector('.dmLinkedinIcon');
     dmLinkedinIcon.classList.toggle('hidden');
@@ -163,12 +168,18 @@ darkModeBtn.addEventListener('click', function() {
         card0H3.classList.toggle('text-black');
         card0H3.classList.toggle('text-gray-200');
         card0.classList.toggle('bg-red');
+        card0Icon.classList.toggle('invert-card');
+        card0Icon.classList.toggle('icon-red');
+        
+       
     })
     allCard.addEventListener('mouseout', function(){
         card0.classList.toggle('bg-red');
+        
     })
 })
 
 })
+
 
 

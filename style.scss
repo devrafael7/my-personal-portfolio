@@ -416,7 +416,7 @@ nav ul li a:hover{
 }
 
 .myServiceCards {
-    transition: background-color 0.5s ease, color 0.3s ease; 
+    transition: background-color 0.5s ease, color 0.3s ease;
 }
 
 .myServiceCards:hover {
@@ -443,9 +443,13 @@ nav ul li a:hover{
 .textWhite {
     color: $light-gray;
 }
+.viewAllBtn {
+    position: relative;
+}
 
 .viewAllBtn h3 {
-    z-index: 999;
+    z-index: 1;
+    position: relative; 
 }
 
 .viewAllBtnFillTransition {
@@ -455,13 +459,12 @@ nav ul li a:hover{
     width: 0;
     height: 100%;
     background-color: #1D4ED8;
-    transition: width 0.5s ease; 
-    z-index: -999;
+    transition: 0.6s ease; 
+    z-index: 0;
 }
 
 .viewAllBtn:hover .viewAllBtnFillTransition {
     width: 100%; 
-    color: $text-white;
 }
 
 .mainCardRight {
@@ -655,3 +658,83 @@ nav ul li a:hover{
     background: none;
 }
 
+.mainContent.dark .myServiceCards img{
+    filter: brightness(0) saturate(100%) invert(22%) sepia(92%) saturate(4753%) hue-rotate(357deg) brightness(103%) contrast(52%);
+}
+
+.mainContent.dark .myServiceCards:hover img{
+    filter: brightness(0) invert(1); 
+}
+
+.mainContent.dark .invert-card .invert-img {
+    filter: brightness(0) invert(1); 
+}
+
+.icon-red {
+    filter: brightness(0) saturate(100%) invert(22%) sepia(92%) saturate(4753%) hue-rotate(357deg) brightness(103%) contrast(52%);
+}
+
+.mainContent.dark .myServiceCards:hover .card0 .card0Icon{
+    filter: brightness(0) saturate(100%) invert(22%) sepia(92%) saturate(4753%) hue-rotate(357deg) brightness(103%) contrast(52%);
+}
+
+.mainContent.dark .myServiceCards{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 10px 8px;
+}
+
+.mainContent.dark .skillsFilledBarBg {
+    background: #42425a;
+}
+
+.mainContent.dark .viewAllBtn {
+    background: $standart-yellow;
+}
+
+.mainContent.dark .viewAllBtnFillTransition {
+    background-color: #d83434;
+}
+
+.mainContent.dark .deployBtn {
+    background: #363649;
+}
+
+.mainContent.dark .sourceCodeBtn {
+    background: #363649;
+}
+
+.mainContent.dark .sourceCodeBtn img{
+    filter: brightness(0) invert(1); 
+}
+
+.mainContent.dark .deployBtn img{
+    display: none;
+}
+
+.deployBtn .dmVisibleIcon{
+    display: none;
+}
+
+.mainContent.dark .deployBtn .dmVisibleIcon{
+    display: flex;
+}
+
+.mainContent.dark .image-container {
+    background: #363649;
+    border: 2px black solid;
+}
+
+.mainContent.dark {
+    background: $standart-black;
+}
+
+ .projectsSection {
+    margin-bottom: 5rem;
+}
+
+.mainContent.dark .projectsSection {
+    margin-bottom: 2rem;
+}
+
+body.dark {
+    background: $standart-black;
+}
