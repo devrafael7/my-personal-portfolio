@@ -784,5 +784,13 @@ body.dark .logoText span {
     .mainCard .mainCardRight .mainPicture2 {
         height: 100%;
     }
+
+    .mainContent .skills {
+        border-left: 16px solid $soft-blue;
+    }
+
+    .mainContent.dark .skills {
+        border-left: 16px solid $standart-yellow;
+    }
 }
 

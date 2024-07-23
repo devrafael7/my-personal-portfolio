@@ -747,4 +747,10 @@ body.dark .logoText span {
   .mainCard .mainCardRight .mainPicture2 {
     height: 100%;
   }
+  .mainContent .skills {
+    border-left: 16px solid #2772db;
+  }
+  .mainContent.dark .skills {
+    border-left: 16px solid #f95959;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -156,7 +156,7 @@
       </main>
 
       <section
-        class="w-full h-20 flex flex-col items-center uppercase gap-8 mb-24 hideaway justify-center" 
+        class="w-full h-20 flex flex-col items-center uppercase gap-8 lg:mb-24 mb-20 hideaway justify-center" 
       >
         <h3 class="font-semibold opacity-80">Knowledge in technologies:</h3>
         <figure class="flex gap-2 h-7 w-full justify-evenly lg:px-20 px-10 items-center">
@@ -177,11 +177,11 @@
       </section>
 
       <article
-        class="aboutMe w-full h-80 flex px-24 relative overflow-y-hidden items-center gap-5 justify-between overflow-x-hidden hideaway"
+        class="aboutMe w-full lg:h-80 flex lg:px-24 relative overflow-y-hidden lg:items-center gap-5 lg:justify-between overflow-x-hidden hideaway h-auto px-5 items-end"
       >
-        <figure class="w-3/6 h-full z-30 flex justify-center hideaway">
+        <figure class="w-3/6 h-full z-30 lg:flex justify-center hideaway hidden">
           <div
-            class="w-80 rounded-full h-80 bg-blue-100 bg-opacity-60 absolute z-10 -bottom-28"
+            class="lg:w-80 rounded-full lg:h-80 bg-blue-100 bg-opacity-60 absolute lg:z-10 lg:-bottom-28 -bottom-16 w-56 h-56"
           ></div>
           <img
             class="z-50 h-full hideaway"
@@ -190,7 +190,7 @@
           />
         </figure>
 
-        <aside class="w-3/6 h-full py-5 px-1 flex flex-col justify-center">
+        <aside class="lg:w-3/6 h-full py-5 px-1 flex flex-col justify-center z-40 lg:z-0 w-full">
           <p class="text-gray-500 text-sm font-medium mb-1">ABOUT ME</p>
           <h2 class="font-semibold text-lg leading-tight mb-2 pr-10">
             6 Months Ago Creating Projects and Delving Deeper Into Web
@@ -241,13 +241,13 @@
       </article>
 
       <div
-        class="skills w-full h-80 bg-blue-100 bg-opacity-60 rounded-tr-xl flex border-b-2 border-blue-500 border-solid hideaway"
+        class="skills w-full lg:h-80 bg-blue-100 bg-opacity-60 rounded-tr-xl lg:flex flex-column border-b-2 border-blue-500 border-solid hideaway h-max "
       >
         <aside
-          class="w-1/2 h-full flex justify-center items-start gap-7 hideaway"
+          class="lg:w-1/2 h-full flex lg:justify-center items-start gap-7 hideaway justify-start w-full pt-7 lg:pt-0 pr-7 lg:pr-0"
         >
           <div
-            class="h-full skillsDecoration w-20 bg-blue-500 bg-opacity-90 rounded-tl-lg"
+            class="h-full skillsDecoration lg:w-20 bg-blue-500 bg-opacity-90 rounded-tl-lg"
           ></div>
           <div
             class="flex-col items-start flex justify-center h-full w-full pr-3"
@@ -264,7 +264,7 @@
               quidem.
             </p>
             <button
-              class="getAnyProjectBtn bg-blue-600 hover:bg-blue-700 transition-all bg-opacity-80 text-white w-max h-max px-5 py-2 text-xs rounded-sm"
+              class="getAnyProjectBtn bg-blue-600 hover:bg-blue-700 transition-all bg-opacity-80 text-white w-max h-max px-5 py-2 text-xs rounded-sm lg:flex hidden"
               type="submit"
             >
               Get Any Project
@@ -273,7 +273,7 @@
         </aside>
 
         <section
-          class="w-1/2 h-full flex justify-center items-start flex-col pl-8 pr-36 hideaway"
+          class="lg:w-1/2 h-full flex justify-center items-start flex-col pl-8 lg:pr-36 hideaway mt-2 lg:mt-0 pr-10"
         >
           <div class="flex flex-col mb-6 w-full gap-1">
             <p class="text-sm font-medium">Creation of Interfaces</p>
@@ -321,7 +321,14 @@
               </div>
               <p class="text-sm">39%</p>
             </div>
+            
           </div>
+          <button
+          class="getAnyProjectBtn bg-blue-600 hover:bg-blue-700 transition-all bg-opacity-80 text-white w-max h-max px-5 py-2 text-xs rounded-sm lg:hidden mt-2 mb-5"
+          type="submit"
+        >
+          Get Any Project
+        </button>
         </section>
       </div>
 
