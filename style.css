@@ -730,6 +730,10 @@ body.dark .logoText span {
   color: #ff7777;
 }
 
+.deployBtn .smVisibleIcon {
+  display: none;
+}
+
 @media (min-width: 360px) and (max-width: 780px) {
   .mainCard {
     justify-content: end;
@@ -772,5 +776,18 @@ body.dark .logoText span {
   }
   .footerDivision h4 {
     font-size: 120%;
+  }
+  .deployBtn .visibleIcon {
+    display: none;
+  }
+  .deployBtn .visibleGif {
+    display: none;
+  }
+  .deployBtn:hover .visibleGif {
+    opacity: 0;
+    display: none;
+  }
+  .deployBtn .smVisibleIcon {
+    display: flex;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -762,6 +762,11 @@ body.dark .logoText span {
     color: $text-yellow;
 }
 
+.deployBtn .smVisibleIcon {
+    display: none;
+}
+
+
 @media (min-width: 360px) and (max-width: 780px) {
 
     .mainCard {
@@ -817,6 +822,22 @@ body.dark .logoText span {
         font-size: 120%;
     }
 
+    .deployBtn .visibleIcon {
+        display: none;
+    }
+
+    .deployBtn .visibleGif {
+        display: none;
+    }
+
+    .deployBtn:hover .visibleGif{
+        opacity: 0;
+        display: none;
+    }
+
+    .deployBtn .smVisibleIcon {
+        display: flex;
+    }
     
 }
 
