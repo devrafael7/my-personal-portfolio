@@ -706,6 +706,10 @@ nav ul li:hover {
   display: none;
 }
 
+.mainContent.dark .image-container .projectInformatioIcon {
+  display: flex;
+}
+
 .mainContent.dark .image-container .hidden {
   display: flex;
 }

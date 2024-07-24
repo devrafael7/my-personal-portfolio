@@ -59,8 +59,13 @@
           </p>
           <h1
             id="main-title-name"
-            class="text-4xl font-semibold leading-tight tracking-wide mb-2"
+            class="text-4xl font-semibold leading-tight tracking-wide mb-2 hidden lg:flex"
           > I'm Rafael Oliveira <br class="hidden lg:flex"/> a
+            <span class="text-blue-500">Front-end Developer</span>
+          </h1>
+          <h1
+            class="text-3xl font-semibold leading-tight tracking-wide mb-2 lg:hidden"
+          > I'm Rafael Oliveira a
             <span class="text-blue-500">Front-end Developer</span>
           </h1>
           <p class="text-sm mb-4 opacity-70">
@@ -190,7 +195,7 @@
           />
         </figure>
 
-        <aside class="lg:w-3/6 h-full py-5 px-1 flex flex-col justify-center z-40 lg:z-0 w-full">
+        <aside class="lg:w-3/6 h-full py-5 px-1 flex flex-col justify-center z-40 lg:z-0 w-full relative">
           <p class="text-gray-500 text-sm font-medium mb-1">ABOUT ME</p>
           <h2 class="font-semibold text-lg leading-tight mb-2 pr-10">
             6 Months Ago Creating Projects and Delving Deeper Into Web
@@ -333,20 +338,48 @@
       </div>
 
       <div
-        class="achievementsCards flex lg:flex-row w-full lg:h-64 relative lg:justify-end items-center hideaway flex-col justify-center "
+        class="achievementsCards flex lg:flex-row w-full lg:h-64 relative lg:justify-end items-center hideaway flex-col justify-center lg:mb-0 mb-36"
       >
         <div
-          class="lg:h-80 lg:w-3/6 bg-blue-100 bg-opacity-80 z-10 lg:absolute left-0 top-0 flex items-center justify-center hideaway h-60 w-full"
+          class="lg:h-80 lg:w-3/6 bg-blue-100 bg-opacity-80 z-10 lg:absolute left-0 top-0 flex items-center justify-center hideaway h-60 w-full relative"
           id="months-learning-card"
         >
           <h1 class="text-2xl font-semibold text-center text-gray-700">
             <span class="text-7xl font-bold text-blue-500">6</span><br />
             Months Learning
           </h1>
+          <div
+          class="grid grid-cols-2 lg:w-4/6 gap-5 lg:h-80 lg:py-14 lg:pl-32 lg:pr-7 px-5 lg:px-0 lg:mt-20 place-items-center w-full lf:h-52 h-44 lg:hidden absolute -bottom-40"
+        >
+          <div
+            class="w-full z-30 h-full bg-white border-t border-gray-200 shadow-md border-solid flex flex-col items-center justify-center hideaway hover:scale-110 eachAchievementCard"
+          >
+            <h3 class="font-bold text-blue-600">10+</h3>
+            <p class="text-gray-700 text-xs lg:text-sm text-center">Complete Projects</p>
+          </div>
+          <div
+            class="w-full z-30 h-full bg-white border-t border-gray-200 shadow-md border-solid flex flex-col items-center justify-center hideaway hover:scale-110 eachAchievementCard"
+          >
+            <h3 class="font-bold text-blue-600">120+</h3>
+            <p class="text-gray-700 text-xs lg:text-sm text-center">Commits Made</p>
+          </div>
+          <div
+            class="w-full z-30 h-full bg-white border-t border-gray-200 shadow-md border-solid flex flex-col items-center justify-center hideaway hover:scale-110 eachAchievementCard"
+          >
+            <h3 class="font-bold text-blue-600">700+</h3>
+            <p class="text-gray-700 text-xs lg:text-sm text-center">Over 700 Hours Learning</p>
+          </div>
+          <div
+            class="w-full z-30 h-full bg-white border-t border-gray-200 shadow-md border-solid flex flex-col items-center justify-center hideaway hover:scale-110 eachAchievementCard"
+          >
+            <h3 class="font-bold text-blue-600">4+</h3>
+            <p class="text-gray-700 text-xs lg:text-sm text-center">Certificates</p>
+          </div>
+        </div>
         </div>
 
         <div
-          class="grid grid-cols-2 lg:w-4/6 gap-5 lg:h-80 lg:py-14 lg:pl-32 lg:pr-7 px-5 lg:px-0 lg:mt-20 place-items-center w-full h-52"
+          class="grid grid-cols-2 lg:w-4/6 gap-5 lg:h-80 lg:py-14 lg:pl-32 lg:pr-7 px-5 lg:px-0 lg:mt-20 place-items-center w-full h-52 lg:grid hidden"
         >
           <div
             class="w-full z-30 h-full bg-white border-t border-gray-200 shadow-md border-solid flex flex-col items-center justify-center hideaway hover:scale-110 eachAchievementCard"
@@ -499,7 +532,7 @@
               alt=""
             />
             <img
-              class="absolute right-0 w-20 lg:w-28 bottom-0 h-auto hidden"
+              class="absolute right-0 w-20 lg:w-28 bottom-0 h-auto hidden    "
               src="dark-mode-images/Capturar.dm.mob-removebg-preview.png"
               alt=""
             />
@@ -517,16 +550,16 @@
                 </p>
               </div>
 
-              <div class="flex gap-2 w-full justify-start items-center ">
-                <img class="lg:w-9 lg:h-9 w-7 h-7" src="icons/icons8-html5-48.png" alt="" />
-                <img class="lg:w-9 lg:h-9 w-7 h-7" src="icons/icons8-css3-48.png" alt="" />
+              <div class="flex gap-2 w-full justify-start items-center  projectInformationsIcons">
+                <img class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon" src="icons/icons8-html5-48.png" alt="" />
+                <img class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon" src="icons/icons8-css3-48.png" alt="" />
                 <img
-                  class="lg:w-9 lg:h-9 w-7 h-7"
+                  class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon"
                   src="icons/icons8-tailwindcss-48.png"
                   alt=""
                 />
                 <img
-                  class="lg:w-9 lg:h-9 w-7 h-7"
+                  class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon"
                   src="icons/icons8-javascript-48.png"
                   alt=""
                 />
@@ -600,7 +633,7 @@
               alt=""
             />
             <img
-              class="absolute right-0 w-20 lg:w-28 bottom-0 h-auto hidden"
+              class="absolute right-0 w-20 lg:w-28 bottom-0 h-auto hidden    "
               src="dark-mode-images/Capturar.dm.mob-removebg-preview.png"
               alt=""
             />
@@ -618,222 +651,16 @@
                 </p>
               </div>
 
-              <div class="flex gap-2 w-full justify-start items-center ">
-                <img class="lg:w-9 lg:h-9 w-7 h-7" src="icons/icons8-html5-48.png" alt="" />
-                <img class="lg:w-9 lg:h-9 w-7 h-7" src="icons/icons8-css3-48.png" alt="" />
+              <div class="flex gap-2 w-full justify-start items-center  projectInformationsIcons">
+                <img class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon" src="icons/icons8-html5-48.png" alt="" />
+                <img class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon" src="icons/icons8-css3-48.png" alt="" />
                 <img
-                  class="lg:w-9 lg:h-9 w-7 h-7"
+                  class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon"
                   src="icons/icons8-tailwindcss-48.png"
                   alt=""
                 />
                 <img
-                  class="lg:w-9 lg:h-9 w-7 h-7"
-                  src="icons/icons8-javascript-48.png"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-          <div class="flex w-full justify-between items-center lg:px-5 px-2 hideaway">
-            <h3 class="font-medium mt-1 lg:mt-3 lg:text-md text-xs lg:pl-0 pl- text-start no-translate">E-COMMERCE</h3>
-            <div class="flex gap-3">
-              <a href="https://devrafael7.github.io/e-comerce/" target="_blank" rel="noopener">
-                <div
-                  class="deployBtn w-max h-7 bg-white cursor-pointer rounded-full flex px-3 gap-1 justify-between items-center"
-                >
-                  <img
-                    class="h-7 w-auto visibleIcon"
-                    src="icons/icons8-eye-32.png"
-                    alt=""
-                  />
-                  <img
-                    class="h-6 w-7 visibleGif"
-                    src="icons/icons8-visível.gif"
-                    alt=""
-                  />
-                  <img
-                  class="h-7 w-auto dmVisibleIcon"
-                  src="dark-mode-icons/icons8-visível-50 (1).png"
-                  alt=""
-                  />
-                  <img
-                  class="h-6 w-auto smVisibleIcon"
-                  src="icons/icons8-visível-50.png"
-                  alt=""
-                  />
-                  <p class="font-medium lg:text-sm text-xs no-translate">Deploy</p>
-                </div>
-              </a>
-
-              <a href="https://github.com/devrafael7/e-comerce" target="_blank" rel="noopener">
-                <div
-                  class="w-max sourceCodeBtn h-7 cursor-pointer bg-white rounded-full flex items-center justify-between px-2 gap-1"
-                >
-                  <img
-                    class="h-full w-auto py-1"
-                    src="icons/icons8-github-50.png"
-                    alt=""
-                  />
-                  <p class="font-medium lg:text-sm text-xs">Source Code</p>
-              </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        </div>
-
-        <div
-          class="projectsDiv lg:flex-row flex-col flex justify-center items-center w-full h-auto mb-9 hideaway gap-9"
-        >
-        <div class="flex flex-col">
-          <div
-            class="w-full h-auto bg-white shadow-md mb-2 lg:mb-2 relative flex justify-between border border-2 black border-solid p-2 rounded-3xl image-container"
-          >
-            <img
-              class="rounded-2xl w-max lg:h-60"
-              src="images/Capturar.PNG"
-              alt=""
-            />
-            <img
-              class="absolute right-0 w-20 lg:w-28 bottom-0 h-auto"
-              src="images/Capturar-mob-0-removebg-preview.png"
-              alt=""
-            />
-            <img
-              class="rounded-2xl w-max lg:h-60 hidden"
-              src="dark-mode-images/Capturar.dm.PNG"
-              alt=""
-            />
-            <img
-              class="absolute right-0 w-20 lg:w-28 bottom-0 h-auto hidden"
-              src="dark-mode-images/Capturar.dm.mob-removebg-preview.png"
-              alt=""
-            />
-            <div class="image-overlay"></div>
-            <div
-              class="projectInformations absolute opacity-0 flex flex-col justify-between items-start items-center px-4 text-white py-1 lg:py-3 w-full h-full pb-5"
-            >
-              <div class="flex flex-col w-full h-full">
-                <h1 class="text-md mb-1 font-medium no-translate">E-Commerce</h1>
-                <p class="lg:text-sm text-xs lg:pr-24 pr-1 font-light">
-                  An E-Commerce for sneakers and watches with various
-                  features, such as shopping cart, menu, login and others.
-                  Project created entirely by me, without copies, just using
-                  different references to create the interface.
-                </p>
-              </div>
-
-              <div class="flex gap-2 w-full justify-start items-center ">
-                <img class="lg:w-9 lg:h-9 w-7 h-7" src="icons/icons8-html5-48.png" alt="" />
-                <img class="lg:w-9 lg:h-9 w-7 h-7" src="icons/icons8-css3-48.png" alt="" />
-                <img
-                  class="lg:w-9 lg:h-9 w-7 h-7"
-                  src="icons/icons8-tailwindcss-48.png"
-                  alt=""
-                />
-                <img
-                  class="lg:w-9 lg:h-9 w-7 h-7"
-                  src="icons/icons8-javascript-48.png"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-          <div class="flex w-full justify-between items-center lg:px-5 px-2 hideaway">
-            <h3 class="font-medium mt-1 lg:mt-3 lg:text-md text-xs lg:pl-0 pl- text-start no-translate">E-COMMERCE</h3>
-            <div class="flex gap-3">
-              <a href="https://devrafael7.github.io/e-comerce/" target="_blank" rel="noopener">
-                <div
-                  class="deployBtn w-max h-7 bg-white cursor-pointer rounded-full flex px-3 gap-1 justify-between items-center"
-                >
-                  <img
-                    class="h-7 w-auto visibleIcon"
-                    src="icons/icons8-eye-32.png"
-                    alt=""
-                  />
-                  <img
-                    class="h-6 w-7 visibleGif"
-                    src="icons/icons8-visível.gif"
-                    alt=""
-                  />
-                  <img
-                  class="h-7 w-auto dmVisibleIcon"
-                  src="dark-mode-icons/icons8-visível-50 (1).png"
-                  alt=""
-                  />
-                  <img
-                  class="h-6 w-auto smVisibleIcon"
-                  src="icons/icons8-visível-50.png"
-                  alt=""
-                  />
-                  <p class="font-medium lg:text-sm text-xs no-translate">Deploy</p>
-                </div>
-              </a>
-
-              <a href="https://github.com/devrafael7/e-comerce" target="_blank" rel="noopener">
-                <div
-                  class="w-max sourceCodeBtn h-7 cursor-pointer bg-white rounded-full flex items-center justify-between px-2 gap-1"
-                >
-                  <img
-                    class="h-full w-auto py-1"
-                    src="icons/icons8-github-50.png"
-                    alt=""
-                  />
-                  <p class="font-medium lg:text-sm text-xs">Source Code</p>
-              </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex flex-col">
-          <div
-            class="w-full h-auto bg-white shadow-md mb-2 lg:mb-2 relative flex justify-between border border-2 black border-solid p-2 rounded-3xl image-container"
-          >
-            <img
-              class="rounded-2xl w-max lg:h-60"
-              src="images/Capturar.PNG"
-              alt=""
-            />
-            <img
-              class="absolute right-0 w-20 lg:w-28 bottom-0 h-auto"
-              src="images/Capturar-mob-0-removebg-preview.png"
-              alt=""
-            />
-            <img
-              class="rounded-2xl w-max lg:h-60 hidden"
-              src="dark-mode-images/Capturar.dm.PNG"
-              alt=""
-            />
-            <img
-              class="absolute right-0 w-20 lg:w-28 bottom-0 h-auto hidden"
-              src="dark-mode-images/Capturar.dm.mob-removebg-preview.png"
-              alt=""
-            />
-            <div class="image-overlay"></div>
-            <div
-              class="projectInformations absolute opacity-0 flex flex-col justify-between items-start items-center px-4 text-white py-1 lg:py-3 w-full h-full pb-5"
-            >
-              <div class="flex flex-col w-full h-full">
-                <h1 class="text-md mb-1 font-medium no-translate">E-Commerce</h1>
-                <p class="lg:text-sm text-xs lg:pr-24 pr-1 font-light">
-                  An E-Commerce for sneakers and watches with various
-                  features, such as shopping cart, menu, login and others.
-                  Project created entirely by me, without copies, just using
-                  different references to create the interface.
-                </p>
-              </div>
-
-              <div class="flex gap-2 w-full justify-start items-center ">
-                <img class="lg:w-9 lg:h-9 w-7 h-7" src="icons/icons8-html5-48.png" alt="" />
-                <img class="lg:w-9 lg:h-9 w-7 h-7" src="icons/icons8-css3-48.png" alt="" />
-                <img
-                  class="lg:w-9 lg:h-9 w-7 h-7"
-                  src="icons/icons8-tailwindcss-48.png"
-                  alt=""
-                />
-                <img
-                  class="lg:w-9 lg:h-9 w-7 h-7"
+                  class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon"
                   src="icons/icons8-javascript-48.png"
                   alt=""
                 />
@@ -911,7 +738,7 @@
               alt=""
             />
             <img
-              class="absolute right-0 w-20 lg:w-28 bottom-0 h-auto hidden"
+              class="absolute right-0 w-20 lg:w-28 bottom-0 h-auto hidden    "
               src="dark-mode-images/Capturar.dm.mob-removebg-preview.png"
               alt=""
             />
@@ -929,16 +756,16 @@
                 </p>
               </div>
 
-              <div class="flex gap-2 w-full justify-start items-center ">
-                <img class="lg:w-9 lg:h-9 w-7 h-7" src="icons/icons8-html5-48.png" alt="" />
-                <img class="lg:w-9 lg:h-9 w-7 h-7" src="icons/icons8-css3-48.png" alt="" />
+              <div class="flex gap-2 w-full justify-start items-center  projectInformationsIcons">
+                <img class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon" src="icons/icons8-html5-48.png" alt="" />
+                <img class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon" src="icons/icons8-css3-48.png" alt="" />
                 <img
-                  class="lg:w-9 lg:h-9 w-7 h-7"
+                  class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon"
                   src="icons/icons8-tailwindcss-48.png"
                   alt=""
                 />
                 <img
-                  class="lg:w-9 lg:h-9 w-7 h-7"
+                  class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon"
                   src="icons/icons8-javascript-48.png"
                   alt=""
                 />
@@ -1012,7 +839,7 @@
               alt=""
             />
             <img
-              class="absolute right-0 w-20 lg:w-28 bottom-0 h-auto hidden"
+              class="absolute right-0 w-20 lg:w-28 bottom-0 h-auto hidden    "
               src="dark-mode-images/Capturar.dm.mob-removebg-preview.png"
               alt=""
             />
@@ -1030,16 +857,222 @@
                 </p>
               </div>
 
-              <div class="flex gap-2 w-full justify-start items-center ">
-                <img class="lg:w-9 lg:h-9 w-7 h-7" src="icons/icons8-html5-48.png" alt="" />
-                <img class="lg:w-9 lg:h-9 w-7 h-7" src="icons/icons8-css3-48.png" alt="" />
+              <div class="flex gap-2 w-full justify-start items-center  projectInformationsIcons">
+                <img class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon" src="icons/icons8-html5-48.png" alt="" />
+                <img class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon" src="icons/icons8-css3-48.png" alt="" />
                 <img
-                  class="lg:w-9 lg:h-9 w-7 h-7"
+                  class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon"
                   src="icons/icons8-tailwindcss-48.png"
                   alt=""
                 />
                 <img
-                  class="lg:w-9 lg:h-9 w-7 h-7"
+                  class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon"
+                  src="icons/icons8-javascript-48.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="flex w-full justify-between items-center lg:px-5 px-2 hideaway">
+            <h3 class="font-medium mt-1 lg:mt-3 lg:text-md text-xs lg:pl-0 pl- text-start no-translate">E-COMMERCE</h3>
+            <div class="flex gap-3">
+              <a href="https://devrafael7.github.io/e-comerce/" target="_blank" rel="noopener">
+                <div
+                  class="deployBtn w-max h-7 bg-white cursor-pointer rounded-full flex px-3 gap-1 justify-between items-center"
+                >
+                  <img
+                    class="h-7 w-auto visibleIcon"
+                    src="icons/icons8-eye-32.png"
+                    alt=""
+                  />
+                  <img
+                    class="h-6 w-7 visibleGif"
+                    src="icons/icons8-visível.gif"
+                    alt=""
+                  />
+                  <img
+                  class="h-7 w-auto dmVisibleIcon"
+                  src="dark-mode-icons/icons8-visível-50 (1).png"
+                  alt=""
+                  />
+                  <img
+                  class="h-6 w-auto smVisibleIcon"
+                  src="icons/icons8-visível-50.png"
+                  alt=""
+                  />
+                  <p class="font-medium lg:text-sm text-xs no-translate">Deploy</p>
+                </div>
+              </a>
+
+              <a href="https://github.com/devrafael7/e-comerce" target="_blank" rel="noopener">
+                <div
+                  class="w-max sourceCodeBtn h-7 cursor-pointer bg-white rounded-full flex items-center justify-between px-2 gap-1"
+                >
+                  <img
+                    class="h-full w-auto py-1"
+                    src="icons/icons8-github-50.png"
+                    alt=""
+                  />
+                  <p class="font-medium lg:text-sm text-xs">Source Code</p>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div
+          class="projectsDiv lg:flex-row flex-col flex justify-center items-center w-full h-auto mb-9 hideaway gap-9"
+        >
+        <div class="flex flex-col">
+          <div
+            class="w-full h-auto bg-white shadow-md mb-2 lg:mb-2 relative flex justify-between border border-2 black border-solid p-2 rounded-3xl image-container"
+          >
+            <img
+              class="rounded-2xl w-max lg:h-60"
+              src="images/Capturar.PNG"
+              alt=""
+            />
+            <img
+              class="absolute right-0 w-20 lg:w-28 bottom-0 h-auto"
+              src="images/Capturar-mob-0-removebg-preview.png"
+              alt=""
+            />
+            <img
+              class="rounded-2xl w-max lg:h-60 hidden"
+              src="dark-mode-images/Capturar.dm.PNG"
+              alt=""
+            />
+            <img
+              class="absolute right-0 w-20 lg:w-28 bottom-0 h-auto hidden    "
+              src="dark-mode-images/Capturar.dm.mob-removebg-preview.png"
+              alt=""
+            />
+            <div class="image-overlay"></div>
+            <div
+              class="projectInformations absolute opacity-0 flex flex-col justify-between items-start items-center px-4 text-white py-1 lg:py-3 w-full h-full pb-5"
+            >
+              <div class="flex flex-col w-full h-full">
+                <h1 class="text-md mb-1 font-medium no-translate">E-Commerce</h1>
+                <p class="lg:text-sm text-xs lg:pr-24 pr-1 font-light">
+                  An E-Commerce for sneakers and watches with various
+                  features, such as shopping cart, menu, login and others.
+                  Project created entirely by me, without copies, just using
+                  different references to create the interface.
+                </p>
+              </div>
+
+              <div class="flex gap-2 w-full justify-start items-center  projectInformationsIcons">
+                <img class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon" src="icons/icons8-html5-48.png" alt="" />
+                <img class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon" src="icons/icons8-css3-48.png" alt="" />
+                <img
+                  class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon"
+                  src="icons/icons8-tailwindcss-48.png"
+                  alt=""
+                />
+                <img
+                  class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon"
+                  src="icons/icons8-javascript-48.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="flex w-full justify-between items-center lg:px-5 px-2 hideaway">
+            <h3 class="font-medium mt-1 lg:mt-3 lg:text-md text-xs lg:pl-0 pl- text-start no-translate">E-COMMERCE</h3>
+            <div class="flex gap-3">
+              <a href="https://devrafael7.github.io/e-comerce/" target="_blank" rel="noopener">
+                <div
+                  class="deployBtn w-max h-7 bg-white cursor-pointer rounded-full flex px-3 gap-1 justify-between items-center"
+                >
+                  <img
+                    class="h-7 w-auto visibleIcon"
+                    src="icons/icons8-eye-32.png"
+                    alt=""
+                  />
+                  <img
+                    class="h-6 w-7 visibleGif"
+                    src="icons/icons8-visível.gif"
+                    alt=""
+                  />
+                  <img
+                  class="h-7 w-auto dmVisibleIcon"
+                  src="dark-mode-icons/icons8-visível-50 (1).png"
+                  alt=""
+                  />
+                  <img
+                  class="h-6 w-auto smVisibleIcon"
+                  src="icons/icons8-visível-50.png"
+                  alt=""
+                  />
+                  <p class="font-medium lg:text-sm text-xs no-translate">Deploy</p>
+                </div>
+              </a>
+
+              <a href="https://github.com/devrafael7/e-comerce" target="_blank" rel="noopener">
+                <div
+                  class="w-max sourceCodeBtn h-7 cursor-pointer bg-white rounded-full flex items-center justify-between px-2 gap-1"
+                >
+                  <img
+                    class="h-full w-auto py-1"
+                    src="icons/icons8-github-50.png"
+                    alt=""
+                  />
+                  <p class="font-medium lg:text-sm text-xs">Source Code</p>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col">
+          <div
+            class="w-full h-auto bg-white shadow-md mb-2 lg:mb-2 relative flex justify-between border border-2 black border-solid p-2 rounded-3xl image-container"
+          >
+            <img
+              class="rounded-2xl w-max lg:h-60"
+              src="images/Capturar.PNG"
+              alt=""
+            />
+            <img
+              class="absolute right-0 w-20 lg:w-28 bottom-0 h-auto"
+              src="images/Capturar-mob-0-removebg-preview.png"
+              alt=""
+            />
+            <img
+              class="rounded-2xl w-max lg:h-60 hidden"
+              src="dark-mode-images/Capturar.dm.PNG"
+              alt=""
+            />
+            <img
+              class="absolute right-0 w-20 lg:w-28 bottom-0 h-auto hidden    "
+              src="dark-mode-images/Capturar.dm.mob-removebg-preview.png"
+              alt=""
+            />
+            <div class="image-overlay"></div>
+            <div
+              class="projectInformations absolute opacity-0 flex flex-col justify-between items-start items-center px-4 text-white py-1 lg:py-3 w-full h-full pb-5"
+            >
+              <div class="flex flex-col w-full h-full">
+                <h1 class="text-md mb-1 font-medium no-translate">E-Commerce</h1>
+                <p class="lg:text-sm text-xs lg:pr-24 pr-1 font-light">
+                  An E-Commerce for sneakers and watches with various
+                  features, such as shopping cart, menu, login and others.
+                  Project created entirely by me, without copies, just using
+                  different references to create the interface.
+                </p>
+              </div>
+
+              <div class="flex gap-2 w-full justify-start items-center  projectInformationsIcons">
+                <img class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon" src="icons/icons8-html5-48.png" alt="" />
+                <img class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon" src="icons/icons8-css3-48.png" alt="" />
+                <img
+                  class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon"
+                  src="icons/icons8-tailwindcss-48.png"
+                  alt=""
+                />
+                <img
+                  class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon"
                   src="icons/icons8-javascript-48.png"
                   alt=""
                 />
