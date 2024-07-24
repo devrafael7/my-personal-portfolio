@@ -193,20 +193,32 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const databaseP = document.querySelector('.databaseP');
     const versioningP = document.querySelector('.versioningP');
 
-    // Verifica o idioma
-    if (document.documentElement.lang === 'pt-BR') {
-        responsivenessH3.textContent = 'Responsividade';
-        versioningH3.textContent = 'Versionamento';
-        databaseP.textContent = 'Integração de DB';
-        versioningP.textContent = 'Versionamento Code';
+    // Obtém o idioma do documento
+    const language = document.documentElement.lang;
+
+    // Verifica se o idioma é português (pt)
+    if (language.startsWith('pt')) {
+        if (language === 'pt-BR') {
+            // Português do Brasil
+            responsivenessH3.textContent = 'Responsividade';
+            versioningH3.textContent = 'Versionamento';
+            databaseP.textContent = 'Integração de DB';
+            versioningP.textContent = 'Versionamento Code';
+        } else {
+            // Outros dialectos de português
+            responsivenessH3.textContent = 'Responsividade';
+            versioningH3.textContent = 'Versionamento';
+            databaseP.textContent = 'Integração de BD';
+            versioningP.textContent = 'Versionamento de Código';
+        }
     } else {
+        // Outros idiomas
         responsivenessH3.textContent = 'Responsiveness'; 
         versioningH3.textContent = 'Versioning';
         databaseP.textContent = 'Database Integration';
         versioningP.textContent = 'Code Versioning';
     }
 });
-
 
 
 
