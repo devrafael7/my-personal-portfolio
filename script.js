@@ -190,14 +190,41 @@ document.querySelectorAll('.no-translate').forEach(noTranslate => {
     const h3ResponsivityEn = document.querySelector('.h3ResponsivityEn');
     const h3ResponsivityPt = document.querySelector('.h3ResponsivityPt');
 
+    const pDatabaseEn = document.querySelector('.pDatabaseEn');
+    const pDatabasePt = document.querySelector('.pDatabasePt');
+
+    const pVersioningEn = document.querySelector('.pVersioningEn');
+    const pVersioningPt = document.querySelector('.pVersioningPt');
+
+    const h3VersioningEn = document.querySelector('.h3VersioningEn');
+    const h3VersioningPt = document.querySelector('.h3VersioningPt');
+
     const language = document.documentElement.lang;
 
     if (language === 'pt' || language === 'pt-BR') {
         h3ResponsivityEn.classList.add('hidden');
         h3ResponsivityPt.classList.remove('hidden');
+
+        pDatabaseEn.classList.add('hidden');
+        pDatabasePt.classList.remove('hidden');
+
+        pVersioningEn.classList.add('hidden');
+        pVersioningPt.classList.remove('hidden');
+
+        h3VersioningEn.classList.add('hidden');
+        h3VersioningPt.classList.remove('hidden');
     } else {
         h3ResponsivityEn.classList.remove('hidden');
         h3ResponsivityPt.classList.add('hidden');
+
+        pDatabaseEn.classList.remove('hidden');
+        pDatabasePt.classList.add('hidden');
+
+        pVersioningEn.classList.remove('hidden');
+        pVersioningPt.classList.add('hidden');
+
+        h3VersioningEn.classList.remove('hidden');
+        h3VersioningPt.classList.add('hidden');
     }
 
 
