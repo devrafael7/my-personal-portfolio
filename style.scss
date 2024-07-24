@@ -680,6 +680,10 @@ nav ul li:hover{
     color: $text-yellow;
 }
 
+.mainContent.dark #months-learning-card .commitMadeText{
+    color: $soft-white;
+}
+
 .mainContent.dark .myServiceCards:hover {
     background-color: $standart-yellow;
 }

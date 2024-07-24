@@ -644,6 +644,10 @@ nav ul li:hover {
   color: #ff7777;
 }
 
+.mainContent.dark #months-learning-card .commitMadeText {
+  color: rgba(255, 255, 255, 0.7176470588);
+}
+
 .mainContent.dark .myServiceCards:hover {
   background-color: #f95959;
 }
