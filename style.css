@@ -790,4 +790,7 @@ body.dark .logoText span {
   .deployBtn .smVisibleIcon {
     display: flex;
   }
+  .allWhaves {
+    height: 100vh;
+  }
 }/*# sourceMappingURL=style.css.map */
