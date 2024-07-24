@@ -531,6 +531,10 @@ nav ul li:hover {
   color: #ff7777;
 }
 
+.mainContent.dark #sm-main-title-name span {
+  color: #ff7777;
+}
+
 .mainContent.dark .mainCardRight {
   background: #f95959;
 }
@@ -795,6 +799,6 @@ body.dark .logoText span {
     display: flex;
   }
   .allWhaves {
-    height: 100vh;
+    height: 85vh;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -563,6 +563,10 @@ nav ul li:hover{
     color: $text-yellow;
 }
 
+.mainContent.dark #sm-main-title-name span{
+    color: $text-yellow;
+}
+
 .mainContent.dark .mainCardRight {
     background: $standart-yellow;
 }
@@ -845,7 +849,7 @@ body.dark .logoText span {
     }
 
     .allWhaves {
-        height: 100vh;
+        height: 85vh;
     }
     
 }
