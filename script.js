@@ -187,38 +187,17 @@ document.querySelectorAll('.no-translate').forEach(noTranslate => {
 
 //br language section
 
-document.addEventListener('DOMContentLoaded', (event) => {
-    const responsivenessH3 = document.querySelector('.responsivenessH3');
-    const versioningH3 = document.querySelector('.versioningH3');
-    const databaseP = document.querySelector('.databaseP');
-    const versioningP = document.querySelector('.versioningP');
+    const h3ResponsivityEn = document.querySelector('.h3ResponsivityEn');
+    const h3ResponsivityPt = document.querySelector('.h3ResponsivityPt');
 
-    // Obtém o idioma do documento
     const language = document.documentElement.lang;
 
-    // Verifica se o idioma é português (pt)
-    if (language.startsWith('pt')) {
-        if (language === 'pt-BR') {
-            // Português do Brasil
-            responsivenessH3.textContent = 'Responsividade';
-            versioningH3.textContent = 'Versionamento';
-            databaseP.textContent = 'Integração de DB';
-            versioningP.textContent = 'Versionamento Code';
-        } else {
-            // Outros dialectos de português
-            responsivenessH3.textContent = 'Responsividade';
-            versioningH3.textContent = 'Versionamento';
-            databaseP.textContent = 'Integração de BD';
-            versioningP.textContent = 'Versionamento de Código';
-        }
+    if (language === 'pt' || language === 'pt-BR') {
+        h3ResponsivityEn.classList.add('hidden');
+        h3ResponsivityPt.classList.remove('hidden');
     } else {
-        // Outros idiomas
-        responsivenessH3.textContent = 'Responsiveness'; 
-        versioningH3.textContent = 'Versioning';
-        databaseP.textContent = 'Database Integration';
-        versioningP.textContent = 'Code Versioning';
+        h3ResponsivityEn.classList.remove('hidden');
+        h3ResponsivityPt.classList.add('hidden');
     }
-});
-
 
 
