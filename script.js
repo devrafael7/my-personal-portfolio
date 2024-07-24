@@ -63,7 +63,29 @@ function type() {
 }
 setTimeout(type, typingSpeed);
 
+const smMainCardRightTitle = document.querySelector('.smMainCardRightTitle');
+const smText = smMainCardRightTitle.innerHTML;
+let smTitleNameIndex = 0;
+let smIsDeleting = false;
+let smTypingSpeed = 120; 
 
+function typeForSmMainCardRightTitle() {
+    const currentSmText = smText.substring(0, smTitleNameIndex);
+    smMainCardRightTitle.innerHTML = currentSmText;
+
+    if (!smIsDeleting && smTitleNameIndex === smText.length) {
+        smIsDeleting = true;
+        smTypingSpeed = 120; 
+    } else if (smIsDeleting && smTitleNameIndex === 0) {
+        smIsDeleting = false;
+        smTypingSpeed = 100; 
+    }
+
+    smTitleNameIndex += smIsDeleting ? -1 : 1;
+    setTimeout(typeForSmMainCardRightTitle, smTypingSpeed);
+}
+
+setTimeout(typeForSmMainCardRightTitle, smTypingSpeed);
 
 const cards = document.querySelectorAll(".myServiceCards");
 const card0 = document.querySelector('.card0');

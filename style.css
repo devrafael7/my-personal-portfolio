@@ -760,8 +760,8 @@ body.dark .logoText span {
 @media (min-width: 360px) and (max-width: 780px) {
   .mainCard {
     justify-content: end;
-    align-items: end;
-    gap: 3rem;
+    align-items: start;
+    gap: 2rem;
     height: auto;
   }
   .mainCard .mainCardLeft {
@@ -771,7 +771,7 @@ body.dark .logoText span {
   .mainCard .mainCardRight {
     width: 70%;
     height: 40vh;
-    justify-content: end;
+    justify-content: start;
   }
   .mainCard .mainCardRight .mainPicture0 {
     height: 100%;
@@ -823,5 +823,8 @@ body.dark .logoText span {
   }
   .allWhaves {
     height: 20vh;
+  }
+  .mainCardRightTitle {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

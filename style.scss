@@ -799,8 +799,8 @@ body.dark .logoText span {
 
     .mainCard {
         justify-content: end;
-        align-items: end;
-        gap: 3rem;
+        align-items: start;
+        gap: 2rem;
         height: auto;
     }
 
@@ -812,7 +812,7 @@ body.dark .logoText span {
     .mainCard .mainCardRight {
         width: 70%;
         height: 40vh;
-        justify-content: end;
+        justify-content: start;
     }
 
     .mainCard .mainCardRight .mainPicture0 {
@@ -879,5 +879,9 @@ body.dark .logoText span {
 
     .allWhaves {
         height: 20vh;
+    }
+
+    .mainCardRightTitle {
+        display: none;
     }
 }
