@@ -217,12 +217,18 @@ nav ul li:hover{
     .logoAndTerms {
         margin-right: 6rem;
     }
+
+    .footerDivision {
+        height: max;
+    }
     
     .footerLastOne{
         padding: 0;
-        padding-top: 40px;
         padding-right: 130px;
-        padding-bottom: 30px;
+    }
+
+    .letsWorkImg {
+        width: 18%;
     }
     
 }
@@ -247,8 +253,7 @@ nav ul li:hover{
     .footerLastOne{ 
         padding-left: 5rem;
         padding-right: 5rem;
-        padding-top: 6rem;
-        padding-bottom: 2rem;
+        padding-top: 4rem;
     }
 
 
@@ -257,14 +262,10 @@ nav ul li:hover{
         height: auto;
     }
 
-    .smInvisibleDiv {
-        background: $standart-black;
-        height: 90vh;
+    .letsWorkImg {
+        width: 19%;
     }
-
-    .allWhaves {
-        height: 20vh;
-    }
+    
 }
 
 .custom-scrollbar::-webkit-scrollbar {
@@ -283,11 +284,8 @@ nav ul li:hover{
 }
 
 .allWhaves {
-    position: absolute;
-    height: 105vh;
-    width: 100%;
+    position: relative;
     background: $standart-black;
-    overflow: hidden;
 }
 
 .allWhaves .wave {
@@ -351,7 +349,8 @@ nav ul li:hover{
 }
 
 .footerLastOne{
-    height: 85vh;
+    height: 60vh;
+    padding-bottom: 2rem;
 }
 
 //.hideaway {
@@ -795,7 +794,7 @@ body.dark .logoText span {
 }
 
 
-@media (min-width: 360px) and (max-width: 780px) {
+@media (min-width: 360px) and (max-width: 1024px) {
 
     .mainCard {
         justify-content: end;
@@ -868,21 +867,35 @@ body.dark .logoText span {
         display: flex;
     }
 
-    .smInvisibleDiv {
-        background: $standart-black;
-        height: 80vh;
-    }
-
     .letsWorkImg {
-        width: 50%;
+        width: 45%;
         height: auto;
-    }
-
-    .allWhaves {
-        height: 20vh;
     }
 
     .mainCardRightTitle {
         display: none;
     }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 140%;
+    }
+
+    .letsWorkImg {
+        width: 35%;
+    }
+}
+
+.certificateAndWaves {
+    background: $standart-black;
+}
+
+.allWhaves {
+    background: $standart-black;
+}
+
+.allWhavesDiv {
+    background: $standart-black;
 }
