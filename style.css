@@ -829,6 +829,7 @@ body.dark .logoText span {
 }
 .certificateAndWaves {
   background: #181821;
+  border-top: 12px solid rgba(70, 252, 70, 0.726);
 }
 
 .allWhaves {
