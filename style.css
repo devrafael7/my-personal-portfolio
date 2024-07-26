@@ -58,10 +58,11 @@ nav ul li:hover {
 
 .mainCard .mainCardLeft {
   width: 70%;
+  justify-content: center;
 }
 
 .mainCard .mainCardRight {
-  width: 30%;
+  width: 35%;
 }
 
 .mainCard .mainCardRight .mainPicture0 {
@@ -206,7 +207,7 @@ nav ul li:hover {
     margin-right: 50px;
   }
   .logoAndTerms {
-    margin-right: 6rem;
+    margin-right: 4rem;
   }
   .footerDivision {
     height: max;
@@ -216,7 +217,10 @@ nav ul li:hover {
     padding-right: 130px;
   }
   .letsWorkImg {
-    width: 18%;
+    width: 17%;
+  }
+  .footerLocation {
+    margin-right: 1.8rem;
   }
 }
 @media (min-width: 1124px) and (max-width: 2000px) {
@@ -230,10 +234,10 @@ nav ul li:hover {
     gap: 60px;
   }
   .logoAndTerms {
-    margin-right: 9rem;
+    margin-right: 5rem;
   }
   .footerLastOne {
-    padding-left: 5rem;
+    padding-left: 2rem;
     padding-right: 5rem;
     padding-top: 4rem;
   }
@@ -242,7 +246,10 @@ nav ul li:hover {
     height: auto;
   }
   .letsWorkImg {
-    width: 19%;
+    width: 17%;
+  }
+  .footerLocation {
+    margin-right: 3rem;
   }
 }
 .custom-scrollbar::-webkit-scrollbar {
@@ -323,11 +330,6 @@ nav ul li:hover {
     background-position-x: -1000px;
   }
 }
-.footerLastOne {
-  height: 60vh;
-  padding-bottom: 2rem;
-}
-
 .gitAndLinkedinBtns {
   position: relative;
   overflow: hidden;
@@ -754,7 +756,7 @@ body.dark .logoText span {
   display: none;
 }
 
-@media (min-width: 360px) and (max-width: 1024px) {
+@media (min-width: 360px) and (max-width: 767px) {
   .mainCard {
     justify-content: end;
     align-items: start;
@@ -819,14 +821,99 @@ body.dark .logoText span {
     display: none;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  html {
-    font-size: 140%;
+@media (min-width: 600px) and (max-width: 768px) {
+  .mainCard {
+    height: auto;
+    width: 100%;
   }
   .letsWorkImg {
     width: 35%;
   }
+  .mainCard p {
+    font-size: 100%;
+    padding-right: 1rem;
+  }
+  .aboutMe p {
+    font-size: 100%;
+    line-height: 20px;
+    padding-right: 3rem;
+  }
+  .mainCard .mainCardRight {
+    width: 70%;
+    height: 50vh;
+  }
+  .aboutMeInformationsSection span {
+    align-items: center;
+    font-size: 90%;
+  }
+  .textSkillsDiv p {
+    font-size: 90%;
+  }
+  .mainCard .mainCardRight .mainPicture0 {
+    height: 90%;
+  }
+  .mainCard .mainCardRight .mainPicture1 {
+    height: 100%;
+  }
+  .mainCard .mainCardRight .mainPicture2 {
+    height: 100%;
+  }
+  .projectsSection {
+    font-size: 130%;
+  }
+  .projectsSection p {
+    font-size: 81%;
+  }
+  .projectInformationsIcons img {
+    height: 120%;
+    width: auto;
+  }
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mainCard .mainCardRight {
+    padding: 0px 10px;
+    height: 35vh;
+    margin-top: 1rem;
+    width: 45%;
+    margin-left: 4rem;
+  }
+  .mainCardLeft {
+    justify-content: start;
+    align-items: start;
+    padding-top: 2rem;
+  }
+  .mainCard .mainCardRight .mainPicture0 {
+    height: 85%;
+  }
+  .mainCard {
+    justify-content: start;
+    align-items: start;
+    margin-bottom: none;
+    height: auto;
+  }
+  .mainCardLeft {
+    justify-content: center;
+    align-items: start;
+  }
+  .mainCard .mainCardRight .mainPicture1 {
+    height: 85%;
+  }
+  .mainCard .mainCardRight .mainPicture2 {
+    height: 85%;
+  }
+  .footerLastOne {
+    padding: 0;
+    padding-right: 10px;
+    padding-bottom: 1rem;
+  }
+  .letsWorkImg {
+    width: 13%;
+  }
+}
+body.dark .certificateAndWaves {
+  border: none;
+}
+
 .certificateAndWaves {
   background: #181821;
   border-top: 12px solid rgba(70, 252, 70, 0.726);
@@ -838,4 +925,8 @@ body.dark .logoText span {
 
 .allWhavesDiv {
   background: #181821;
+}
+
+.footerLastOne {
+  height: max;
 }/*# sourceMappingURL=style.css.map */
