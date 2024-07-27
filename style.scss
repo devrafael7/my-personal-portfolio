@@ -358,17 +358,17 @@ nav ul li:hover{
 }
 
 
-//.hideaway {
-//    opacity: 0;
-//    transform: translateX(-100%);
-//    transition: opacity 1.4s, transform 1.4s;
-//}
-//
-//.show {
-//    opacity: 1;
-//    transform: translateX(0);
-//    transition: opacity 1.4s, transform 1.4s;
-//}
+.hideaway {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1.4s, transform 1.4s;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 1.4s, transform 1.4s;
+}
 
 .gitAndLinkedinBtns {
     position: relative;
