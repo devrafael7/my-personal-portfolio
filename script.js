@@ -168,40 +168,44 @@ const card0Icon = document.querySelector('.card0Icon');
 
 const mainContent = document.querySelector('.mainContent');
 const body = document.querySelector('body');
-const darkModeBtn = document.querySelector('.darkModeBtn');
-darkModeBtn.addEventListener('click', function() {
-    mainContent.classList.toggle('dark');
-    body.classList.toggle('dark');
-
-    const dmLinkedinIcon = document.querySelector('.dmLinkedinIcon');
-    dmLinkedinIcon.classList.toggle('hidden');
-    const lmLinkedinIcon = document.querySelectorAll('.lmLinkedinIcon');
-    lmLinkedinIcon.forEach(lmLinkedinIcons => {
-        lmLinkedinIcons.classList.toggle('hidden');
-    })
-
-    const card0H3 = document.querySelector('.card0H3');
-    const card0 = document.querySelector('.card0');
-    card0.classList.toggle('bg-red');
-    const cards = document.querySelectorAll(".myServiceCards");
-
-    cards.forEach(allCard=>{
-    allCard.addEventListener('mouseover', function(){
-        card0H3.classList.toggle('text-black');
-        card0H3.classList.toggle('text-gray-200');
+const darkModeBtn = document.querySelectorAll('.darkModeBtn');
+darkModeBtn.forEach(darkModeBtns=>{
+    darkModeBtns.addEventListener('click', function() {
+        mainContent.classList.toggle('dark');
+        body.classList.toggle('dark');
+    
+        const dmLinkedinIcon = document.querySelector('.dmLinkedinIcon');
+        dmLinkedinIcon.classList.toggle('hidden');
+        const lmLinkedinIcon = document.querySelectorAll('.lmLinkedinIcon');
+        lmLinkedinIcon.forEach(lmLinkedinIcons => {
+            lmLinkedinIcons.classList.toggle('hidden');
+        })
+    
+        const card0H3 = document.querySelector('.card0H3');
+        const card0 = document.querySelector('.card0');
         card0.classList.toggle('bg-red');
-        card0Icon.classList.toggle('invert-card');
-        card0Icon.classList.toggle('icon-red');
-        
-       
+        const cards = document.querySelectorAll(".myServiceCards");
+    
+        cards.forEach(allCard=>{
+        allCard.addEventListener('mouseover', function(){
+            card0H3.classList.toggle('text-black');
+            card0H3.classList.toggle('text-gray-200');
+            card0.classList.toggle('bg-red');
+            card0Icon.classList.toggle('invert-card');
+            card0Icon.classList.toggle('icon-red');
+            
+           
+        })
+        allCard.addEventListener('mouseout', function(){
+            card0.classList.toggle('bg-red');
+            
+        })
     })
-    allCard.addEventListener('mouseout', function(){
-        card0.classList.toggle('bg-red');
-        
+    
     })
 })
 
-})
+
 
 document.querySelectorAll('.no-translate').forEach(noTranslate => {
     noTranslate.setAttribute('translate', 'no');
@@ -209,44 +213,45 @@ document.querySelectorAll('.no-translate').forEach(noTranslate => {
 
 //br language section
 
-    const h3ResponsivityEn = document.querySelector('.h3ResponsivityEn');
-    const h3ResponsivityPt = document.querySelector('.h3ResponsivityPt');
+const h3ResponsivityEn = document.querySelector('.h3ResponsivityEn');
+const h3ResponsivityPt = document.querySelector('.h3ResponsivityPt');
+const pDatabaseEn = document.querySelector('.pDatabaseEn');
+const pDatabasePt = document.querySelector('.pDatabasePt');
+const pVersioningEn = document.querySelector('.pVersioningEn');
+const pVersioningPt = document.querySelector('.pVersioningPt');
+const h3VersioningEn = document.querySelector('.h3VersioningEn');
+const h3VersioningPt = document.querySelector('.h3VersioningPt');
+const language = document.documentElement.lang;
+if (language === 'pt' || language === 'pt-BR') {
+    h3ResponsivityEn.classList.add('hidden');
+    h3ResponsivityPt.classList.remove('hidden');
+    pDatabaseEn.classList.add('hidden');
+    pDatabasePt.classList.remove('hidden');
+    pVersioningEn.classList.add('hidden');
+    pVersioningPt.classList.remove('hidden');
+    h3VersioningEn.classList.add('hidden');
+    h3VersioningPt.classList.remove('hidden');
+} else {
+    h3ResponsivityEn.classList.remove('hidden');
+    h3ResponsivityPt.classList.add('hidden');
+    pDatabaseEn.classList.remove('hidden');
+    pDatabasePt.classList.add('hidden');
+    pVersioningEn.classList.remove('hidden');
+    pVersioningPt.classList.add('hidden');
+    h3VersioningEn.classList.remove('hidden');
+    h3VersioningPt.classList.add('hidden');
+}
 
-    const pDatabaseEn = document.querySelector('.pDatabaseEn');
-    const pDatabasePt = document.querySelector('.pDatabasePt');
-
-    const pVersioningEn = document.querySelector('.pVersioningEn');
-    const pVersioningPt = document.querySelector('.pVersioningPt');
-
-    const h3VersioningEn = document.querySelector('.h3VersioningEn');
-    const h3VersioningPt = document.querySelector('.h3VersioningPt');
-
-    const language = document.documentElement.lang;
-
-    if (language === 'pt' || language === 'pt-BR') {
-        h3ResponsivityEn.classList.add('hidden');
-        h3ResponsivityPt.classList.remove('hidden');
-
-        pDatabaseEn.classList.add('hidden');
-        pDatabasePt.classList.remove('hidden');
-
-        pVersioningEn.classList.add('hidden');
-        pVersioningPt.classList.remove('hidden');
-
-        h3VersioningEn.classList.add('hidden');
-        h3VersioningPt.classList.remove('hidden');
-    } else {
-        h3ResponsivityEn.classList.remove('hidden');
-        h3ResponsivityPt.classList.add('hidden');
-
-        pDatabaseEn.classList.remove('hidden');
-        pDatabasePt.classList.add('hidden');
-
-        pVersioningEn.classList.remove('hidden');
-        pVersioningPt.classList.add('hidden');
-
-        h3VersioningEn.classList.remove('hidden');
-        h3VersioningPt.classList.add('hidden');
-    }
+const menuBtn = document.getElementById('menu-btn');
+const sideMenu = document.getElementById('side-menu');
+const closeBtn = document.getElementById('close-btn');
+menuBtn.addEventListener('click', function() {
+    sideMenu.classList.toggle('open');
+    menuBtn.classList.toggle('open');
+});
+closeBtn.addEventListener('click', function() {
+    sideMenu.classList.remove('open');
+    menuBtn.classList.remove('open');
+});
 
 

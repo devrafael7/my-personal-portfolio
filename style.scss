@@ -553,7 +553,7 @@ nav ul li:hover{
     color: $soft-white;
 }
 
-.darkModeBtn {
+.mainContent .darkModeBtn {
     transition: .2s ease;
 }
 
@@ -1018,4 +1018,52 @@ body.dark .certificateAndWaves {
 .footerLastOne{
     height: max;
 
+}
+
+#menu-btn.open #line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+#menu-btn.open #line2 {
+    opacity: 0;
+}
+
+#menu-btn.open #line3 {
+    transform: rotate(45deg) translate(-3px, -6px);
+}
+
+#side-menu.open {
+    transform: translateX(0);
+}
+
+#menu-btn .menuBtnAllLines{
+    background: $soft-black;
+}
+
+body.dark #menu-btn .menuBtnAllLines{
+    background: rgba(255, 255, 255, 0.884);
+}
+
+#side-menu {
+    background: white;
+}
+
+#side-menu ul li a{
+    color: $soft-black;
+}
+
+body.dark #side-menu {
+    background: $soft-black;
+}
+
+body.dark #side-menu ul li a{
+    color: rgba(255, 255, 255, 0.884);
+}
+
+#close-btn {
+    color: $soft-black;
+}
+
+body.dark #close-btn {
+    color: rgba(255, 255, 255, 0.884);
 }
