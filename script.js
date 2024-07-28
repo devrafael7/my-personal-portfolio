@@ -127,6 +127,8 @@ redirectServices.forEach(redirectServicesAll => {
             top: servicesTop,
             behavior: 'smooth'
         });
+        sideMenu.classList.remove('open');
+        menuBtn.classList.remove('open');
     });
 })
 

@@ -201,7 +201,7 @@ nav ul li:hover {
     padding: 0px 30px;
   }
   .projectsDiv {
-    gap: 17px;
+    gap: 4px;
   }
   .logoAndTerms {
     margin-right: 50px;
@@ -225,13 +225,10 @@ nav ul li:hover {
 }
 @media (min-width: 1124px) and (max-width: 2000px) {
   .mainContent {
-    padding: 0px 100px;
+    padding: 0px 80px;
   }
   .certificatesSection {
     padding: 0px 80px;
-  }
-  .projectsDiv {
-    gap: 60px;
   }
   .logoAndTerms {
     margin-right: 5rem;
@@ -944,7 +941,7 @@ body.dark .certificateAndWaves {
 }
 
 #menu-btn.open #line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 5px);
 }
 
 #menu-btn.open #line2 {
@@ -952,7 +949,17 @@ body.dark .certificateAndWaves {
 }
 
 #menu-btn.open #line3 {
-  transform: rotate(45deg) translate(-3px, -6px);
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+
+#side-menu {
+  border-left: 18px solid #2772db;
+  border-right: 1px solid #2772db;
+}
+
+body.dark #side-menu {
+  border-left: 18px solid #f95959;
+  border-right: 1px solid #f95959;
 }
 
 #side-menu.open {
@@ -975,11 +982,19 @@ body.dark #menu-btn .menuBtnAllLines {
   color: #272736;
 }
 
+#side-menu ul li {
+  color: #272736;
+}
+
 body.dark #side-menu {
   background: #272736;
 }
 
 body.dark #side-menu ul li a {
+  color: rgba(255, 255, 255, 0.884);
+}
+
+body.dark #side-menu ul li {
   color: rgba(255, 255, 255, 0.884);
 }
 
