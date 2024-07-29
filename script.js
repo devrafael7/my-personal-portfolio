@@ -13,6 +13,20 @@ const elements = document.querySelectorAll(".hideaway");
 elements.forEach((element) => observer.observe(element));
 
 if (window.location.pathname === "/index.html") {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (
+            entry.isIntersecting &&
+            !entry.target.classList.contains("animated")
+          ) {
+            entry.target.classList.add("show", "animated");
+          }
+        });
+      });
+    
+    const elements = document.querySelectorAll(".hideaway");
+    elements.forEach((element) => observer.observe(element));
+    
   document.getElementById("prev").addEventListener("click", function () {
     document.querySelector(".overflow-x-auto").scrollBy({
       left: -500,
@@ -245,6 +259,20 @@ if (
   window.location.pathname === "/about.html" ||
   window.location.pathname === "/projects.html"
 ) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (
+            entry.isIntersecting &&
+            !entry.target.classList.contains("animated")
+          ) {
+            entry.target.classList.add("show", "animated");
+          }
+        });
+      });
+    
+    const elements = document.querySelectorAll(".hideaway");
+    elements.forEach((element) => observer.observe(element));
+
     document.querySelectorAll(".menu-btn").forEach((menuBtn) => {
     
 
@@ -266,6 +294,20 @@ if (
 if (window.location.pathname === "/about.html" ||
     window.location.pathname === "/projects.html"
 ) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (
+            entry.isIntersecting &&
+            !entry.target.classList.contains("animated")
+          ) {
+            entry.target.classList.add("show", "animated");
+          }
+        });
+      });
+    
+    const elements = document.querySelectorAll(".hideaway");
+    elements.forEach((element) => observer.observe(element));
+    
   const redirectServices = document.querySelectorAll(".redirectServices");
   redirectServices.forEach((redirectServicesAll) => {
     redirectServicesAll.addEventListener("click", function (event) {
