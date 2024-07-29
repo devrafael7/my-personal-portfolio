@@ -231,20 +231,22 @@ if (
   window.location.pathname === "/about.html" ||
   window.location.pathname === "/projects.html"
 ) {
-  document.querySelectorAll(".menu-btn").forEach((menuBtn) => {
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (
-          entry.isIntersecting &&
-          !entry.target.classList.contains("animated")
-        ) {
-          entry.target.classList.add("show", "animated");
-        }
+        entries.forEach((entry) => {
+          if (
+            entry.isIntersecting &&
+            !entry.target.classList.contains("animated")
+          ) {
+            entry.target.classList.add("show", "animated");
+          }
+        });
       });
-    });
 
     const elements = document.querySelectorAll(".hideaway");
     elements.forEach((element) => observer.observe(element));
+
+    document.querySelectorAll(".menu-btn").forEach((menuBtn) => {
+    
 
     const sideMenu = menuBtn.nextElementSibling;
 
