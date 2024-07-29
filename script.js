@@ -41,7 +41,6 @@ if (window.location.pathname === "/index.html") {
     });
   });
 
-  document.addEventListener("DOMContentLoaded", () => {
     const images = document.querySelectorAll(
       ".mainPicture0, .mainPicture1, .mainPicture2"
     );
@@ -60,7 +59,7 @@ if (window.location.pathname === "/index.html") {
     images[currentIndex].classList.add("visible");
 
     setInterval(showNextImage, 5000);
-  });
+
 
   const mainTitleName = document.getElementById("main-title-name");
   const text = mainTitleName.innerHTML;
@@ -307,7 +306,7 @@ if (window.location.pathname === "/about.html" ||
     
     const elements = document.querySelectorAll(".hideaway");
     elements.forEach((element) => observer.observe(element));
-    
+
   const redirectServices = document.querySelectorAll(".redirectServices");
   redirectServices.forEach((redirectServicesAll) => {
     redirectServicesAll.addEventListener("click", function (event) {
