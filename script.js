@@ -1,4 +1,23 @@
-    document.getElementById("prev").addEventListener("click", function () {
+function setupIntersectionObserver() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (
+          entry.isIntersecting &&
+          !entry.target.classList.contains("animated")
+        ) {
+          entry.target.classList.add("show", "animated");
+        }
+      });
+    });
+
+    const elements = document.querySelectorAll(".hideaway");
+  
+    elements.forEach((element) => observer.observe(element));
+  }
+  
+  document.addEventListener("DOMContentLoaded", setupIntersectionObserver);
+
+document.getElementById("prev").addEventListener("click", function () {
     document.querySelector(".overflow-x-auto").scrollBy({
       left: -500,
       behavior: "smooth",
@@ -243,29 +262,31 @@
 
 
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (
-            entry.isIntersecting &&
-            !entry.target.classList.contains("animated")
-          ) {
-            entry.target.classList.add("show", "animated");
-          }
+
+
+
+    const sideMenu = menuBtn.nextElementSibling;
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("open");
+      sideMenu.classList.toggle("open");
+      console.log("oi");
+    });
+
+    sideMenu.querySelector(".close-btn").addEventListener("click", () => {
+      sideMenu.classList.remove("open");
+      menuBtn.classList.remove("open");
+    });
+
+    redirectServices.forEach((redirectServicesAll) => {
+        redirectServicesAll.addEventListener("click", function (event) {
+          event.preventDefault(); 
+    
+          window.location.href = "index.html#services";
         });
       });
-    
-    const elements = document.querySelectorAll(".hideaway");
-    elements.forEach((element) => observer.observe(element));
-
-  redirectServices.forEach((redirectServicesAll) => {
-    redirectServicesAll.addEventListener("click", function (event) {
-      event.preventDefault(); 
-
-      window.location.href = "index.html#services";
-    });
-  });
-  sideMenu.classList.remove("open");
-  menuBtn.classList.remove("open");
-
+      sideMenu.classList.remove("open");
+      menuBtn.classList.remove("open");
+  
 
 
