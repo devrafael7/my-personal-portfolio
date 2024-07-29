@@ -122,18 +122,17 @@ if (window.location.pathname === "/index.html") {
     });
   });
 
-  const redirectAbout = document.querySelectorAll(".redirectAbout");
-  redirectAbout.forEach((redirectAboutAll) => {
-    redirectAboutAll.addEventListener("click", function () {
-      const aboutMe = document.querySelector(".aboutMe");
-      const aboutMeTop = aboutMe.offsetTop;
-
-      window.scrollTo({
-        top: aboutMeTop,
-        behavior: "smooth",
-      });
-    });
-  });
+  //const redirectAbout = document.querySelectorAll(".redirectAbout");
+  //redirectAbout.forEach((redirectAboutAll) => {
+  //  redirectAboutAll.addEventListener("click", function () {
+  //    const aboutMe = document.querySelector(".aboutMe");
+  //    const aboutMeTop = aboutMe.offsetTop;
+  //    window.scrollTo({
+  //      top: aboutMeTop,
+  //      behavior: "smooth",
+  //    });
+  //  });
+  //});
 
   const backToTopBtn = document.querySelector(".backToTopBtn");
   backToTopBtn.addEventListener("click", () => {
@@ -229,7 +228,8 @@ if (window.location.pathname === "/index.html") {
 
 if (
   window.location.pathname === "/index.html" ||
-  window.location.pathname === "/about.html"
+  window.location.pathname === "/about.html" ||
+  window.location.pathname === "/projects.html"
 ) {
   document.querySelectorAll(".menu-btn").forEach((menuBtn) => {
     const observer = new IntersectionObserver((entries) => {
@@ -261,16 +261,19 @@ if (
   });
 }
 
-if (window.location.pathname === "/about.html") {
+if (window.location.pathname === "/about.html" ||
+    window.location.pathname === "/projects.html"
+) {
   const redirectServices = document.querySelectorAll(".redirectServices");
   redirectServices.forEach((redirectServicesAll) => {
     redirectServicesAll.addEventListener("click", function (event) {
-      event.preventDefault(); // Previne o comportamento padrão do link
+      event.preventDefault(); 
 
-      // Redireciona para a página index.html com o hash #services
       window.location.href = "index.html#services";
     });
   });
   sideMenu.classList.remove("open");
   menuBtn.classList.remove("open");
+
+
 }

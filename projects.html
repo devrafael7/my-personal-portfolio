@@ -4,8 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class=" min-h-screen ">
+  
+    <header
+    class="w-full h-16 hidden lg:flex justify-between items-center mb-7 pt-3 hideaway absolute top-0 px-16"
+  >
+    <article
+      class="logo flex items-center h-full justify-center cursor-pointer hideaway"
+    >
+      <h1 class="text-lg logoText font-semibold mr-7 no-translate">
+        Rafa's <span>Dev</span>Work
+      </h1>
+    </article>
+
+    <nav class="flex gap-3 hideaway">
+      <ul class="flex gap-10 opacity-90 items-center">
+        <li><a class="text-sm font-medium no-translate" href="index.html">Home</a></li>
+        <li class="redirectAbout text-sm font-medium cursor-pointer">About</li>
+        <li class="redirectServices text-sm font-medium cursor-pointer">Services</li>
+        <li><a class="text-sm font-medium" href="projects.html">Projects</a></li>
+        <li><a class="text-sm font-medium" href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+
+    <article
+      class="emailBox flex gap-2 items-center w-auto h-auto opacity-70 cursor-pointer hideaway"
+    >
+      <img class="h-5 gmailIcon" src="icons/icons8-gmail-logo-50.png" alt="" />
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rafarafa99944@gmail.com&su=Olá, vim pelo seu portfolio!%20do%20Email&body=%20%20" target="_blank" rel="noopener">
+        <h3 class="text-sm">rafarafa99944@gmail.com</h3>
+      </a>
+    </article>
+  </header>
+
+
+ 
+
+
+       
+
+        <div class=" flex justify-between items-center w-full h-auto lg:hidden relative pt-3 px-3">
+            <article
+                class="logo flex items-center h-full justify-center cursor-pointer hideaway"
+                >
+                <h1 class="text-lg logoText font-semibold mr-7 no-translate">
+                    Rafa's <span>Dev</span>Work
+                </h1>
+            </article>
+
+            <div  class="menu-btn cursor-pointer z-50 flex flex-col gap-1.5 hideaway">
+              <div class="menuBtnAllLines w-9 h-1 bg-black transition-transform duration-300 hideaway" id="line1"></div>
+              <div class="menuBtnAllLines w-9 h-1 bg-black transition-opacity duration-300 hideaway" id="line2"></div>
+              <div class="menuBtnAllLines w-9 h-1 bg-black transition-transform duration-300 hideaway" id="line3"></div>
+          </div>
+          <div  class="side-menu fixed top-0 left-0 w-56 h-full  text-white transform -translate-x-full transition-transform duration-300 z-40">
+              <button type="button" class="close-btn absolute top-4 right-4 text-3xl">&times;</button>
+              <ul class="mt-16 space-y-6 px-7">
+                  <li><a href="index.html" class="block text-xl no-translate">Home</a></li>
+                  <li><a href="about.html" class="block text-xl">About</a></li>
+                  <li class="block text-xl redirectServices">Services</li>
+                  <li><a href="projects.html" class="block text-xl">Projects</a></li>
+                  <li><a href="blog.html" class="block text-xl">Blog</a></li>
+              </ul>
+          </div>
+
+            
+ 
+
+
+    <script src="script.js"></script>
 </body>
 </html>
