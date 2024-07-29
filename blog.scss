@@ -1,3 +1,45 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
 .gmailIcon {
     filter: brightness(0) invert(1); 
+}
+
+nav ul li {
+    position: relative;
+    padding-bottom: 2px;
+}
+
+nav ul li::after {
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background-color: $white; 
+    transition: width 0.3s ease-in-out;
+    border-radius: 20px;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+    color: $soft-blue;
+}
+
+nav ul li a{
+    transition: .2s ease;
+}
+
+nav ul li a:hover{
+    color: $white;
+}
+
+nav ul li:hover{
+    color: $white;
+}
+
+.side-menu {
+    border-left: 18px solid $soft-blue;
+    border-right: none;
 }
