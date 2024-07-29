@@ -940,68 +940,76 @@ body.dark .certificateAndWaves {
   height: max;
 }
 
-#menu-btn.open #line1 {
+.menu-btn.open #line1 {
   transform: rotate(-45deg) translate(-5px, 5px);
 }
 
-#menu-btn.open #line2 {
+.menu-btn.open #line2 {
   opacity: 0;
 }
 
-#menu-btn.open #line3 {
-  transform: rotate(45deg) translate(-5px, -5px);
+.menu-btn.open #line3 {
+  transform: rotate(45deg) translate(-8px, -9px);
 }
 
-#side-menu {
+.side-menu {
   border-left: 18px solid #2772db;
   border-right: 1px solid #2772db;
 }
 
-body.dark #side-menu {
+body.dark .side-menu {
   border-left: 18px solid #f95959;
   border-right: 1px solid #f95959;
 }
 
-#side-menu.open {
+.side-menu.open {
   transform: translateX(0);
 }
 
-#menu-btn .menuBtnAllLines {
+.menu-btn .menuBtnAllLines {
   background: #272736;
 }
 
-body.dark #menu-btn .menuBtnAllLines {
+body.dark .menu-btn .menuBtnAllLines {
   background: rgba(255, 255, 255, 0.884);
 }
 
-#side-menu {
+.side-menu {
   background: white;
 }
 
-#side-menu ul li a {
+.side-menu ul li a {
   color: #272736;
 }
 
-#side-menu ul li {
+.side-menu ul li {
   color: #272736;
 }
 
-body.dark #side-menu {
+body.dark .side-menu {
   background: #272736;
 }
 
-body.dark #side-menu ul li a {
+body.dark .side-menu ul li a {
   color: rgba(255, 255, 255, 0.884);
 }
 
-body.dark #side-menu ul li {
+body.dark .side-menu ul li {
   color: rgba(255, 255, 255, 0.884);
 }
 
-#close-btn {
+.close-btn {
   color: #272736;
 }
 
-body.dark #close-btn {
+body.dark .close-btn {
   color: rgba(255, 255, 255, 0.884);
+}
+
+.aboutMeBottomDecoration {
+  background: #2772db;
+}
+
+body.dark .aboutMeBottomDecoration {
+  background: #f95959;
 }/*# sourceMappingURL=style.css.map */

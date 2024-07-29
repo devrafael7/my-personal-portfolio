@@ -1017,68 +1017,76 @@ body.dark .certificateAndWaves {
 
 }
 
-#menu-btn.open #line1 {
+.menu-btn.open #line1 {
     transform: rotate(-45deg) translate(-5px, 5px);
 }
 
-#menu-btn.open #line2 {
+.menu-btn.open #line2 {
     opacity: 0;
 }
 
-#menu-btn.open #line3 {
-    transform: rotate(45deg) translate(-5px, -5px);
+.menu-btn.open #line3 {
+    transform: rotate(45deg) translate(-8px, -9px);
 }
 
-#side-menu {
+.side-menu {
     border-left: 18px solid $soft-blue;
     border-right: 1px solid $soft-blue
 }
 
-body.dark #side-menu {
+body.dark .side-menu {
     border-left: 18px solid $standart-yellow;
     border-right: 1px solid $standart-yellow;
 }
 
-#side-menu.open {
+.side-menu.open {
     transform: translateX(0);
 }
 
-#menu-btn .menuBtnAllLines{
+.menu-btn .menuBtnAllLines{
     background: $soft-black;
 }
 
-body.dark #menu-btn .menuBtnAllLines{
+body.dark .menu-btn .menuBtnAllLines{
     background: rgba(255, 255, 255, 0.884);
 }
 
-#side-menu {
+.side-menu {
     background: white;
 }
 
-#side-menu ul li a{
+.side-menu ul li a{
     color: $soft-black;
 }
 
-#side-menu ul li{
+.side-menu ul li{
     color: $soft-black;
 }
 
-body.dark #side-menu {
+body.dark .side-menu {
     background: $soft-black;
 }
 
-body.dark #side-menu ul li a{
+body.dark .side-menu ul li a{
     color: rgba(255, 255, 255, 0.884);
 }
 
-body.dark #side-menu ul li{
+body.dark .side-menu ul li{
     color: rgba(255, 255, 255, 0.884);
 }
 
-#close-btn {
+.close-btn {
     color: $soft-black;
 }
 
-body.dark #close-btn {
+body.dark .close-btn {
     color: rgba(255, 255, 255, 0.884);
+}
+
+.aboutMeBottomDecoration {
+    background: $soft-blue;
+}
+
+body.dark .aboutMeBottomDecoration {
+    background: $standart-yellow;
 }
