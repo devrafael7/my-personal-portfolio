@@ -4,8 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="blog.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class="bg-gray-100 flex flex-col min-h-screen ">
+
+    <!-- Header -->
+    <header class="w-full h-16 hidden lg:flex justify-between items-center mb-7 pt-3  absolute top-0 px-16 bg-blue-500 shadow-md z-50">
+        <article class="text-white flex items-center h-full justify-center cursor-pointer hideaway">
+            <h1 class="text-lg font-semibold mr-7 no-translate">
+                Rafa's <span class="text-yellow-200">Blog</span>
+            </h1>
+        </article>
+        <div class="flex gap-10 w-max h-full justify-center items-center">
+            <nav class="flex gap-3 hideaway">
+                <ul class="flex gap-8 opacity-90 items-center">
+                    <li><a class="text-sm font-medium no-translate uppercase text-white" href="blog.html">Home</a></li>
+                    <li><a class="text-sm font-medium uppercase text-white" href="index.html">Portfolio</a></li>
+                </ul>
+            </nav>
+            <article class="emailBox flex gap-2 items-center w-auto h-auto opacity-70 cursor-pointer hideaway">
+                <img class="h-5 gmailIcon" src="icons/icons8-gmail-logo-50.png" alt="" />
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rafarafa99944@gmail.com&su=Olá, vim pelo seu portfolio!%20do%20Email&body=%20%20" target="_blank" rel="noopener">
+                    <h3 class="text-sm text-white">rafarafa99944@gmail.com</h3>
+                </a>
+            </article>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto lg:mt-20 p-4 z-50 flex flex-col gap-6 hideaway">
+        <div class="flex justify-between items-center w-full h-auto lg:hidden relative">
+            <article class="logo flex items-center h-full justify-center cursor-pointer hideaway">
+                <h1 class="text-lg logoText font-semibold mr-7 no-translate">
+                    Rafa's <span>Dev</span>Work
+                </h1>
+            </article>
+            <div class="menu-btn cursor-pointer z-50 flex flex-col gap-1.5 hideaway">
+                <div class="menuBtnAllLines w-9 h-1 bg-black transition-transform duration-300 hideaway" id="line1"></div>
+                <div class="menuBtnAllLines w-9 h-1 bg-black transition-opacity duration-300 hideaway" id="line2"></div>
+                <div class="menuBtnAllLines w-9 h-1 bg-black transition-transform duration-300 hideaway" id="line3"></div>
+            </div>
+            <div class="side-menu fixed top-0 left-0 w-56 h-full text-white transform -translate-x-full transition-transform duration-300 z-40">
+                <button type="button" class="close-btn absolute top-4 right-4 text-3xl">&times;</button>
+                <ul class="mt-16 space-y-6 px-7">
+                    <li><a href="index.html" class="block text-xl no-translate">Home</a></li>
+                    <li><a href="about.html" class="block text-xl">About</a></li>
+                    <li class="block text-xl redirectServices">Services</li>
+                    <li><a href="projects.html" class="block text-xl">Projects</a></li>
+                    <li><a href="blog.html" class="block text-xl">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Blog Post -->
+        <article class="bg-white shadow-md rounded-lg overflow-hidden mb-6">
+            <img src="https://via.placeholder.com/800x400" alt="Post Image" class="w-full">
+            <div class="p-4">
+                <h2 class="text-2xl font-bold mb-2">Blog Post Title</h2>
+                <p class="text-gray-600 text-sm mb-4">Published on July 29, 2024</p>
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus.</p>
+                <a href="#" class="text-blue-600 hover:underline">Read more</a>
+            </div>
+        </article>
+
+        <!-- Blog Post -->
+        <article class="bg-white shadow-md rounded-lg overflow-hidden mb-6">
+            <img src="https://via.placeholder.com/800x400" alt="Post Image" class="w-full">
+            <div class="p-4">
+                <h2 class="text-2xl font-bold mb-2">Another Blog Post</h2>
+                <p class="text-gray-600 text-sm mb-4">Published on July 28, 2024</p>
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus.</p>
+                <a href="#" class="text-blue-600 hover:underline">Read more</a>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white p-4 mt-auto">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 My Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

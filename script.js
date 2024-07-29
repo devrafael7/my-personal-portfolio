@@ -244,8 +244,7 @@ document.getElementById("prev").addEventListener("click", function () {
 
 
     document.querySelectorAll(".menu-btn").forEach((menuBtn) => {
-    
-
+  
     const sideMenu = menuBtn.nextElementSibling;
 
     menuBtn.addEventListener("click", () => {
@@ -259,11 +258,6 @@ document.getElementById("prev").addEventListener("click", function () {
       menuBtn.classList.remove("open");
     });
   });
-
-
-
-
-
 
     const sideMenu = menuBtn.nextElementSibling;
 
