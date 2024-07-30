@@ -1,4 +1,22 @@
 
+
+document.querySelectorAll(".menu-btn").forEach((menuBtn) => {
+    
+
+  const sideMenu = menuBtn.nextElementSibling;
+
+  menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("open");
+    sideMenu.classList.toggle("open");
+    console.log("oi");
+  });
+
+  sideMenu.querySelector(".close-btn").addEventListener("click", () => {
+    sideMenu.classList.remove("open");
+    menuBtn.classList.remove("open");
+  });
+});
+
 function setupIntersectionObserver() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -126,41 +144,19 @@ document.getElementById("prev").addEventListener("click", function () {
   });
 
 
-  //const redirectAbout = document.querySelectorAll(".redirectAbout");
-  //redirectAbout.forEach((redirectAboutAll) => {
-  //  redirectAboutAll.addEventListener("click", function () {
-  //    const aboutMe = document.querySelector(".aboutMe");
-  //    const aboutMeTop = aboutMe.offsetTop;
-  //    window.scrollTo({
-  //      top: aboutMeTop,
-  //      behavior: "smooth",
-  //    });
-  //  });
-  //});
-
-  if (window.location.pathname === '/index.html') {
-      const backToTopBtn = document.querySelectorAll(".backToTopBtn");
-      backToTopBtn.forEach(backToTopBtns => {
-        backToTopBtns.addEventListener("click", () => {
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          });
-        });
-      })
-    }
- 
-
-  const getAnyProjectBtn = document.querySelector(".getAnyProjectBtn");
-  getAnyProjectBtn.addEventListener("click", function () {
-    const projectsSection = document.querySelector(".projectsSection");
-    const sectionTop = projectsSection.offsetTop;
-
-    window.scrollTo({
-      top: sectionTop,
-      behavior: "smooth",
+  const getAnyProjectBtn = document.querySelectorAll(".getAnyProjectBtn");
+  getAnyProjectBtn.forEach(getAnyProjectBtns => {
+    getAnyProjectBtns.addEventListener("click", function () {
+      const projectsSection = document.querySelector(".projectsSection");
+      const sectionTop = projectsSection.offsetTop;
+  
+      window.scrollTo({
+        top: sectionTop,
+        behavior: "smooth",
+      });
     });
-  });
+  })
+
 
   const card0Icon = document.querySelector(".card0Icon");
 
@@ -232,7 +228,9 @@ document.getElementById("prev").addEventListener("click", function () {
     pVersioningPt.classList.add("hidden");
     h3VersioningEn.classList.remove("hidden");
     h3VersioningPt.classList.add("hidden");
-  }
+  };
+
+  
     
   
 

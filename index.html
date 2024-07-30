@@ -9,7 +9,7 @@
   </head>
   <body class="w-full h-min-screen transition-all ">
 
-      <div  class="menu-btn absolute top-4 right-4 cursor-pointer z-50 flex flex-col gap-1.5 hideaway">
+      <div  class="menu-btn absolute top-4 right-4 cursor-pointer z-50 flex flex-col gap-1.5 hideaway lg:hidden">
           <div class="menuBtnAllLines w-9 h-1 bg-black transition-transform duration-300 hideaway" id="line1"></div>
           <div class="menuBtnAllLines w-9 h-1 bg-black transition-opacity duration-300 hideaway" id="line2"></div>
           <div class="menuBtnAllLines w-9 h-1 bg-black transition-transform duration-300 hideaway" id="line3"></div>
@@ -19,7 +19,7 @@
           <ul class="mt-16 space-y-6 px-7">
               <li><a href="index.html" class="block text-xl no-translate">Home</a></li>
               <li><a href="about.html" class="block text-xl">About</a></li>
-              <li class="block text-xl redirectServices">Services</li>
+              <li class="block text-xl redirectServices cursor-pointer">Services</li>
               <li><a href="projects.html" class="block text-xl">Projects</a></li>
               <li><a href="blog.html" class="block text-xl">Blog</a></li>
           </ul>
@@ -174,12 +174,12 @@
             alt=""
           />
           <img
-            class="z-40 lmCodeIcon absolute -right-20 md:-left-20 lg:-left-20 top-4 w-7 hideaway"
+            class="z-40 lmCodeIcon absolute -right-20 md:-left-20 lg:-left-20 top-2 w-7 hideaway"
             src="icons/icons8-código-fonte-48.png"
             alt=""
           />
           <img
-            class="z-40 dmCodeIcon absolute -right-20 md:-left-20 lg:-left-20 top-4 w-7 "
+            class="z-40 dmCodeIcon absolute -right-20 md:-left-20 lg:-left-20 top-2 w-7 "
             src="dark-mode-icons/icons8-código-fonte-50.png"
             alt=""
           />
@@ -207,7 +207,7 @@
         class="w-full h-20 flex flex-col items-center uppercase md:gap-8 gap-5 lg:gap-8 lg:mb-24 mb-20 hideaway justify-center" 
       >
         <h3 class="font-semibold opacity-80">Knowledge in technologies:</h3>
-        <figure class="flex gap-2 h-7 w-full lg:justify-evenly justify-center lg:px-20 px-10 items-center flex-wrap">
+        <figure class="knowledgeFigure flex gap-2 h-7 w-full lg:justify-evenly justify-center lg:px-20 px-10 items-center flex-wrap">
           <img class="w-10 lg:w-12 lg:h-12" src="icons/icons8-html5-48.png" alt="" />
           <img class="w-10 lg:w-12 lg:h-12" src="icons/icons8-css3-48.png" alt="" />
           <img
@@ -267,8 +267,8 @@
           <div class=" w-full flex hideaway">
             <a href="cv.pdf.pdf" download>
             <div 
-              class="bg-blue-500 text-white text-xs w-auto px-5 h-auto py-2 rounded-sm relative cursor-pointer "
-              id="download-cv-btn hideaway"
+              class="bg-blue-500 text-white text-xs w-auto px-5 h-auto py-2 rounded-sm relative cursor-pointer hideaway"
+              id="download-cv-btn"
             >
             <h3 class="hideaway">
               Download CV

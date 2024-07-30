@@ -1,16 +1,21 @@
-document.querySelectorAll(".menu-btn").forEach((menuBtn) => {
-    
-
-    const sideMenu = menuBtn.nextElementSibling;
-  
-    menuBtn.addEventListener("click", () => {
-      menuBtn.classList.toggle("open");
-      sideMenu.classList.toggle("open");
-      console.log("oi");
+    const backToTopBtn = document.querySelectorAll(".backToTopBtn");
+  backToTopBtn.forEach(backToTopBtns => {
+    backToTopBtns.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     });
-  
-    sideMenu.querySelector(".close-btn").addEventListener("click", () => {
-      sideMenu.classList.remove("open");
-      menuBtn.classList.remove("open");
+  })
+
+    const redirectServices = document.querySelectorAll(".redirectServices");
+    redirectServices.forEach((allRedirectServices) => {
+        allRedirectServices.addEventListener("click", function () {
+      const services = document.querySelector(".services");
+      const servicesTop = services.offsetTop;
+      window.scrollTo({
+        top: servicesTop,
+        behavior: "smooth",
+      });
     });
   });

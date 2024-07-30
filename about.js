@@ -1,20 +1,25 @@
-document.querySelectorAll(".menu-btn").forEach((menuBtn) => {
-    
-
-  const sideMenu = menuBtn.nextElementSibling;
-
-  menuBtn.addEventListener("click", () => {
-    menuBtn.classList.toggle("open");
-    sideMenu.classList.toggle("open");
-    console.log("oi");
-  });
-
-  sideMenu.querySelector(".close-btn").addEventListener("click", () => {
-    sideMenu.classList.remove("open");
-    menuBtn.classList.remove("open");
-  });
-});
-
 document.querySelectorAll(".no-translate").forEach((noTranslate) => {
   noTranslate.setAttribute("translate", "no");
 });
+
+const redirectServices = document.querySelectorAll(".redirectServices");
+
+  redirectServices.forEach((allRedirectServices) => {
+    allRedirectServices.addEventListener("click", function (event) {
+      event.preventDefault(); 
+
+      window.location.href = "index.html#services";
+    });
+  });
+
+  // Verifica se o hash na URL é #services e faz o scroll suave para a seção
+  if (window.location.hash === "#services") {
+    const services = document.querySelector(".services");
+    if (services) {
+      const servicesTop = services.offsetTop;
+      window.scrollTo({
+        top: servicesTop,
+        behavior: "smooth",
+      });
+    }
+  }
