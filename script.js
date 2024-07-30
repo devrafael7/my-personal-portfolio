@@ -1,3 +1,4 @@
+
 function setupIntersectionObserver() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -124,20 +125,6 @@ document.getElementById("prev").addEventListener("click", function () {
     });
   });
 
-  const redirectServices = document.querySelectorAll(".redirectServices");
-  redirectServices.forEach((redirectServicesAll) => {
-    redirectServicesAll.addEventListener("click", function () {
-      const sevices = document.querySelector(".services");
-      const servicesTop = sevices.offsetTop;
-
-      window.scrollTo({
-        top: servicesTop,
-        behavior: "smooth",
-      });
-      sideMenu.classList.remove("open");
-      menuBtn.classList.remove("open");
-    });
-  });
 
   //const redirectAbout = document.querySelectorAll(".redirectAbout");
   //redirectAbout.forEach((redirectAboutAll) => {
@@ -152,16 +139,16 @@ document.getElementById("prev").addEventListener("click", function () {
   //});
 
   if (window.location.pathname === '/index.html') {
-    const backToTopBtn = document.querySelectorAll(".backToTopBtn");
-    backToTopBtn.forEach(backToTopBtns => {
-      backToTopBtns.addEventListener("click", () => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
+      const backToTopBtn = document.querySelectorAll(".backToTopBtn");
+      backToTopBtn.forEach(backToTopBtns => {
+        backToTopBtns.addEventListener("click", () => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
         });
-      });
-    })
-  }
+      })
+    }
  
 
   const getAnyProjectBtn = document.querySelector(".getAnyProjectBtn");
@@ -246,46 +233,7 @@ document.getElementById("prev").addEventListener("click", function () {
     h3VersioningEn.classList.remove("hidden");
     h3VersioningPt.classList.add("hidden");
   }
-
-
-    document.querySelectorAll(".menu-btn").forEach((menuBtn) => {
-  
-    const sideMenu = menuBtn.nextElementSibling;
-
-    menuBtn.addEventListener("click", () => {
-      menuBtn.classList.toggle("open");
-      sideMenu.classList.toggle("open");
-      console.log("oi");
-    });
-
-    sideMenu.querySelector(".close-btn").addEventListener("click", () => {
-      sideMenu.classList.remove("open");
-      menuBtn.classList.remove("open");
-    });
-  });
-
-    const sideMenu = menuBtn.nextElementSibling;
-
-    menuBtn.addEventListener("click", () => {
-      menuBtn.classList.toggle("open");
-      sideMenu.classList.toggle("open");
-      console.log("oi");
-    });
-
-    sideMenu.querySelector(".close-btn").addEventListener("click", () => {
-      sideMenu.classList.remove("open");
-      menuBtn.classList.remove("open");
-    });
-
-    redirectServices.forEach((redirectServicesAll) => {
-        redirectServicesAll.addEventListener("click", function (event) {
-          event.preventDefault(); 
     
-          window.location.href = "index.html#services";
-        });
-      });
-      sideMenu.classList.remove("open");
-      menuBtn.classList.remove("open");
   
 
 
