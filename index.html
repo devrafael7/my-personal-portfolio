@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="w-full h-min-screen transition-all">
-    <div class="relative flex-1 lg:hidden">
+  <body class="w-full h-min-screen transition-all ">
+    <div class="relative flex-1 lg:hidden hideaway">
       <div  class="menu-btn absolute top-4 right-4 cursor-pointer z-50 flex flex-col gap-1.5 hideaway">
           <div class="menuBtnAllLines w-9 h-1 bg-black transition-transform duration-300 hideaway" id="line1"></div>
           <div class="menuBtnAllLines w-9 h-1 bg-black transition-opacity duration-300 hideaway" id="line2"></div>
@@ -28,7 +28,7 @@
 
 
 
-    <div class="mainContent w-full h-min-screen">
+    <div class="mainContent w-full h-min-screen ">
       <div class="w-full h-min-screen">
         <header
           class="w-full h-16 hidden lg:flex justify-between items-center mb-7 pt-3 hideaway"
@@ -70,9 +70,9 @@
           </div>
         </div>
   
-        <div class="mainCardLeft h-full flex flex-col justify-center md:justify-start hideaway relative pl-3 pt-2 lg:pl-0 lg:pt-0 ">
+        <div class="mainCardLeft h-full flex flex-col justify-center md:justify-start lg:hideaway relative pl-3 pt-2 lg:pl-0 lg:pt-0 ">
 
-          <div class="darkModeBtn w-20 h-8 bg-blue-200 lg:absolute top-0 cursor-pointer rounded-full py-1 px-1 flex items-center justify-start cursor-pointer mb-3 lg:mb-0 hidden lg:block">
+          <div class="darkModeBtn w-20 h-8 bg-blue-200 lg:absolute top-0 cursor-pointer rounded-full py-1 px-1 flex items-center justify-start cursor-pointer mb-3 lg:mb-0 hidden lg:block hideaway">
             <div class="darkModeInsideBtn bg-white rounded-full h-full w-6">
 
             </div>
@@ -88,7 +88,7 @@
 
           <h1
             id="main-title-name"
-            class="text-4xl font-semibold leading-tight tracking-wide mb-2 hidden md:block lg:block"
+            class="text-4xl font-semibold leading-tight tracking-wide mb-2 hidden md:block lg:block lg:hideaway"
           > I'm Rafael Oliveira <br> a <span class="text-blue-500">Front-end Developer</span>
           </h1>
 
@@ -99,13 +99,13 @@
             <span class="text-blue-500">Front-end Developer</span>
           </h1>
           
-          <p class="text-sm mb-4 opacity-70">
+          <p class="text-sm mb-4 opacity-70 lg:hideaway">
             Software Engineering student, currently studying <br class="hidden lg:flex md:flex"/>
             web development for 6 months. I have skills in developing <br class="hidden lg:flex md:flex"/>
             interfaces and functionalities for pages. I am currently <br> looking for my first internship!
           </p>
 
-          <div class="flex gap-3">
+          <div class="flex gap-3 lg:hideaway">
             <a href="https://www.linkedin.com/in/rafael-marques-de-oliveira-4013b4300/" target="_blank" rel="noopener">
               <div
                 class="gitAndLinkedinBtns flex rounded-sm w-auto pl-2 pr-4 justify-start items-center gap-1 hideaway"
@@ -116,7 +116,7 @@
                   alt=""
                 />
                 <img
-                  class="noHoverIcon lmLinkedinIcon  h-7 z-40"
+                  class="noHoverIcon lmLinkedinIcon  h-7 z-40 "
                   src="icons/icons8-linkedin-48.png"
                   alt=""
                 />
@@ -154,10 +154,10 @@
 
       
         <div
-          class="mainCardRight md:h-full lg:h-full rounded-r-md relative flex items-center"
+          class="mainCardRight md:h-full lg:h-full rounded-r-md relative flex items-center hideaway"
         >
           <img
-            class="mainPicture0 absolute -right-10 md:-left-20 lg:-left-20 bottom-0 z-40"
+            class="mainPicture0 absolute -right-10 md:-left-20 lg:-left-20 bottom-0 z-40 "
             src="images/1720653347461.png"
             alt=""
           />
@@ -174,17 +174,17 @@
             alt=""
           />
           <img
-            class="z-40 lmCodeIcon absolute -right-20 md:-left-20 lg:-left-20 top-4 w-7"
+            class="z-40 lmCodeIcon absolute -right-20 md:-left-20 lg:-left-20 top-4 w-7 hideaway"
             src="icons/icons8-código-fonte-48.png"
             alt=""
           />
           <img
-            class="z-40 dmCodeIcon absolute -right-20 md:-left-20 lg:-left-20 top-4 w-7"
+            class="z-40 dmCodeIcon absolute -right-20 md:-left-20 lg:-left-20 top-4 w-7 "
             src="dark-mode-icons/icons8-código-fonte-50.png"
             alt=""
           />
           <h1
-            class="mainCardRightTitle transform rotate-90 text-2xl tracking-widest text-white absolute hidden  md:block -right-20 no-translate"
+            class="mainCardRightTitle transform rotate-90 text-2xl tracking-widest text-white absolute hidden  md:block -right-20 no-translate "
           >
             WEB DEVELOPER
           </h1>
@@ -264,13 +264,13 @@
               <p class="text-gray-500">+55 24 99331-8146</p></span
             >
           </section>
-          <div class=" w-full flex">
+          <div class=" w-full flex hideaway">
             <a href="cv.pdf.pdf" download>
             <div 
               class="bg-blue-500 text-white text-xs w-auto px-5 h-auto py-2 rounded-sm relative cursor-pointer "
-              id="download-cv-btn"
+              id="download-cv-btn hideaway"
             >
-            <h3 class="">
+            <h3 class="hideaway">
               Download CV
             </h3>
               <div class="fillDownloadCVBtn">
@@ -290,16 +290,16 @@
           class="lg:w-1/2 md:w-1/2 h-full flex lg:justify-center md:justify-start items-start gap-7 hideaway justify-start w-full pt-7 lg:pt-0 pr-7 md:pr-0 lg:pr-0 md:pl-7 lg:pl-0"
         >
           <div
-            class="h-full skillsDecoration md:w-20 lg:w-20 bg-blue-500 bg-opacity-90 rounded-tl-lg md:hidden lg:block"
+            class="h-full skillsDecoration md:w-20 lg:w-20 bg-blue-500 bg-opacity-90 rounded-tl-lg md:hidden lg:block hideaway"
           ></div>
           <div
             class="flex-col items-start flex justify-center h-full w-full pr-3 textSkillsDiv"
           >
-            <h5 class="text-gray-500 font-semibold mb-1 hideaway">SKILL SET</h5>
-            <h1 class="text-2xl font-semibold mb-3 hideaway">
-              My Experience, Creative and <br> Professional Skills
+            <h5 class="text-gray-500 font-semibold mb-1 ">SKILL SET</h5>
+            <h1 class="text-2xl font-semibold mb-3 ">
+              My Experience, Creativity and <br> Professional Skills
             </h1>
-            <p class="text-sm text-gray-500 mb-4 hideaway">
+            <p class="text-sm text-gray-500 mb-4 ">
               Here are my skills and knowledge levels: I am proficient in HTML5, CSS3, Sass, TailwindCSS, and JavaScript. I have experience with Git, GitHub, and MySQL, and I'm currently learning PHP. With these skills, I can build anything from interactive, responsive interfaces to complex systems with database integrations.
             </p>
             <button
@@ -312,53 +312,53 @@
         </aside>
 
         <section
-          class="lg:w-1/2 md:w-1/2 h-full flex justify-center items-start flex-col pl-8 lg:pr-36 md:pr-10 md:mt-4  mt-2 lg:mt-0 pr-10"
+          class="lg:w-1/2 md:w-1/2 h-full flex justify-center items-start flex-col pl-8 lg:pr-36 md:pr-10 md:mt-4  mt-2 lg:mt-0 pr-10 hideaway"
         >
-          <div class="flex flex-col mb-6 w-full gap-1 hideaway">
-            <p class="text-sm font-medium hideaway">Creation of Interfaces</p>
-            <div class="flex w-full h-2 justify-between items-center gap-2 hideaway">
+          <div class="flex flex-col mb-6 w-full gap-1 ">
+            <p class="text-sm font-medium ">Creation of Interfaces</p>
+            <div class="flex w-full h-2 justify-between items-center gap-2 ">
               <div class="skillsFilledBarBg w-full bg-gray-300 h-full rounded-full">
                 <div
                   class="skillsFilledBar creationOfInterfaceSkill bg-blue-500 h-full rounded-r-full"
                 ></div>
               </div>
-              <p class="text-sm hideaway">87%</p>
+              <p class="text-sm ">87%</p>
             </div>
           </div>
 
-          <div class="flex flex-col mb-6 w-full gap-1 hideaway">
-            <p class="text-sm font-medium hideaway">Database Usage</p>
-            <div class="flex w-full h-2 justify-between items-center gap-2 hideaway">
+          <div class="flex flex-col mb-6 w-full gap-1 ">
+            <p class="text-sm font-medium ">Database Usage</p>
+            <div class="flex w-full h-2 justify-between items-center gap-2 ">
               <div class="skillsFilledBarBg w-full bg-gray-300 h-full rounded-full">
                 <div
                   class="skillsFilledBar databaseUsageSkill bg-blue-500 h-full rounded-r-full"
                 ></div>
               </div>
-              <p class="text-sm hideaway">69%</p>
+              <p class="text-sm ">69%</p>
             </div>
           </div>
 
-          <div class="flex flex-col mb-6 w-full gap-1 hideaway">
-            <p class="text-sm font-medium hideaway">Front-end Development</p>
-            <div class="flex w-full h-2 justify-between items-center gap-2 hideaway">
+          <div class="flex flex-col mb-6 w-full gap-1 ">
+            <p class="text-sm font-medium ">Front-end Development</p>
+            <div class="flex w-full h-2 justify-between items-center gap-2 ">
               <div class="skillsFilledBarBg w-full bg-gray-300 h-full rounded-full">
                 <div
                   class="skillsFilledBar front-endDevelopmentSkill bg-blue-500 w-5/6 h-full rounded-r-full"
                 ></div>
               </div>
-              <p class="text-sm hideaway">62%</p>
+              <p class="text-sm ">62%</p>
             </div>
           </div>
 
-          <div class="flex flex-col mb-6 w-full gap-1 hideaway">
-            <p class="text-sm font-medium hideaway">Back-End Development</p>
-            <div class="flex w-full h-2 justify-between items-center gap-2 hideaway">
+          <div class="flex flex-col mb-6 w-full gap-1 ">
+            <p class="text-sm font-medium ">Back-End Development</p>
+            <div class="flex w-full h-2 justify-between items-center gap-2 ">
               <div class="skillsFilledBarBg w-full bg-gray-300 h-full rounded-full">
                 <div
                   class="skillsFilledBar back-endDevelopmentSkill bg-blue-500 w-5/6 h-full rounded-r-full"
                 ></div>
               </div>
-              <p class="text-sm hideaway">39%</p>
+              <p class="text-sm ">39%</p>
             </div>
             
           </div>
@@ -1191,14 +1191,14 @@
               </p>
           </div>
   
-          <div class="relative w-full py-4 hideaway">
+          <div class="relative w-full py-4 ">
               <img
                   id="prev"
                   class="z-40 absolute left-0 top-1/2 transform -translate-y-1/2 cursor-pointer transition-transform duration-300 hover:scale-110 transition-all hover:bg-gray-800 hover:bg-opacity-40 rounded-xl "
                   src="icons/icons8-prev-50.png"
                   alt=""
               />
-              <div class="w-full overflow-x-auto custom-scrollbar overflow-y-hidden h-max py-4 px-4 hideaway">
+              <div class="w-full overflow-x-auto custom-scrollbar overflow-y-hidden h-max py-4 px-4 ">
                   <div class="flex gap-4 w-max h-auto ">
                       <img
                           class="w-auto md:60 lg:h-64 h-48 rounded-2xl transform transition-transform duration-300 hover:scale-105 hideaway"

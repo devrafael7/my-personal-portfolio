@@ -14,3 +14,7 @@ document.querySelectorAll(".menu-btn").forEach((menuBtn) => {
       menuBtn.classList.remove("open");
     });
   });
+
+  document.querySelectorAll(".no-translate").forEach((noTranslate) => {
+    noTranslate.setAttribute("translate", "no");
+  });

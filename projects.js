@@ -25,4 +25,7 @@ document.querySelectorAll(".menu-btn").forEach((menuBtn) => {
     });
   })
 
+  document.querySelectorAll(".no-translate").forEach((noTranslate) => {
+    noTranslate.setAttribute("translate", "no");
+  });
   
