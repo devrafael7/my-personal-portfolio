@@ -14,4 +14,15 @@ document.querySelectorAll(".menu-btn").forEach((menuBtn) => {
       menuBtn.classList.remove("open");
     });
   });
+
+  const backToTopBtn = document.querySelectorAll(".backToTopBtn");
+  backToTopBtn.forEach(backToTopBtns => {
+    backToTopBtns.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
+  })
+
   

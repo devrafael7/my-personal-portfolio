@@ -151,13 +151,18 @@ document.getElementById("prev").addEventListener("click", function () {
   //  });
   //});
 
-  const backToTopBtn = document.querySelector(".backToTopBtn");
-  backToTopBtn.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  });
+  if (window.location.pathname === '/index.html') {
+    const backToTopBtn = document.querySelectorAll(".backToTopBtn");
+    backToTopBtn.forEach(backToTopBtns => {
+      backToTopBtns.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    })
+  }
+ 
 
   const getAnyProjectBtn = document.querySelector(".getAnyProjectBtn");
   getAnyProjectBtn.addEventListener("click", function () {
