@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css"/>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="w-full h-min-screen transition-all ">
+  <body class="w-full h-min-screen transition-all">
 
       <div  class="menu-btn absolute top-4 right-4 cursor-pointer z-50 flex flex-col gap-1.5 hideaway lg:hidden">
           <div class="menuBtnAllLines w-9 h-1 bg-black transition-transform duration-300 hideaway" id="line1"></div>
@@ -20,8 +20,8 @@
               <li><a href="index.html" class="block text-xl no-translate">Home</a></li>
               <li><a href="about.html" class="block text-xl">About</a></li>
               <li class="block text-xl redirectServices cursor-pointer">Services</li>
-              <li><a href="projects.html" class="block text-xl">Projects</a></li>
-              <li><a href="blog.html" class="block text-xl">Blog</a></li>
+              <li><a href="projects.html" class=" block text-xl">Projects</a></li>
+              <li class="hidden"><a href="blog.html" class=" block text-xl">Blog</a></li>
           </ul>
       </div>
 
@@ -47,7 +47,7 @@
               <li><a href="about.html" class="redirectAbout text-sm font-medium cursor-pointer">About</a></li>
               <li class="redirectServices text-sm font-medium cursor-pointer">Services</li>
               <li><a class="text-sm font-medium" href="projects.html">Projects</a></li>
-              <li><a class="text-sm font-medium" href="blog.html">Blog</a></li>
+              <li class="hidden"><a class="text-sm font-medium" href="blog.html">Blog</a></li>
             </ul>
           </nav>
 
@@ -89,20 +89,20 @@
           <h1
             id="main-title-name"
             class="text-4xl font-semibold leading-tight tracking-wide mb-2 hidden md:block lg:block lg:hideaway"
-          > I'm Rafael Oliveira <br> a <span class="text-blue-500">Front-end Developer</span>
+          > I'm Rafael Oliveira <br> a <span class="text-blue-500">Web Developer <span class="text-black">and</span> Data Analyst</span>
           </h1>
 
           <h1
             id="sm-main-title-name"
             class="text-3xl font-semibold leading-tight tracking-wide mb-2 lg:hidden md:hidden"
           > I'm Rafael Oliveira a <br class="hidden md:flex">
-            <span class="text-blue-500">Front-end Developer</span>
+            <span class="text-blue-500">Web Developer <span class="text-black">and</span> Data Analyst</span>
           </h1>
           
           <p class="text-sm mb-4 opacity-70 lg:hideaway">
             Software Engineering student, currently studying <br class="hidden lg:flex md:flex"/>
-            web development for 6 months. I have skills in developing <br class="hidden lg:flex md:flex"/>
-            interfaces and functionalities for pages. I am currently <br> looking for my first internship!
+            web development and data analysis for 12 months. I have skills <br class="hidden lg:flex md:flex"/>
+            in developing interfaces, features for pages, creating dashboards <br> and a good ability to solve problems. 
           </p>
 
           <div class="flex gap-3 lg:hideaway">
@@ -184,17 +184,17 @@
             alt=""
           />
           <h1
-            class="mainCardRightTitle transform rotate-90 text-2xl tracking-widest text-white absolute hidden  md:block -right-20 no-translate "
+            class="mainCardRightTitle transform rotate-90 text-lg tracking-widest text-white absolute hidden  md:block -right-20 no-translate opacity-60"
           >
-            WEB DEVELOPER
+            SOFTWARE DEVELOPER
           </h1>
 
           <div class="flex flex-col md:hidden lg:hidden pl-5 hideaway">
             <h1
-            class=" text-4xl md:text-2xl tracking-widest text-white  -right-20 no-translate hideaway font-extralight"
+            class=" text-3xl md:text-2xl tracking-widest text-white  -right-20 no-translate hideaway font-extralight"
           >
-          <span class="quitTypeSpan">FRO</span><span class="smMainCardRightTitle">NT-END <br>
-          WEB DEVELOPER </span>
+          <span class="quitTypeSpan">Sof</span><span class="smMainCardRightTitle">tware <br>
+            Developer - WEB | DA </span>
 
           </h1>
           <p class="text-gray-200 text-xs my-1 pl-1">Since January 2024</p>
@@ -207,7 +207,7 @@
         class="w-full h-20 flex flex-col items-center uppercase md:gap-8 gap-5 lg:gap-8 lg:mb-24 mb-20 hideaway justify-center" 
       >
         <h3 class="font-semibold opacity-80">Knowledge in technologies:</h3>
-        <figure class="knowledgeFigure flex gap-2 h-7 w-full lg:justify-evenly justify-center lg:px-20 px-10 items-center flex-wrap">
+        <figure class="knowledgeFigure flex gap-4 lg:gap-2 h-7 w-full lg:justify-evenly justify-center lg:px-20 px-10 items-center flex-wrap">
           <img class="w-10 lg:w-12 lg:h-12" src="icons/icons8-html5-48.png" alt="" />
           <img class="w-10 lg:w-12 lg:h-12" src="icons/icons8-css3-48.png" alt="" />
           <img
@@ -217,15 +217,18 @@
           />
           <img class="w-10 lg:w-12 lg:h-12" src="icons/icons8-tailwindcss-48.png" alt="" />
           <img class="w-10 lg:w-12 lg:h-12" src="icons/icons8-javascript-48.png" alt="" />
+          <img class="w-8 lg:w-9 lg:h-10" src="icons/node-js-icon-454x512-nztofx17.webp" alt="" />
           <img class="w-10 lg:w-12 lg:h-12" src="icons/icons8-git-48.png" alt="" />
           <img class="w-10 lg:w-12 lg:h-12 knowledgeGithubIcon" src="icons/icons8-github-64.png" alt="" />
-          <img class="w-10 lg:w-12 lg:h-10" src="icons/PHP-Logo.png" alt="" />
           <img class="w-10 lg:w-12 lg:h-14" src="icons/icons8-mysql-48.png" alt="" />
+          <img class="w-20 lg:w-28 lg:h-28" src="icons/python-logo-0.webp" alt="" />
+          <img class="w-6 lg:w-7 lg:h-8" src="icons/power-bi-icon-768x1024-e6rrfqlo.webp" alt="" />
+          <img class="w-8 lg:w-10 lg:h-10" src="icons/732220.webp" alt="" />
         </figure>
       </section>
 
       <article
-        class="aboutMe w-full lg:h-80 flex lg:px-24 relative overflow-y-hidden lg:items-center gap-5 lg:justify-between overflow-x-hidden hideaway h-auto px-5 items-end"
+        class="aboutMe w-full lg:h-80 flex  lg:px-24 relative overflow-y-hidden lg:items-center gap-5 lg:justify-between overflow-x-hidden hideaway h-auto px-5 items-end"
       >
         <figure class="w-3/6 h-full z-30 lg:flex justify-center hideaway hidden">
           <div
@@ -238,14 +241,14 @@
           />
         </figure>
 
-        <aside class="lg:w-3/6 h-full py-5 px-1 flex flex-col justify-center z-40 lg:z-0 w-full relative">
+        <aside class="lg:w-3/6 h-full py-5 px-1 flex flex-col justify-center z-40 lg:z-0 w-full relative lg:mt-0 mt-24 md:mt-0">
           <p class="text-gray-500 text-sm font-medium mb-1 hideaway">ABOUT ME</p>
           <h2 class="font-semibold text-lg leading-tight mb-2 pr-10 hideaway">
-            Creating projects and delving into web development for 6 months.
+            Creation of projects, deepening in web development and data analysis for 12 months.
           </h2>
           <p class="text-xs text-gray-500 mb-3 md:pr-7 hideaway">
-            Hello! My name is Rafael Marques de Oliveira and I am studying Software Engineering at AEDB Resende/RJ. I am Brazilian, 18 years old, and have an intermediate level of English.
-            As a web developer, I have been studying and dedicating myself intensely to learning technologies for developing websites and web applications for the past 6 months.
+            Hello! My name is Rafael Marques de Oliveira and I am studying Software Engineering at AEDB Resende/RJ. I am Brazilian, 18 years old, and I have an advanced level of English.
+            As a web developer and data analyst, I have studied and dedicated myself intensively to learning technologies for developing websites, web applications, and dashboard for analytics over the past 12 months.
           <section class="aboutMeInformationsSection grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-x-9 gap-y-1 mb-4 w-max hideaway">
             <span class="flex gap-1 text-xs font-semibold hideaway"
               >Name:
@@ -300,7 +303,7 @@
               My Experience, Creativity and <br> Professional Skills
             </h1>
             <p class="text-sm text-gray-500 mb-4 ">
-              Here are my skills and knowledge levels: I am proficient in HTML5, CSS3, Sass, TailwindCSS, and JavaScript. I have experience with Git, GitHub, and MySQL, and I'm currently learning PHP. With these skills, I can build anything from interactive, responsive interfaces to complex systems with database integrations.
+              Here are my skills and knowledge levels: I am proficient in HTML5, CSS3, Sass, TailwindCSS, JavaScript, PBI, and Excel. I have experience with Git, GitHub, and MySQL, and am currently learning Python and Node Js. With these skills, I can build anything from interactive, responsive interfaces to complex systems with database integrations and analytics with SQL queries.
             </p>
             <button
               class="getAnyProjectBtn bg-blue-600 hover:bg-blue-700 transition-all bg-opacity-80 text-white w-max h-max px-5 py-2 text-xs rounded-sm lg:flex hidden md:uppercase md:py-3 hideaway"
@@ -315,38 +318,14 @@
           class="lg:w-1/2 md:w-1/2 h-full flex justify-center items-start flex-col pl-8 lg:pr-36 md:pr-10 md:mt-4  mt-2 lg:mt-0 pr-10 hideaway"
         >
           <div class="flex flex-col mb-6 w-full gap-1 ">
-            <p class="text-sm font-medium ">Creation of Interfaces</p>
+            <p class="text-sm font-medium ">Front-end Development</p>
             <div class="flex w-full h-2 justify-between items-center gap-2 ">
               <div class="skillsFilledBarBg w-full bg-gray-300 h-full rounded-full">
                 <div
                   class="skillsFilledBar creationOfInterfaceSkill bg-blue-500 h-full rounded-r-full"
                 ></div>
               </div>
-              <p class="text-sm ">87%</p>
-            </div>
-          </div>
-
-          <div class="flex flex-col mb-6 w-full gap-1 ">
-            <p class="text-sm font-medium ">Database Usage</p>
-            <div class="flex w-full h-2 justify-between items-center gap-2 ">
-              <div class="skillsFilledBarBg w-full bg-gray-300 h-full rounded-full">
-                <div
-                  class="skillsFilledBar databaseUsageSkill bg-blue-500 h-full rounded-r-full"
-                ></div>
-              </div>
-              <p class="text-sm ">69%</p>
-            </div>
-          </div>
-
-          <div class="flex flex-col mb-6 w-full gap-1 ">
-            <p class="text-sm font-medium ">Front-end Development</p>
-            <div class="flex w-full h-2 justify-between items-center gap-2 ">
-              <div class="skillsFilledBarBg w-full bg-gray-300 h-full rounded-full">
-                <div
-                  class="skillsFilledBar front-endDevelopmentSkill bg-blue-500 w-5/6 h-full rounded-r-full"
-                ></div>
-              </div>
-              <p class="text-sm ">62%</p>
+              <p class="text-sm ">89%</p>
             </div>
           </div>
 
@@ -355,10 +334,34 @@
             <div class="flex w-full h-2 justify-between items-center gap-2 ">
               <div class="skillsFilledBarBg w-full bg-gray-300 h-full rounded-full">
                 <div
+                  class="skillsFilledBar databaseUsageSkill bg-blue-500 h-full rounded-r-full"
+                ></div>
+              </div>
+              <p class="text-sm ">42%</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col mb-6 w-full gap-1 ">
+            <p class="text-sm font-medium ">Database Usage</p>
+            <div class="flex w-full h-2 justify-between items-center gap-2 ">
+              <div class="skillsFilledBarBg w-full bg-gray-300 h-full rounded-full">
+                <div
+                  class="skillsFilledBar front-endDevelopmentSkill bg-blue-500 w-5/6 h-full rounded-r-full"
+                ></div>
+              </div>
+              <p class="text-sm ">64%</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col mb-6 w-full gap-1 ">
+            <p class="text-sm font-medium ">Data Analysis</p>
+            <div class="flex w-full h-2 justify-between items-center gap-2 ">
+              <div class="skillsFilledBarBg w-full bg-gray-300 h-full rounded-full">
+                <div
                   class="skillsFilledBar back-endDevelopmentSkill bg-blue-500 w-5/6 h-full rounded-r-full"
                 ></div>
               </div>
-              <p class="text-sm ">39%</p>
+              <p class="text-sm ">75%</p>
             </div>
             
           </div>
@@ -379,7 +382,7 @@
           id="months-learning-card"
         >
           <h1 class="text-2xl font-semibold text-center text-gray-700">
-            <span class="text-7xl font-bold text-blue-500">6</span><br />
+            <span class="text-7xl font-bold text-blue-500">12</span><br />
             Months Learning
           </h1>
           <div
@@ -388,25 +391,25 @@
           <div
             class="w-full z-30 h-full bg-white border-t border-gray-200 shadow-md border-solid flex flex-col items-center justify-center hideaway hover:scale-110 eachAchievementCard"
           >
-            <h3 class="font-bold text-blue-600">10+</h3>
+            <h3 class="font-bold text-blue-600">12+</h3>
             <p class="text-gray-700 text-xs lg:text-sm text-center">Complete Projects</p>
           </div>
           <div
             class="w-full z-30 h-full bg-white border-t border-gray-200 shadow-md border-solid flex flex-col items-center justify-center hideaway hover:scale-110 eachAchievementCard"
           >
-            <h3 class="font-bold text-blue-600">129+</h3>
+            <h3 class="font-bold text-blue-600">300+</h3>
             <p class="text-gray-700 text-xs lg:text-sm text-center"><span class="no-translate commitMadeText">Commits </span> Made</p>
           </div>
           <div
             class="w-full z-30 h-full bg-white border-t border-gray-200 shadow-md border-solid flex flex-col items-center justify-center hideaway hover:scale-110 eachAchievementCard"
           >
-            <h3 class="font-bold text-blue-600">700+</h3>
-            <p class="text-gray-700 text-xs lg:text-sm text-center">Over 700 Hours Learning</p>
+            <h3 class="font-bold text-blue-600">800+</h3>
+            <p class="text-gray-700 text-xs lg:text-sm text-center">Over 800 Hours Learning</p>
           </div>
           <div
             class="w-full z-30 h-full bg-white border-t border-gray-200 shadow-md border-solid flex flex-col items-center justify-center hideaway hover:scale-110 eachAchievementCard"
           >
-            <h3 class="font-bold text-blue-600">4+</h3>
+            <h3 class="font-bold text-blue-600">5+</h3>
             <p class="text-gray-700 text-xs lg:text-sm text-center">Certificates</p>
           </div>
         </div>
@@ -418,25 +421,25 @@
           <div
             class="w-full z-30 h-full bg-white border-t border-gray-200 shadow-md border-solid flex flex-col items-center justify-center hideaway hover:scale-110 eachAchievementCard"
           >
-            <h3 class="font-bold text-blue-600">10+</h3>
+            <h3 class="font-bold text-blue-600">12+</h3>
             <p class="text-gray-700 text-sm">Complete Projects</p>
           </div>
           <div
             class="w-full z-30 h-full bg-white border-t border-gray-200 shadow-md border-solid flex flex-col items-center justify-center hideaway hover:scale-110 eachAchievementCard"
           >
-            <h3 class="font-bold text-blue-600">120+</h3>
+            <h3 class="font-bold text-blue-600">300+</h3>
             <p class="text-gray-700 text-sm"><span class="no-translate">Commits </span> Made</p>
           </div>
           <div
             class="w-full z-30 h-full bg-white border-t border-gray-200 shadow-md border-solid flex flex-col items-center justify-center hideaway hover:scale-110 eachAchievementCard"
           >
-            <h3 class="font-bold text-blue-600">700+</h3>
-            <p class="text-gray-700 text-sm">Over 700 Hours Learning</p>
+            <h3 class="font-bold text-blue-600">800+</h3>
+            <p class="text-gray-700 text-sm">Over 800 Hours Learning</p>
           </div>
           <div
             class="w-full z-30 h-full bg-white border-t border-gray-200 shadow-md border-solid flex flex-col items-center justify-center hideaway hover:scale-110 eachAchievementCard"
           >
-            <h3 class="font-bold text-blue-600">4+</h3>
+            <h3 class="font-bold text-blue-600">5+</h3>
             <p class="text-gray-700 text-sm">Certificates</p>
           </div>
         </div>
@@ -460,7 +463,7 @@
             <p class="text-xs hideaway">Design</p>
             <h3 class="font-medium mb-1 card0H3 hideaway">Interfaces</h3>
             <p id="card0-p" class="text-xs text-gray-200 pr-2 hideaway">
-              Creation of interfaces using Html5, Css3, Sass and Tailwindcss
+              Creation of web interfaces and dashboards
             </p>
           </div>
   
@@ -473,7 +476,7 @@
               <h3 class="font-medium mb-2 leading-none h3ResponsivityEn">Reponsivity</h3>
               <h3 class="font-medium mb-2 leading-none h3ResponsivityPt hidden">Responsividade</h3>
               <p class="text-xs text-gray-500 pr-2">
-                Responsive websites for mobile devices using Css3 and Tailwindcss
+                Responsive websites and dashboards for mobile devices 
               </p>
             </div>
           </div>
@@ -502,7 +505,7 @@
             <div class="flex flex-col">
               <h3 class="font-medium mb-1 databaseH3">Database</h3>
               <p class="text-xs text-gray-500 pr-2">
-                Integration of forms into the MySQL database with PHP
+                Integration with DB - Python and SQL queries
               </p>
             </div>
           </div>
@@ -678,10 +681,7 @@
               <div class="flex flex-col w-full h-full">
                 <h1 class="text-md mb-1 font-medium no-translate">Weather App</h1>
                 <p class="lg:text-sm text-xs lg:pr-24 pr-1 font-light">
-                  An E-Commerce for sneakers and watches with various
-                  features, such as shopping cart, menu, login and others.
-                  Project created entirely by me, without copies, just using
-                  different references to create the interface.
+                  A weather software with dark mode, where you can search for the region you want to see the weather. Using Openweather API
                 </p>
               </div>
 
@@ -749,6 +749,9 @@
         </div>
         </div>
 
+
+
+        
         <div
           class="projectsDiv lg:flex-row md:flex-row flex-col flex justify-center items-center w-full h-auto mb-9 hideaway gap-9 md:gap-3 lg:gap-7"
         >
@@ -758,22 +761,22 @@
           >
             <img
               class="rounded-2xl w-max lg:h-60"
-              src="images/Capturar.lmCalculator.PNG"
+              src="images/Capturar.rea.PNG"
               alt=""
             />
             <img
               class="absolute right-0 w-20 lg:w-28 bottom-0 h-auto"
-              src="images/Capturar.lmMobCalculator (1).png"
+              src="images/Capturar.rea_mob.PNG"
               alt=""
             />
             <img
               class="rounded-2xl w-max lg:h-60 hidden"
-              src="images/Capturar.dmCalculator.PNG"
+              src="images/Capturar.rea.PNG"
               alt=""
             />
             <img
               class="absolute right-0 w-20 lg:w-28 bottom-0 h-auto hidden    "
-              src="images/Capturar.dmMobCalculator-removebg-preview.png"
+              src="images/Capturar.rea_mob.PNG"
               alt=""
             />
             <div class="image-overlay"></div>
@@ -781,12 +784,9 @@
               class="projectInformations absolute opacity-0 flex flex-col justify-between items-start items-center px-4 text-white py-1 lg:py-3 w-full h-full pb-5"
             >
               <div class="flex flex-col w-full h-full">
-                <h1 class="text-md mb-1 font-medium no-translate">Calculator</h1>
+                <h1 class="text-md mb-1 font-medium no-translate">Resende em ação</h1>
                 <p class="lg:text-sm text-xs lg:pr-24 pr-1 font-light">
-                  An E-Commerce for sneakers and watches with various
-                  features, such as shopping cart, menu, login and others.
-                  Project created entirely by me, without copies, just using
-                  different references to create the interface.
+                  A project created by a team of 5 developers. 30% Front end created by me and back end entirely created by me. Project aimed at helping needy families in our region. With the intention of obtaining partnerships with institutions to enhance the help
                 </p>
               </div>
 
@@ -803,13 +803,18 @@
                   src="icons/icons8-javascript-48.png"
                   alt=""
                 />
+                <img
+                class=" w-7 h-7 projectInformatioIcon"
+                src="icons/node-js-icon-454x512-nztofx17.webp"
+                alt=""
+              />
               </div>
             </div>
           </div>
           <div class="flex w-full justify-between items-center lg:px-5 px-2 hideaway">
-            <h3 class="font-medium mt-1 lg:mt-3 lg:text-md text-xs lg:pl-0 pl- text-start no-translate">CALCULATOR</h3>
+            <h3 class="font-medium mt-1 lg:mt-3 lg:text-md text-xs lg:pl-0 pl- text-start no-translate">RESENDE EM AÇÃO</h3>
             <div class="flex gap-3">
-              <a href="https://devrafael7.github.io/js-calculator/" target="_blank" rel="noopener">
+              <a href="https://devrafael7.github.io/Resende-em-acao/" target="_blank" rel="noopener">
                 <div
                   class="deployBtn w-max h-7 bg-white cursor-pointer rounded-full flex px-3 gap-1 justify-between items-center"
                 >
@@ -837,7 +842,7 @@
                 </div>
               </a>
 
-              <a href="https://github.com/devrafael7/js-calculator" target="_blank" rel="noopener">
+              <a href="https://github.com/devrafael7/Resende-em-acao" target="_blank" rel="noopener">
                 <div
                   class="w-max sourceCodeBtn h-7 cursor-pointer bg-white rounded-full flex items-center justify-between px-2 gap-1"
                 >
@@ -853,318 +858,23 @@
           </div>
         </div>
 
-        <div class="flex flex-col">
-          <div
-            class="w-full h-auto bg-white shadow-md mb-2 lg:mb-2 relative flex justify-between border border-2 black border-solid p-2 rounded-3xl image-container"
-          >
-            <img
-              class="rounded-2xl w-max lg:h-60"
-              src="images/Capturar.PNG"
-              alt=""
-            />
-            <img
-              class="absolute right-0 w-20 lg:w-28 bottom-0 h-auto"
-              src="images/Capturar-mob-0-removebg-preview.png"
-              alt=""
-            />
-            <img
-              class="rounded-2xl w-max lg:h-60 hidden"
-              src="dark-mode-images/Capturar.dm.PNG"
-              alt=""
-            />
-            <img
-              class="absolute right-0 w-20 lg:w-28 bottom-0 h-auto hidden    "
-              src="dark-mode-images/Capturar.dm.mob-removebg-preview.png"
-              alt=""
-            />
-            <div class="image-overlay"></div>
-            <div
-              class="projectInformations absolute opacity-0 flex flex-col justify-between items-start items-center px-4 text-white py-1 lg:py-3 w-full h-full pb-5"
-            >
-              <div class="flex flex-col w-full h-full">
-                <h1 class="text-md mb-1 font-medium no-translate">E-Commerce</h1>
-                <p class="lg:text-sm text-xs lg:pr-24 pr-1 font-light">
-                  An E-Commerce for sneakers and watches with various
-                  features, such as shopping cart, menu, login and others.
-                  Project created entirely by me, without copies, just using
-                  different references to create the interface.
-                </p>
-              </div>
-
-              <div class="flex gap-2 w-full justify-start items-center  projectInformationsIcons">
-                <img class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon" src="icons/icons8-html5-48.png" alt="" />
-                <img class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon" src="icons/icons8-css3-48.png" alt="" />
-                <img
-                  class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon"
-                  src="icons/icons8-tailwindcss-48.png"
-                  alt=""
-                />
-                <img
-                  class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon"
-                  src="icons/icons8-javascript-48.png"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-          <div class="flex w-full justify-between items-center lg:px-5 px-2 hideaway">
-            <h3 class="font-medium mt-1 lg:mt-3 lg:text-md text-xs lg:pl-0 pl- text-start no-translate">E-COMMERCE</h3>
-            <div class="flex gap-3">
-              <a href="https://devrafael7.github.io/e-comerce/" target="_blank" rel="noopener">
-                <div
-                  class="deployBtn w-max h-7 bg-white cursor-pointer rounded-full flex px-3 gap-1 justify-between items-center"
-                >
-                  <img
-                    class="h-7 w-auto visibleIcon"
-                    src="icons/icons8-eye-32.png"
-                    alt=""
-                  />
-                  <img
-                    class="h-6 w-7 visibleGif"
-                    src="icons/icons8-visível.gif"
-                    alt=""
-                  />
-                  <img
-                  class="h-7 w-auto dmVisibleIcon"
-                  src="dark-mode-icons/icons8-visível-50 (1).png"
-                  alt=""
-                  />
-                  <img
-                  class="h-6 w-auto smVisibleIcon"
-                  src="icons/icons8-visível-50.png"
-                  alt=""
-                  />
-                  <p class="font-medium lg:text-sm text-xs no-translate">Deploy</p>
-                </div>
-              </a>
-
-              <a href="https://github.com/devrafael7/e-comerce" target="_blank" rel="noopener">
-                <div
-                  class="w-max sourceCodeBtn h-7 cursor-pointer bg-white rounded-full flex items-center justify-between px-2 gap-1"
-                >
-                  <img
-                    class="h-full w-auto py-1"
-                    src="icons/icons8-github-50.png"
-                    alt=""
-                  />
-                  <p class="font-medium lg:text-sm text-xs">Source Code</p>
-              </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        </div>
-
-        <div
-          class="projectsDiv lg:flex-row md:flex-row flex-col flex justify-center items-center w-full h-auto mb-9 hideaway gap-9 md:gap-3 lg:gap-7"
-        >
-        <div class="flex flex-col">
-          <div
-            class="w-full h-auto bg-white shadow-md mb-2 lg:mb-2 relative flex justify-between border border-2 black border-solid p-2 rounded-3xl image-container"
-          >
-            <img
-              class="rounded-2xl w-max lg:h-60"
-              src="images/Capturar.PNG"
-              alt=""
-            />
-            <img
-              class="absolute right-0 w-20 lg:w-28 bottom-0 h-auto"
-              src="images/Capturar-mob-0-removebg-preview.png"
-              alt=""
-            />
-            <img
-              class="rounded-2xl w-max lg:h-60 hidden"
-              src="dark-mode-images/Capturar.dm.PNG"
-              alt=""
-            />
-            <img
-              class="absolute right-0 w-20 lg:w-28 bottom-0 h-auto hidden    "
-              src="dark-mode-images/Capturar.dm.mob-removebg-preview.png"
-              alt=""
-            />
-            <div class="image-overlay"></div>
-            <div
-              class="projectInformations absolute opacity-0 flex flex-col justify-between items-start items-center px-4 text-white py-1 lg:py-3 w-full h-full pb-5"
-            >
-              <div class="flex flex-col w-full h-full">
-                <h1 class="text-md mb-1 font-medium no-translate">E-Commerce</h1>
-                <p class="lg:text-sm text-xs lg:pr-24 pr-1 font-light">
-                  An E-Commerce for sneakers and watches with various
-                  features, such as shopping cart, menu, login and others.
-                  Project created entirely by me, without copies, just using
-                  different references to create the interface.
-                </p>
-              </div>
-
-              <div class="flex gap-2 w-full justify-start items-center  projectInformationsIcons">
-                <img class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon" src="icons/icons8-html5-48.png" alt="" />
-                <img class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon" src="icons/icons8-css3-48.png" alt="" />
-                <img
-                  class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon"
-                  src="icons/icons8-tailwindcss-48.png"
-                  alt=""
-                />
-                <img
-                  class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon"
-                  src="icons/icons8-javascript-48.png"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-          <div class="flex w-full justify-between items-center lg:px-5 px-2 hideaway">
-            <h3 class="font-medium mt-1 lg:mt-3 lg:text-md text-xs lg:pl-0 pl- text-start no-translate">E-COMMERCE</h3>
-            <div class="flex gap-3">
-              <a href="https://devrafael7.github.io/e-comerce/" target="_blank" rel="noopener">
-                <div
-                  class="deployBtn w-max h-7 bg-white cursor-pointer rounded-full flex px-3 gap-1 justify-between items-center"
-                >
-                  <img
-                    class="h-7 w-auto visibleIcon"
-                    src="icons/icons8-eye-32.png"
-                    alt=""
-                  />
-                  <img
-                    class="h-6 w-7 visibleGif"
-                    src="icons/icons8-visível.gif"
-                    alt=""
-                  />
-                  <img
-                  class="h-7 w-auto dmVisibleIcon"
-                  src="dark-mode-icons/icons8-visível-50 (1).png"
-                  alt=""
-                  />
-                  <img
-                  class="h-6 w-auto smVisibleIcon"
-                  src="icons/icons8-visível-50.png"
-                  alt=""
-                  />
-                  <p class="font-medium lg:text-sm text-xs no-translate">Deploy</p>
-                </div>
-              </a>
-
-              <a href="https://github.com/devrafael7/e-comerce" target="_blank" rel="noopener">
-                <div
-                  class="w-max sourceCodeBtn h-7 cursor-pointer bg-white rounded-full flex items-center justify-between px-2 gap-1"
-                >
-                  <img
-                    class="h-full w-auto py-1"
-                    src="icons/icons8-github-50.png"
-                    alt=""
-                  />
-                  <p class="font-medium lg:text-sm text-xs">Source Code</p>
-              </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex flex-col">
-          <div
-            class="w-full h-auto bg-white shadow-md mb-2 lg:mb-2 relative flex justify-between border border-2 black border-solid p-2 rounded-3xl image-container"
-          >
-            <img
-              class="rounded-2xl w-max lg:h-60"
-              src="images/Capturar.PNG"
-              alt=""
-            />
-            <img
-              class="absolute right-0 w-20 lg:w-28 bottom-0 h-auto"
-              src="images/Capturar-mob-0-removebg-preview.png"
-              alt=""
-            />
-            <img
-              class="rounded-2xl w-max lg:h-60 hidden"
-              src="dark-mode-images/Capturar.dm.PNG"
-              alt=""
-            />
-            <img
-              class="absolute right-0 w-20 lg:w-28 bottom-0 h-auto hidden    "
-              src="dark-mode-images/Capturar.dm.mob-removebg-preview.png"
-              alt=""
-            />
-            <div class="image-overlay"></div>
-            <div
-              class="projectInformations absolute opacity-0 flex flex-col justify-between items-start items-center px-4 text-white py-1 lg:py-3 w-full h-full pb-5"
-            >
-              <div class="flex flex-col w-full h-full">
-                <h1 class="text-md mb-1 font-medium no-translate">E-Commerce</h1>
-                <p class="lg:text-sm text-xs lg:pr-24 pr-1 font-light">
-                  An E-Commerce for sneakers and watches with various
-                  features, such as shopping cart, menu, login and others.
-                  Project created entirely by me, without copies, just using
-                  different references to create the interface.
-                </p>
-              </div>
-
-              <div class="flex gap-2 w-full justify-start items-center  projectInformationsIcons">
-                <img class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon" src="icons/icons8-html5-48.png" alt="" />
-                <img class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon" src="icons/icons8-css3-48.png" alt="" />
-                <img
-                  class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon"
-                  src="icons/icons8-tailwindcss-48.png"
-                  alt=""
-                />
-                <img
-                  class="lg:w-9 lg:h-9 w-7 h-7 projectInformatioIcon"
-                  src="icons/icons8-javascript-48.png"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-          <div class="flex w-full justify-between items-center lg:px-5 px-2 hideaway">
-            <h3 class="font-medium mt-1 lg:mt-3 lg:text-md text-xs lg:pl-0 pl- text-start no-translate">E-COMMERCE</h3>
-            <div class="flex gap-3">
-              <a href="https://devrafael7.github.io/e-comerce/" target="_blank" rel="noopener">
-                <div
-                  class="deployBtn w-max h-7 bg-white cursor-pointer rounded-full flex px-3 gap-1 justify-between items-center"
-                >
-                  <img
-                    class="h-7 w-auto visibleIcon"
-                    src="icons/icons8-eye-32.png"
-                    alt=""
-                  />
-                  <img
-                    class="h-6 w-7 visibleGif"
-                    src="icons/icons8-visível.gif"
-                    alt=""
-                  />
-                  <img
-                  class="h-7 w-auto dmVisibleIcon"
-                  src="dark-mode-icons/icons8-visível-50 (1).png"
-                  alt=""
-                  />
-                  <img
-                  class="h-6 w-auto smVisibleIcon"
-                  src="icons/icons8-visível-50.png"
-                  alt=""
-                  />
-                  <p class="font-medium lg:text-sm text-xs no-translate">Deploy</p>
-                </div>
-              </a>
-
-              <a href="https://github.com/devrafael7/e-comerce" target="_blank" rel="noopener">
-                <div
-                  class="w-max sourceCodeBtn h-7 cursor-pointer bg-white rounded-full flex items-center justify-between px-2 gap-1"
-                >
-                  <img
-                    class="h-full w-auto py-1"
-                    src="icons/icons8-github-50.png"
-                    alt=""
-                  />
-                  <p class="font-medium lg:text-sm text-xs">Source Code</p>
-              </div>
-              </a>
-            </div>
-          </div>
-        </div>
-     
+       
         </div>
 
 
+    
+        </div>
 
-        <div class="w-full flex justify-end items-center mt-9  md:mt-0 md:mb-6  lg:mb-6 ">
+
+        
+
+        
+
+        
+
+
+
+        <div class="w-full flex justify-end items-center mt-9 lg:pr-24 md:mt-0 md:mb-6  lg:mb-6 ">
           <a href="projects.html" rel="noopener">
             <div
               class="viewAllBtn bg-blue-500 text-white text-xs w-max h-max px-4 py-2 hideaway cursor-pointer"
@@ -1287,7 +997,7 @@
           <p class="redirectAbout text-gray-500 text-sm hover:text-gray-800 hover:font-medium cursor-pointer lg:text-sm">About</p>
           <p class="redirectServices text-gray-500 text-sm hover:text-gray-800 hover:font-medium cursor-pointer lg:text-sm">Services</p>
           <a href="projects.html"><p class="text-gray-500 text-sm hover:text-gray-800 hover:font-medium  lg:text-sm">Projects</p></a>
-          <a href="blog.html"><p class="text-gray-500 text-sm hover:text-gray-800 hover:font-medium  lg:text-sm">Blog</p></a>
+          <a class="hidden" href="blog.html"><p class="text-gray-500 text-sm hover:text-gray-800 hover:font-medium  lg:text-sm">Blog</p></a>
         </div>
         <div class="footerLocation flex flex-col gap-1  hideaway md:items-start  items-center lg:items-start ">
           <h4 class="mb-1 font-medium ">Location</h4>

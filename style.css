@@ -96,19 +96,19 @@ nav ul li:hover {
 }
 
 .skills .creationOfInterfaceSkill {
-  width: 87%;
+  width: 89%;
 }
 
 .skills .databaseUsageSkill {
-  width: 69%;
+  width: 42%;
 }
 
 .skills .front-endDevelopmentSkill {
-  width: 62%;
+  width: 64%;
 }
 
 .skills .back-endDevelopmentSkill {
-  width: 39%;
+  width: 75%;
 }
 
 .myServiceCards {
@@ -478,7 +478,7 @@ nav ul li:hover {
 }
 
 #download-cv-btn:hover {
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 #download-cv-btn h3 {
@@ -1068,4 +1068,19 @@ body.dark .aboutMeBottomDecoration {
 
 .knowledgeFigure img:nth-child(9) {
   animation: softFloat 3.4s ease-in-out infinite;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.knowledgeFigure img:nth-child(10) {
+  animation: softFloat 3.1s ease-in-out infinite;
+}
+
+.knowledgeFigure img:nth-child(11) {
+  animation: softFloat 2.9s ease-in-out infinite;
+}
+
+.knowledgeFigure img:nth-child(12) {
+  animation: softFloat 2.5s ease-in-out infinite;
+}
+
+
+/*# sourceMappingURL=style.css.map */
