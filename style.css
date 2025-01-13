@@ -1082,5 +1082,9 @@ body.dark .aboutMeBottomDecoration {
   animation: softFloat 2.5s ease-in-out infinite;
 }
 
+.knowledgeFigure img:nth-child(13) {
+  animation: softFloat 2.2s ease-in-out infinite;
+}
+
 
 /*# sourceMappingURL=style.css.map */
