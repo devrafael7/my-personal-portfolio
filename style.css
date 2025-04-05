@@ -108,7 +108,7 @@ nav ul li:hover {
 }
 
 .skills .back-endDevelopmentSkill {
-  width: 75%;
+  width: 85%;
 }
 
 .myServiceCards {
@@ -1012,6 +1012,10 @@ body.dark .close-btn {
 
 body.dark .aboutMeBottomDecoration {
   background: #f95959;
+}
+
+body.dark .BIDiv {
+  color: #ffffff;
 }
 
 @keyframes float {
