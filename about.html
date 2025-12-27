@@ -1,106 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen ">
-  
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
     <header
-    class="w-full h-16 hidden lg:flex justify-between items-center mb-7 pt-3 hideaway absolute top-0 px-16"
-  >
-    <article
-      class="logo flex items-center h-full justify-center cursor-pointer hideaway"
+      class="w-full h-16 hidden lg:flex justify-between items-center mb-7 pt-3 hideaway absolute top-0 px-16"
     >
-      <h1 class="text-lg logoText font-semibold mr-7 no-translate">
-        Rafa <span>Dev</span>
-      </h1>
-    </article>
+      <article
+        class="logo flex items-center h-full justify-center cursor-pointer hideaway"
+      >
+        <h1 class="text-lg logoText font-semibold mr-7 no-translate">
+          Rafa's <span>Portfolio</span>
+        </h1>
+      </article>
 
-    <nav class="flex gap-3 hideaway">
-      <ul class="flex gap-10 opacity-90 items-center">
-        <li><a class="text-sm font-medium no-translate" href="index.html">Home</a></li>
-        <li class="redirectAbout text-sm font-medium cursor-pointer">About</li>
-        <li class="redirectServices text-sm font-medium cursor-pointer">Services</li>
-        <li><a class="text-sm font-medium" href="projects.html">Projects</a></li>
-        <li class="hidden"><a class="text-sm font-medium" href="blog.html">Blog</a></li>
-      </ul>
-    </nav>
+      <nav class="flex gap-3 hideaway">
+        <ul class="flex gap-10 opacity-90 items-center">
+          <li>
+            <a class="text-sm font-medium no-translate" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="redirectAbout text-sm font-medium cursor-pointer">
+            Sobre mim
+          </li>
+          <li class="redirectServices text-sm font-medium cursor-pointer">
+            Serviços
+          </li>
+          <li>
+            <a class="text-sm font-medium" href="projects.html">Projetos</a>
+          </li>
+          <li class="hidden">
+            <a class="text-sm font-medium" href="blog.html">Blog</a>
+          </li>
+        </ul>
+      </nav>
 
-    <article
-      class="emailBox flex gap-2 items-center w-auto h-auto opacity-70 cursor-pointer hideaway"
-    >
-      <img class="h-5 gmailIcon" src="icons/icons8-gmail-logo-50.png" alt="" />
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rafarafa99944@gmail.com&su=Olá, vim pelo seu portfolio!%20do%20Email&body=%20%20" target="_blank" rel="noopener">
-        <h3 class="text-sm">rafarafa99944@gmail.com</h3>
-      </a>
-    </article>
-  </header>
-
-
- 
+      <article
+        class="emailBox flex gap-2 items-center w-auto h-auto opacity-70 cursor-pointer hideaway"
+      >
+        <img
+          class="h-5 gmailIcon"
+          src="icons/icons8-gmail-logo-50.png"
+          alt=""
+        />
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=rafael.marques@aedb.br&su=Olá, vim pelo seu portfolio!%20do%20Email&body=%20%20"
+          target="_blank"
+          rel="noopener"
+        >
+          <h3 class="text-sm">rafael.marques@aedb.br</h3>
+        </a>
+      </article>
+    </header>
 
     <div class="container w-full h-full p-4 z-50 flex flex-col gap-6 hideaway">
-       
+      <div
+        class="flex justify-between items-center w-full h-auto lg:hidden relative"
+      >
+        <article
+          class="logo flex items-center h-full justify-center cursor-pointer hideaway"
+        >
+          <h1 class="text-lg logoText font-semibold mr-7 no-translate">
+            Rafa's <span>Portfolio</span>
+          </h1>
+        </article>
 
-        <div class=" flex justify-between items-center w-full h-auto lg:hidden relative">
-            <article
-                class="logo flex items-center h-full justify-center cursor-pointer hideaway"
-                >
-                <h1 class="text-lg logoText font-semibold mr-7 no-translate">
-                    Rafa <span>Dev</span>
-                </h1>
-            </article>
-
-            <div  class="menu-btn cursor-pointer z-50 flex flex-col gap-1.5 hideaway">
-              <div class="menuBtnAllLines w-9 h-1 bg-black transition-transform duration-300 hideaway" id="line1"></div>
-              <div class="menuBtnAllLines w-9 h-1 bg-black transition-opacity duration-300 hideaway" id="line2"></div>
-              <div class="menuBtnAllLines w-9 h-1 bg-black transition-transform duration-300 hideaway" id="line3"></div>
-          </div>
-          <div  class="side-menu fixed top-0 left-0 w-56 h-full  text-white transform -translate-x-full transition-transform duration-300 z-40">
-              <button type="button" class="close-btn absolute top-4 right-4 text-3xl">&times;</button>
-              <ul class="mt-16 space-y-6 px-7">
-                  <li><a href="index.html" class="block text-xl no-translate">Home</a></li>
-                  <li><a href="about.html" class="block text-xl">About</a></li>
-                  <li class="block text-xl redirectServices cursor-pointer">Services</li>
-                  <li><a href="projects.html" class="block text-xl">Projects</a></li>
-                  <li class="hidden"><a href="blog.html" class="block text-xl">Blog</a></li>
-              </ul>
-          </div>
-
-            
-          </div>
-
-        <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col lg:flex-row items-center lg:items-center lg:justify-center lg:gap-20 lg:pl-10 ">
-            <div class="w-full lg:w-1/3 h-full border border-black border-solid flex justify-center items-center relative lg:mt-10 mb-7 lg:mb-0 hideaway">
-                <img src="images/1720653347461.png" alt="Profile Picture" class="z-40 h-80 w-auto lg:mx-0 hideaway">
-                <div class="w-full h-full border border-solid border-black absolute -right-16 -top-12 hidden lg:block hideaway">
-
-                </div>
-            </div>
-            <div class="w-full lg:w-2/3 lg:pl-8 hideaway">
-                <h1 class="text-2xl lg:text-3xl font-bold mb-4 hideaway">Rafael Marques de Oliveira</h1>
-                <p class="text-gray-700 mb-4 hideaway">
-                  Hello! My name is Rafael Marques de Oliveira and I am studying Software Engineering at AEDB Resende/RJ and ADS at Gran Faculdade (Online). I am Brazilian, 19 years old. As a web developer and data analyst, I have been studying and dedicating myself intensely to learning technologies for the development of websites, web applications and dashboards for the last 15 months. I have knowledge of HTML5, CSS3, TailwindCSS, JavaScript, Git, GitHub, MySQL, Power BI, MicroStrategy, Excel and am currently learning Python and Node Js.
-                </p>
-                <p class="text-gray-700 mb-4 hideaway">
-                  During these 15 months, I created several projects, from small projects and interfaces to interactive websites with database integrations and back-end use. My experience includes the development of responsive and accessible interfaces, the creation of interactive websites, integration with databases and the implementation of back-end functionalities. Beyond Data Analysis skills.
-                </p>
-                <p class="text-gray-700 mb-4 hideaway">
-                   
-                </p>
-            </div>
+        <div
+          class="menu-btn cursor-pointer z-50 flex flex-col gap-1.5 hideaway"
+        >
+          <div
+            class="menuBtnAllLines w-9 h-1 bg-black transition-transform duration-300 hideaway"
+            id="line1"
+          ></div>
+          <div
+            class="menuBtnAllLines w-9 h-1 bg-black transition-opacity duration-300 hideaway"
+            id="line2"
+          ></div>
+          <div
+            class="menuBtnAllLines w-9 h-1 bg-black transition-transform duration-300 hideaway"
+            id="line3"
+          ></div>
         </div>
+        <div
+          class="side-menu fixed top-0 left-0 w-56 h-full text-white transform -translate-x-full transition-transform duration-300 z-40"
+        >
+          <button
+            type="button"
+            class="close-btn absolute top-4 right-4 text-3xl"
+          >
+            &times;
+          </button>
+          <ul class="mt-16 space-y-6 px-7">
+            <li>
+              <a href="index.html" class="block text-xl no-translate">Home</a>
+            </li>
+            <li><a href="about.html" class="block text-xl">Sobre mim</a></li>
+            <li class="block text-xl redirectServices cursor-pointer">
+              Serviços
+            </li>
+            <li><a href="projects.html" class="block text-xl">Projetos</a></li>
+            <li class="hidden">
+              <a href="blog.html" class="block text-xl">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="bg-white rounded-lg shadow-lg p-6 flex flex-col lg:flex-row items-center lg:items-center lg:justify-center lg:gap-20 lg:pl-10"
+      >
+        <div
+          class="w-full lg:w-1/3 h-full border border-black border-solid flex justify-center items-center relative lg:mt-10 mb-7 lg:mb-0 hideaway"
+        >
+          <img
+            src="images/1720653347461.png"
+            alt="Profile Picture"
+            class="z-40 h-80 w-auto lg:mx-0 hideaway"
+          />
+          <div
+            class="w-full h-full border border-solid border-black absolute -right-16 -top-12 hidden lg:block hideaway"
+          ></div>
+        </div>
+        <div class="w-full lg:w-2/3 lg:pl-8 hideaway">
+          <h1 class="text-2xl lg:text-3xl font-bold mb-4 hideaway">
+            Rafael Marques de Oliveira
+          </h1>
+          <p class="text-gray-700 mb-4 hideaway">
+            Rafael Marques de Oliveira Olá! Meu nome é Rafael Marques de
+            Oliveira e estudo Engenharia de Software na AEDB Resende/RJ e ADS na
+            Gran Faculdade (EAD). Sou brasileiro, tenho 19 anos. Como
+            desenvolvedor web e analista de dados, tenho me dedicado
+            intensamente ao aprendizado de tecnologias para o desenvolvimento de aplicações web e dashboards(BI) nos últimos 24 meses. Possuo
+            conhecimento em HTML5, CSS3, TailwindCSS, JavaScript, TypeScript, SQL, AWS(Básico), Git, GitHub, Python, Excel, Office 365, Power Automate, Power BI, Power Apps entre outros.. Além disso possuo conhecimento básico em Java/SpringBoot
+          </p>
+          <p class="text-gray-700 mb-4 hideaway">
+            Durante esses 24 meses, desenvolvi diversos projetos, desde pequenos
+            projetos e interfaces até aplicações interativas com integração de
+            banco de dados e uso de back-end. Minha experiência inclui principalmente tratamento de dados e criação de BI's com PBI/Python, além disso também posso criar aplicações com PowerApps, integrando com PowerAutomate. Possuo 1 ano e 4 meses de experiência como estágiario de digitalização na Michelin - Itatiaia RJ.
+          </p>
+          <p class="text-gray-700 mb-4 hideaway"></p>
+        </div>
+      </div>
     </div>
 
-    <div class="hidden lg:block w-full h-2/6 absolute bottom-0 aboutMeBottomDecoration hideaway">
-
-    </div>
+    <div
+      class="hidden lg:block w-full h-2/6 absolute bottom-0 aboutMeBottomDecoration hideaway"
+    ></div>
 
     <script src="script.js"></script>
     <script src="about.js"></script>
-</body>
+  </body>
 </html>

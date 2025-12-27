@@ -70,7 +70,7 @@ nav ul li:hover {
 }
 
 .mainCard .mainCardRight .mainPicture1 {
-  height: 90%;
+  height: 100%;
 }
 
 .mainCard .mainCardRight .mainPicture2 {
@@ -96,19 +96,19 @@ nav ul li:hover {
 }
 
 .skills .creationOfInterfaceSkill {
-  width: 89%;
+  width: 92%;
 }
 
 .skills .databaseUsageSkill {
-  width: 42%;
+  width: 89%;
 }
 
 .skills .front-endDevelopmentSkill {
-  width: 64%;
+  width: 71%;
 }
 
 .skills .back-endDevelopmentSkill {
-  width: 85%;
+  width: 60%;
 }
 
 .myServiceCards {
@@ -1088,6 +1088,14 @@ body.dark .BIDiv {
 
 .knowledgeFigure img:nth-child(13) {
   animation: softFloat 2.2s ease-in-out infinite;
+}
+
+.knowledgeFigure img:nth-child(14) {
+  animation: softFloat 2.0s ease-in-out infinite;
+}
+
+.knowledgeFigure img:nth-child(15) {
+  animation: softFloat 1.8s ease-in-out infinite;
 }
 
 
